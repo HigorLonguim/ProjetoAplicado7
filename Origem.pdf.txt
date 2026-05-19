@@ -1,0 +1,521 @@
+PROJETO APLICADO I e II
+Higor Vedovello, José Roppa, Julia Dias, Luigi Targa
+Grupo 08
+
+“Dificuldade da população em compreender rótulos e fazer escolhas alimentares mais
+saudáveis.”
+O problema social:
+Consumo de ultraprocessados – IBGE e Fiocruz:
+●
+●
+●
+●
+
+Ultraprocessados representam cerca de 20% das calorias consumidas no Brasil.
+Consumo mais elevado entre jovens.
+Consumo maior em áreas urbanas.
+Associação com aumento de obesidade e doenças crônicas.
+
+Obesidade e doenças crônicas – Ministério da Saúde (Vigitel):
+●
+●
+●
+
+Mais de 50% dos adultos brasileiros estão acima do peso.
+Cerca de 20% apresentam obesidade.
+Hipertensão e diabetes seguem em crescimento.
+
+Compreensão de rótulos – Anvisa:
+●
+●
+●
+
+Parte significativa da população tem dificuldade em interpretar tabelas nutricionais.
+Termos como “%VD”, “gorduras saturadas” e “valor energético” não são claros para
+muitos consumidores.
+Implementação de rotulagem frontal com símbolo de lupa para indicar alto teor de
+açúcar, sódio e gordura saturada.
+
+A proposta:
+O Origem é um aplicativo criado para ajudar as pessoas a entenderem melhor os rótulos
+dos alimentos no momento da compra. Ao escanear o código de barras, o app mostra de
+forma simples informações como açúcar, sódio, calorias e gorduras, utilizando alertas
+visuais que facilitam a decisão.
+Além disso, o aplicativo terá uma aba com vídeos curtos e informativos produzidos por
+profissionais da área da saúde, explicando como interpretar rótulos, os riscos do consumo
+excessivo de certos nutrientes e orientações básicas sobre alimentação equilibrada.
+A proposta é tornar a informação nutricional mais clara e acessível, ajudando o consumidor
+a fazer escolhas mais conscientes.
+
+O produto:
+O produto será um aplicativo mobile, desenvolvido em Flutter, utilizando a linguagem Dart.
+O app terá como principal função a leitura de código de barras pela câmera do celular,
+fazendo a consulta das informações nutricionais em uma API e exibindo esses dados de
+forma simples e fácil de entender. A estrutura do sistema será organizada em camadas
+(interface, lógica e dados), facilitando a manutenção e futuras melhorias.
+O desenvolvimento será feito de forma incremental, com versionamento de código e
+implementação das funcionalidades ao longo das etapas do projeto.
+
+As etapas:
+
+PARTE I – Fundamentação, Planejamento e Início do Desenvolvimento
+(Foco: pesquisa, engenharia de software, arquitetura e metade do desenvolvimento)
+
+1. Definição do Problema e Brainstorm
+Identificação do problema social: dificuldade na interpretação de rótulos nutricionais.
+Delimitação do escopo do aplicativo.
+Definição do público-alvo.
+Levantamento inicial de possíveis funcionalidades.
+Definição do nome do aplicativo: Origem.
+Escolha da abordagem técnica (leitura de código de barras + exibição simplificada).
+2. Pesquisa e Fundamentação Teórica
+Levantamento de dados estatísticos (IBGE, Ministério da Saúde, Anvisa).
+Estudo sobre rotulagem nutricional e nova rotulagem frontal.
+Análise de aplicativos similares (benchmarking).
+Identificação de lacunas nas soluções existentes.
+Justificativa técnica e social do projeto.
+3. Levantamento e Documentação de Requisitos
+Documento de Requisitos (SRS).
+Histórias de usuário.
+Casos de uso.
+Diagrama de casos de uso.
+Backlog inicial do produto.
+4. Arquitetura do Sistema
+Definição de arquitetura em camadas (UI, lógica de negócio, dados).
+Integração com API externa (ex.: Open Food Facts).
+Estrutura modular do aplicativo.
+Planejamento da futura aba de conteúdo educativo.
+5. Modelagem e Estrutura de Banco de Dados
+6. UI/UX e Prototipação
+Definição de personas.
+Jornada do usuário no supermercado.
+
+Wireframes de baixa fidelidade.
+Protótipo (Figma).
+Testes de usabilidade preliminares.
+Ajustes na experiência do usuário.
+7. Desenvolvimento – Primeira Metade do Código (MVP)
+Organização em Sprints.
+PARTE II – Expansão do Sistema, Conteúdo Especializado e Consolidação
+(Foco: continuidade do desenvolvimento, conteúdo profissional e defesa final)
+8. Continuidade do Desenvolvimento
+9. Produção dos Conteúdos Educativos
+Contato com profissionais da área da saúde.
+Agendamento e gravação no estúdio de Comunicação e Imagem da PUC.
+Captação de áudio e vídeo profissional.
+Edição dos vídeos (padronização de duração e qualidade).
+Exportação em formato otimizado para aplicativo.
+10. Integração dos Vídeos ao Aplicativo
+Testes de carregamento e desempenho.
+Validação da experiência do usuário.
+11. Testes e QA
+Testes funcionais completos.
+Testes de integração.
+Testes de usabilidade.
+Correção de bugs.
+Verificação de desempenho.
+12. Documentação Final
+Documento técnico completo.
+Arquitetura final.
+Modelagem atualizada.
+Descrição das sprints.
+Resultados obtidos.
+
+Limitações do sistema.
+Possibilidades futuras de expansão.
+13. Preparação e Apresentação da Tese de TCC
+Descrição do problema social.
+Fundamentação teórica.
+Metodologia aplicada.
+Demonstração do aplicativo.
+Apresentação de resultados.
+Discussão de impacto social.
+
+PARTE III – Requisitos Funcionais
+RF01 – Leitura de código de barras
+O sistema deve permitir que o usuário utilize a câmera do celular para escanear o código
+de barras de um produto alimentício.
+RF02 – Consulta de informações nutricionais
+O sistema deve consultar uma API externa para obter as informações nutricionais do
+produto escaneado.
+RF03 – Exibição simplificada das informações nutricionais de forma simples e fácil de
+entender. O sistema deve apresentar ao usuário as informações principais do produto,
+como:
+●
+●
+●
+●
+
+calorias
+açúcar
+sódio
+gorduras
+
+RF04 – Alertas visuais de nutrientes
+O sistema deve destacar visualmente quando um produto possuir alto teor de açúcar, sódio
+ou gordura, utilizando cores ou ícones de alerta.
+RF05 – Exibição do nome e imagem do produto
+O sistema deve mostrar o nome e, quando disponível, a imagem do produto escaneado.
+RF06 – Histórico de produtos escaneados
+O sistema deve permitir que o usuário visualize os últimos produtos escaneados.
+RF07 – Lista de produtos favoritos / em compra
+O sistema deve permitir que o usuário salve produtos escaneados como parte de uma lista
+de compras ou favoritos.
+
+RF08 – Criação de lista de compras manual
+O sistema deve permitir que o usuário crie e edite listas de compras manualmente.
+RF09 – Associação de listas a mercados
+O sistema deve permitir associar listas de compras a mercados específicos.
+RF10 – Notificação por localização (geolocalização)
+O sistema deve identificar quando o usuário chegar a um mercado e exibir
+automaticamente a última lista de compras associada àquele local.
+RF11 – Pesquisa manual de produtos
+O sistema deve permitir que o usuário busque um produto manualmente pelo nome.
+RF12 – Mensagem para produto não encontrado
+O sistema deve informar ao usuário quando um produto escaneado não for encontrado na
+base de dados.
+
+PARTE IV – Requisitos Não Funcionais
+RNF01 – Usabilidade
+O aplicativo deve apresentar as informações nutricionais de forma simples, clara e fácil de
+entender, utilizando cores, ícones e textos curtos.
+RNF02 – Desempenho
+O sistema deve apresentar as informações do produto em até 3 segundos após o
+escaneamento do código de barras, considerando conexão com internet.
+RNF03 – Compatibilidade
+O aplicativo deve funcionar em dispositivos Android e iOS, pois será desenvolvido
+utilizando Flutter.
+RNF04 – Disponibilidade de conexão
+O aplicativo deve informar ao usuário quando não houver conexão com a internet, pois a
+consulta das informações depende de uma API externa.
+RNF05 – Segurança de dados
+O aplicativo não deve armazenar dados pessoais sensíveis dos usuários, garantindo maior
+privacidade.
+RNF06 – Interface responsiva
+A interface deve se adaptar a diferentes tamanhos de tela de smartphones.
+RNF07 – Manutenibilidade
+O sistema deve possuir arquitetura em camadas (interface, lógica e dados) para facilitar
+manutenção e futuras melhorias.
+
+RNF08 – Uso de localização
+O aplicativo deve utilizar a localização do usuário para identificar quando ele está em um
+mercado específico, respeitando permissões e privacidade.
+
+PARTE V – Pesquisa com Usuário
+Link para nossa pesquisa: https://forms.gle/TtPTv4f8T4EatZ5X7
+Resultados obtidos:
+
+PARTE VI – Organização em Sprints Semanais
+PARTE I – Fundamentação, Planejamento e MVP
+
+Sprint
+
+Período
+
+Foco
+
+Atividades
+Principais
+
+Entregas
+
+1
+
+Fev (sem 1)
+
+Definição do
+problema
+
+Problema,
+escopo,
+público,
+brainstorming
+
+Tema definido
+
+2
+
+Fev (sem 2)
+
+Fundamentação
+
+Pesquisa
+IBGE, Anvisa,
+rotulagem
+
+Base teórica
+
+3
+
+Fev (sem 3)
+
+Benchmarking
+
+Análise de
+apps similares
+
+Justificativa
+
+4
+
+Fev (sem 4)
+
+Requisitos
+
+Levantamento
+e SRS inicial
+
+Requisitos
+preliminares
+
+5
+
+Mar (sem 1)
+
+Modelagem
+
+Casos de uso
+e backlog
+
+Modelagem
+inicial
+
+6
+
+Mar (sem 2)
+
+Arquitetura
+
+Definição em
+camadas
+
+Arquitetura
+definida
+
+7
+
+Mar (sem 3)
+
+Banco de dados
+
+Modelagem
+de dados
+
+Estrutura de
+dados
+
+8
+
+Mar (sem 4)
+
+UI/UX
+
+Personas e
+wireframes
+
+Wireframes
+
+9
+
+Abr (sem 1)
+
+Protótipo
+
+Figma e
+testes
+
+Protótipo
+validado
+
+10
+
+Abr (sem 2)
+
+Estrutura app
+
+Configuração
+Flutter
+
+Base criada
+
+11
+
+Abr (sem 3)
+
+Dev inicial
+
+Leitura código
+barras + API
+
+Leitura
+funcional
+
+12
+
+Abr (sem 4)
+
+Exibição
+
+Nome,
+imagem, erro
+
+Dados
+exibidos
+
+13
+
+Mai (sem 1)
+
+Regras
+
+Classificação
+A/B/C/D
+
+Interpretação
+
+14
+
+Mai (sem 2)
+
+Alertas
+
+Cores e
+ícones
+
+UX melhorada
+
+15
+
+Mai (sem 3)
+
+Funcionalidades
+
+Histórico e
+lista
+
+Funcionalidad
+e completa
+
+16
+
+Mai (sem 4)
+
+Refino
+
+Testes e bugs
+
+MVP estável
+
+17
+
+Jun (sem 1)
+
+Apresentação
+
+Slides e demo
+
+Apresentação
+parcial
+
+—-->
+
+Refazer a parte da organização entre 2 semanas por sprint
+
+PARTE II – Expansão e Consolidação (ainda não completa)
+
+Sprint
+
+Período
+
+Foco
+
+Atividades
+Principais
+
+Entregas
+
+18
+
+Ago
+
+Extras
+
+Busca manual
+e listas
+
+Expansão
+
+19
+
+Ago
+
+Organização
+
+Listas por
+mercado
+
+Listas
+contextualizad
+as
+
+20
+
+Set
+
+Geolocalização
+
+Notificações
+por local
+
+Funcionalidad
+e ativa
+
+21
+
+Out
+
+Validação
+
+Testes de
+localização
+
+Sistema
+validado
+
+27
+
+Out
+
+Otimização
+
+Correções e
+melhorias
+
+Sistema
+estável
+
+28
+
+Nov
+
+Documentação
+
+Finalização
+TCC
+
+Documento
+completo
+
+29
+
+Nov (final)
+
+Defesa
+
+Apresentação
+final
+
+Defesa
+concluída
+
+
