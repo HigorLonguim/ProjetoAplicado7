@@ -10,11 +10,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:origem/main.dart';
 
 void main() {
-  testWidgets('shows the Origem starter home screen', (WidgetTester tester) async {
+  testWidgets('shows the Origem home screen', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const OrigemApp());
 
-    expect(find.text('Origem'), findsOneWidget);
-    expect(find.text('Primeiros passos'), findsOneWidget);
+    expect(find.text('Origem'), findsWidgets);
+    expect(find.text('Escanear produto'), findsOneWidget);
+    expect(find.text('Visão geral'), findsOneWidget);
   });
 }
