@@ -1,5 +1,5 @@
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'loading_screen.dart';
@@ -12,189 +12,82 @@ class ScannerScreen extends StatefulWidget {
 }
 
 class _ScannerScreenState extends State<ScannerScreen> with WidgetsBindingObserver {
-  CameraController? _cameraController;
+  final MobileScannerController _controller = MobileScannerController(
+    detectionSpeed: DetectionSpeed.normal,
+    facing: CameraFacing.back,
+    torchEnabled: false,
+  );
+  
+  bool _isScanning = true;
+  bool _hasPermission = false;
   bool _isLoading = true;
-  String? _errorMessage;
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    _initializeCamera();
+    _checkPermission();
   }
 
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
-    _cameraController?.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    // Se o controller não estiver inicializado, não faz nada
-    if (_cameraController == null || !_cameraController!.value.isInitialized) {
-      return;
-    }
-
-    if (state == AppLifecycleState.inactive) {
-      _cameraController?.dispose();
-      _cameraController = null;
-    } else if (state == AppLifecycleState.resumed) {
-      _initializeCamera();
+    if (state == AppLifecycleState.resumed) {
+      _controller.start();
+    } else if (state == AppLifecycleState.inactive) {
+      _controller.stop();
     }
   }
 
-  Future<void> _initializeCamera() async {
-    // Se já existir um controller, vamos dar dispose antes de criar um novo
-    if (_cameraController != null) {
-      await _cameraController!.dispose();
-      _cameraController = null;
-    }
-
+  Future<void> _checkPermission() async {
+    final status = await Permission.camera.request();
     setState(() {
-      _isLoading = true;
-      _errorMessage = null;
+      _hasPermission = status.isGranted;
+      _isLoading = false;
     });
-
-    final cameraPermission = await Permission.camera.request();
-
-    if (!mounted) {
-      return;
-    }
-
-    if (cameraPermission.isDenied || cameraPermission.isPermanentlyDenied) {
-      setState(() {
-        _isLoading = false;
-        _errorMessage =
-            'Permissão da câmera negada. Ative a câmera nas configurações do app.';
-      });
-      return;
-    }
-
-    try {
-      final cameras = await availableCameras();
-      final backCamera = cameras.firstWhere(
-        (camera) => camera.lensDirection == CameraLensDirection.back,
-        orElse: () => cameras.first,
-      );
-
-      final controller = CameraController(
-        backCamera,
-        ResolutionPreset.high,
-        enableAudio: false,
-      );
-
-      await controller.initialize();
-
-      if (!mounted) {
-        await controller.dispose();
-        return;
-      }
-
-      setState(() {
-        _cameraController = controller;
-        _isLoading = false;
-      });
-    } catch (error) {
-      if (!mounted) {
-        return;
-      }
-
-      setState(() {
-        _isLoading = false;
-        _errorMessage = 'Não foi possível abrir a câmera: $error';
-      });
+    if (status.isGranted) {
+      _controller.start();
     }
   }
 
-  Future<void> _toggleFlash() async {
-    final controller = _cameraController;
-    if (controller == null || !controller.value.isInitialized) {
-      return;
-    }
+  void _onDetect(BarcodeCapture capture) async {
+    if (!_isScanning) return;
 
-    try {
-      await controller.setFlashMode(
-        controller.value.flashMode == FlashMode.torch
-            ? FlashMode.off
-            : FlashMode.torch,
-      );
-      setState(() {});
-    } catch (_) {}
-  }
+    final List<Barcode> barcodes = capture.barcodes;
+    if (barcodes.isNotEmpty) {
+      final String? code = barcodes.first.rawValue;
+      if (code != null) {
+        setState(() {
+          _isScanning = false;
+        });
+        
+        // Pausa o scanner antes de navegar
+        await _controller.stop();
 
-  Widget _buildPreview(BuildContext context, ColorScheme colorScheme) {
-    final controller = _cameraController;
+        if (!mounted) return;
 
-    if (_isLoading) {
-      return Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const CircularProgressIndicator(),
-            const SizedBox(height: 16),
-            Text(
-              'Abrindo câmera...',
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: colorScheme.onSurfaceVariant,
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-
-    if (_errorMessage != null) {
-      return Center(
-        child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.error_outline, size: 48, color: colorScheme.error),
-              const SizedBox(height: 12),
-              Text(
-                _errorMessage!,
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
-              const SizedBox(height: 16),
-              FilledButton.icon(
-                onPressed: _initializeCamera,
-                icon: const Icon(Icons.refresh),
-                label: const Text('Tentar novamente'),
-              ),
-            ],
+        // Navega para a LoadingScreen com o código capturado
+        await Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => LoadingScreen(barcode: code),
           ),
-        ),
-      );
-    }
+        );
 
-    if (controller == null || !controller.value.isInitialized) {
-      return Center(
-        child: Text(
-          'Câmera indisponível.',
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
-      );
+        // Ao voltar, reinicia o scanner
+        if (mounted) {
+          setState(() {
+            _isScanning = true;
+          });
+          _controller.start();
+        }
+      }
     }
-
-    return Stack(
-      children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(32),
-          child: CameraPreview(controller),
-        ),
-        Positioned.fill(
-          child: IgnorePointer(
-            child: CustomPaint(
-              painter: _ScannerFramePainter(color: colorScheme.primary),
-            ),
-          ),
-        ),
-      ],
-    );
   }
 
   @override
@@ -208,64 +101,94 @@ class _ScannerScreenState extends State<ScannerScreen> with WidgetsBindingObserv
         centerTitle: false,
       ),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              Text(
-                'Centralize o código na moldura',
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+        child: _isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : !_hasPermission
+                ? _buildPermissionError(colorScheme)
+                : _buildScanner(context, colorScheme),
+      ),
+    );
+  }
+
+  Widget _buildPermissionError(ColorScheme colorScheme) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.camera_alt_outlined, size: 64, color: colorScheme.error),
+            const SizedBox(height: 16),
+            const Text(
+              'Permissão da câmera é necessária para escanear os produtos.',
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 24),
+            FilledButton(
+              onPressed: _checkPermission,
+              child: const Text('Dar permissão'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildScanner(BuildContext context, ColorScheme colorScheme) {
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          Text(
+            'Centralize o código na moldura',
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: colorScheme.onSurfaceVariant,
                 ),
-              ),
-              const SizedBox(height: 24),
-              Expanded(
-                child: AspectRatio(
-                  aspectRatio: 0.72,
-                  child: Container(
-                    padding: const EdgeInsets.all(18),
-                    decoration: BoxDecoration(
-                      color: colorScheme.surface,
-                      borderRadius: BorderRadius.circular(32),
-                      border: Border.all(color: colorScheme.outlineVariant),
-                    ),
-                    child: _buildPreview(context, colorScheme),
+          ),
+          const SizedBox(height: 24),
+          Expanded(
+            child: AspectRatio(
+              aspectRatio: 0.72,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(32),
+                  border: Border.all(color: colorScheme.outlineVariant),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(32),
+                  child: Stack(
+                    children: [
+                      MobileScanner(
+                        controller: _controller,
+                        onDetect: _onDetect,
+                      ),
+                      Positioned.fill(
+                        child: CustomPaint(
+                          painter: _ScannerFramePainter(color: colorScheme.primary),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                    onPressed: _toggleFlash,
-                    icon: const Icon(Icons.flash_on_outlined),
-                  ),
-                  FilledButton(
-                    onPressed: () async {
-                      // Ao navegar, esperamos o retorno para re-inicializar a câmera
-                      // Isso garante que ela "destrave" caso o sistema tenha suspendido o recurso
-                      await Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const LoadingScreen(),
-                        ),
-                      );
-
-                      if (mounted) {
-                        _initializeCamera();
-                      }
-                    },
-                    child: const Text('Simular leitura'),
-                  ),
-                  IconButton(
-                    onPressed: _initializeCamera,
-                    icon: const Icon(Icons.refresh_outlined),
-                  ),
-                ],
+            ),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              IconButton.filledTonal(
+                onPressed: () => _controller.toggleTorch(),
+                icon: const Icon(Icons.flash_on),
+              ),
+              IconButton.filledTonal(
+                onPressed: () => _controller.switchCamera(),
+                icon: const Icon(Icons.flip_camera_ios),
               ),
             ],
           ),
-        ),
+        ],
       ),
     );
   }
@@ -281,40 +204,38 @@ class _ScannerFramePainter extends CustomPainter {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 2.5;
+      ..strokeWidth = 3.0;
 
     final rect = Rect.fromLTWH(
-      size.width * 0.18,
-      size.height * 0.24,
-      size.width * 0.64,
-      size.height * 0.34,
+      size.width * 0.15,
+      size.height * 0.3,
+      size.width * 0.7,
+      size.height * 0.2,
     );
-    const cornerLength = 28.0;
+    const cornerLength = 30.0;
 
     void drawCorner(Offset start, Offset horizontalEnd, Offset verticalEnd) {
       canvas.drawLine(start, horizontalEnd, paint);
       canvas.drawLine(start, verticalEnd, paint);
     }
 
-    drawCorner(
-      rect.topLeft,
-      rect.topLeft + const Offset(cornerLength, 0),
-      rect.topLeft + const Offset(0, cornerLength),
-    );
-    drawCorner(
-      rect.topRight,
-      rect.topRight + const Offset(-cornerLength, 0),
-      rect.topRight + const Offset(0, cornerLength),
-    );
-    drawCorner(
-      rect.bottomLeft,
-      rect.bottomLeft + const Offset(cornerLength, 0),
-      rect.bottomLeft + const Offset(0, -cornerLength),
-    );
-    drawCorner(
-      rect.bottomRight,
-      rect.bottomRight + const Offset(-cornerLength, 0),
-      rect.bottomRight + const Offset(0, -cornerLength),
+    drawCorner(rect.topLeft, rect.topLeft + const Offset(cornerLength, 0),
+        rect.topLeft + const Offset(0, cornerLength));
+    drawCorner(rect.topRight, rect.topRight + const Offset(-cornerLength, 0),
+        rect.topRight + const Offset(0, cornerLength));
+    drawCorner(rect.bottomLeft, rect.bottomLeft + const Offset(cornerLength, 0),
+        rect.bottomLeft + const Offset(0, -cornerLength));
+    drawCorner(rect.bottomRight, rect.bottomRight + const Offset(-cornerLength, 0),
+        rect.bottomRight + const Offset(0, -cornerLength));
+    
+    // Linha de scan animada (estática por enquanto)
+    final scanLinePaint = Paint()
+      ..color = color.withValues(alpha: 0.5)
+      ..strokeWidth = 2.0;
+    canvas.drawLine(
+      Offset(rect.left, rect.center.dy),
+      Offset(rect.right, rect.center.dy),
+      scanLinePaint,
     );
   }
 

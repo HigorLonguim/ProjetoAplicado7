@@ -1,9 +1,30 @@
 import 'package:flutter/material.dart';
-
+import '../models/product_model.dart';
 import 'nutrition_details_screen.dart';
 
 class ProductResultScreen extends StatelessWidget {
-  const ProductResultScreen({super.key});
+  final ProductModel product;
+
+  const ProductResultScreen({super.key, required this.product});
+
+  String _getBadge(double value, String type) {
+    if (type == 'sugar') {
+      if (value > 15) return 'ALTO';
+      if (value > 5) return 'MÉDIO';
+      return 'BAIXO';
+    }
+    if (type == 'sodium') {
+      if (value > 0.6) return 'ALTO'; // 600mg
+      if (value > 0.3) return 'MÉDIO';
+      return 'BAIXO';
+    }
+    if (type == 'fat') {
+      if (value > 20) return 'ALTO';
+      if (value > 3) return 'MÉDIO';
+      return 'BAIXO';
+    }
+    return 'MÉDIO';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +34,12 @@ class ProductResultScreen extends StatelessWidget {
       appBar: AppBar(
         leading: const BackButton(),
         title: const Text('Resultado do produto'),
-        actions: const [IconButton(onPressed: null, icon: Icon(Icons.favorite_border))],
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.favorite_border),
+          )
+        ],
       ),
       body: SafeArea(
         child: ListView(
@@ -21,13 +47,25 @@ class ProductResultScreen extends StatelessWidget {
           children: [
             Center(
               child: Container(
-                width: 108,
-                height: 108,
+                width: 140,
+                height: 140,
                 decoration: BoxDecoration(
                   color: colorScheme.surfaceContainerHighest,
                   borderRadius: BorderRadius.circular(28),
                 ),
-                child: Icon(Icons.image_outlined, size: 44, color: colorScheme.onSurfaceVariant),
+                child: product.imageUrl != null
+                    ? ClipRRect(
+                        borderRadius: BorderRadius.circular(28),
+                        child: Image.network(
+                          product.imageUrl!,
+                          fit: BoxFit.cover,
+                          errorBuilder: (_, __, ___) => const Icon(
+                            Icons.image_outlined,
+                            size: 44,
+                          ),
+                        ),
+                      )
+                    : const Icon(Icons.image_outlined, size: 44),
               ),
             ),
             const SizedBox(height: 18),
@@ -35,14 +73,15 @@ class ProductResultScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    'Nome do Produto',
+                    product.name,
+                    textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           fontWeight: FontWeight.w800,
                         ),
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Marca',
+                    product.brand,
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           color: colorScheme.onSurfaceVariant,
                         ),
@@ -51,9 +90,9 @@ class ProductResultScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            _SectionHeader(
+            const _SectionHeader(
               title: 'Resumo nutricional',
-              subtitle: '(por porção)',
+              subtitle: '(por 100g)',
             ),
             const SizedBox(height: 12),
             GridView.count(
@@ -63,11 +102,31 @@ class ProductResultScreen extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               crossAxisSpacing: 12,
               mainAxisSpacing: 12,
-              children: const [
-                _NutritionCard(value: '120', unit: 'kcal', label: 'Calorias', badge: 'ALTO'),
-                _NutritionCard(value: '10g', unit: 'Açúcar', label: 'Açúcar', badge: 'ALTO'),
-                _NutritionCard(value: '300mg', unit: 'Sódio', label: 'Sódio', badge: 'MÉDIO'),
-                _NutritionCard(value: '5g', unit: 'Gorduras', label: 'Gorduras', badge: 'BAIXO'),
+              children: [
+                _NutritionCard(
+                  value: product.calories.toStringAsFixed(0),
+                  unit: 'kcal',
+                  label: 'Calorias',
+                  badge: product.calories > 400 ? 'ALTO' : 'NORMAL',
+                ),
+                _NutritionCard(
+                  value: '${product.sugar.toStringAsFixed(1)}g',
+                  unit: 'Açúcar',
+                  label: 'Açúcar',
+                  badge: _getBadge(product.sugar, 'sugar'),
+                ),
+                _NutritionCard(
+                  value: '${(product.sodium * 1000).toStringAsFixed(0)}mg',
+                  unit: 'Sódio',
+                  label: 'Sódio',
+                  badge: _getBadge(product.sodium, 'sodium'),
+                ),
+                _NutritionCard(
+                  value: '${product.fat.toStringAsFixed(1)}g',
+                  unit: 'Gorduras',
+                  label: 'Gorduras',
+                  badge: _getBadge(product.fat, 'fat'),
+                ),
               ],
             ),
             const SizedBox(height: 16),
@@ -83,26 +142,28 @@ class ProductResultScreen extends StatelessWidget {
               label: const Text('Ver informações completas'),
             ),
             const SizedBox(height: 8),
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: colorScheme.errorContainer,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Icon(Icons.warning_amber_outlined, color: colorScheme.onErrorContainer),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      'Alto em açúcar. Este produto possui alta quantidade de açúcar por porção.',
-                      style: TextStyle(color: colorScheme.onErrorContainer),
+            if (product.sugar > 15 || product.sodium > 0.6)
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: colorScheme.errorContainer,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.warning_amber_outlined,
+                        color: colorScheme.onErrorContainer),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Text(
+                        'Atenção: Este produto possui altos níveis de nutrientes que devem ser consumidos com moderação.',
+                        style: TextStyle(color: colorScheme.onErrorContainer),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
           ],
         ),
       ),
@@ -120,7 +181,10 @@ class _SectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
+        style: Theme.of(context)
+            .textTheme
+            .titleLarge
+            ?.copyWith(fontWeight: FontWeight.w800),
         children: [
           TextSpan(text: title),
           TextSpan(
@@ -166,23 +230,32 @@ class _NutritionCard extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.centerRight,
-            child: Chip(
-              label: Text(badge),
-              labelStyle: TextStyle(
-                color: colorScheme.primary,
-                fontSize: 10,
-                fontWeight: FontWeight.w800,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+              decoration: BoxDecoration(
+                color: colorScheme.primaryContainer.withValues(alpha: 0.4),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: colorScheme.primary.withValues(alpha: 0.18),
+                ),
               ),
-              visualDensity: VisualDensity.compact,
-              side: BorderSide(color: colorScheme.primary.withValues(alpha: 0.18)),
-              backgroundColor: colorScheme.primaryContainer.withValues(alpha: 0.4),
+              child: Text(
+                badge,
+                style: TextStyle(
+                  color: colorScheme.primary,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
             ),
           ),
           Text(
             value,
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w800),
+            style: Theme.of(context)
+                .textTheme
+                .headlineSmall
+                ?.copyWith(fontWeight: FontWeight.w800),
           ),
-          Text(unit),
           Text(
             label,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
