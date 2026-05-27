@@ -47,12 +47,11 @@ class _ScannerScreenState extends State<ScannerScreen> with WidgetsBindingObserv
 
   Future<void> _checkPermission() async {
     final status = await Permission.camera.request();
-    setState(() {
-      _hasPermission = status.isGranted;
-      _isLoading = false;
-    });
-    if (status.isGranted) {
-      _controller.start();
+    if (mounted) {
+      setState(() {
+        _hasPermission = status.isGranted;
+        _isLoading = false;
+      });
     }
   }
 

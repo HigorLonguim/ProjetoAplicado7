@@ -46,20 +46,18 @@ class _AppShellState extends State<AppShell> {
 
   @override
   Widget build(BuildContext context) {
+    // Lista de páginas para alternar sem IndexedStack
+    // Isso garante que o ScannerScreen seja destruído ao sair da aba
+    final List<Widget> pages = [
+      const HomeScreen(),
+      const HistoryScreen(),
+      const ScannerScreen(key: ValueKey('scanner')),
+      const TipsScreen(),
+      const ShoppingListScreen(),
+    ];
+
     return Scaffold(
-      body: IndexedStack(
-        index: _currentIndex,
-        children: [
-          const HomeScreen(),
-          const HistoryScreen(),
-          // Se não for a aba do scanner, colocamos um espaço vazio
-          // Isso força o ScannerScreen a dar dispose() quando você sai da aba
-          // e rodar o initState()/inicializar a câmera quando você volta.
-          _currentIndex == 2 ? const ScannerScreen() : const SizedBox.shrink(),
-          const TipsScreen(),
-          const ShoppingListScreen(),
-        ],
-      ),
+      body: pages[_currentIndex],
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,
         onDestinationSelected: (index) {
