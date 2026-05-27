@@ -16,14 +16,6 @@ class AppShell extends StatefulWidget {
 class _AppShellState extends State<AppShell> {
   int _currentIndex = 0;
 
-  static const _pages = [
-    HomeScreen(),
-    HistoryScreen(),
-    ScannerScreen(),
-    TipsScreen(),
-    ShoppingListScreen(),
-  ];
-
   static const _items = [
     NavigationDestination(
       icon: Icon(Icons.home_outlined),
@@ -57,7 +49,16 @@ class _AppShellState extends State<AppShell> {
     return Scaffold(
       body: IndexedStack(
         index: _currentIndex,
-        children: _pages,
+        children: [
+          const HomeScreen(),
+          const HistoryScreen(),
+          // Se não for a aba do scanner, colocamos um espaço vazio
+          // Isso força o ScannerScreen a dar dispose() quando você sai da aba
+          // e rodar o initState()/inicializar a câmera quando você volta.
+          _currentIndex == 2 ? const ScannerScreen() : const SizedBox.shrink(),
+          const TipsScreen(),
+          const ShoppingListScreen(),
+        ],
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,

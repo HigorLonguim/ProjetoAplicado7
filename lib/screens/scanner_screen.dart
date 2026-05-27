@@ -11,7 +11,7 @@ class ScannerScreen extends StatefulWidget {
   State<ScannerScreen> createState() => _ScannerScreenState();
 }
 
-class _ScannerScreenState extends State<ScannerScreen> {
+class _ScannerScreenState extends State<ScannerScreen> with WidgetsBindingObserver {
   CameraController? _cameraController;
   bool _isLoading = true;
   String? _errorMessage;
@@ -19,16 +19,39 @@ class _ScannerScreenState extends State<ScannerScreen> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _initializeCamera();
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _cameraController?.dispose();
     super.dispose();
   }
 
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    // Se o controller não estiver inicializado, não faz nada
+    if (_cameraController == null || !_cameraController!.value.isInitialized) {
+      return;
+    }
+
+    if (state == AppLifecycleState.inactive) {
+      _cameraController?.dispose();
+      _cameraController = null;
+    } else if (state == AppLifecycleState.resumed) {
+      _initializeCamera();
+    }
+  }
+
   Future<void> _initializeCamera() async {
+    // Se já existir um controller, vamos dar dispose antes de criar um novo
+    if (_cameraController != null) {
+      await _cameraController!.dispose();
+      _cameraController = null;
+    }
+
     setState(() {
       _isLoading = true;
       _errorMessage = null;
@@ -219,12 +242,18 @@ class _ScannerScreenState extends State<ScannerScreen> {
                     icon: const Icon(Icons.flash_on_outlined),
                   ),
                   FilledButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
+                    onPressed: () async {
+                      // Ao navegar, esperamos o retorno para re-inicializar a câmera
+                      // Isso garante que ela "destrave" caso o sistema tenha suspendido o recurso
+                      await Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (_) => const LoadingScreen(),
                         ),
                       );
+
+                      if (mounted) {
+                        _initializeCamera();
+                      }
                     },
                     child: const Text('Simular leitura'),
                   ),
