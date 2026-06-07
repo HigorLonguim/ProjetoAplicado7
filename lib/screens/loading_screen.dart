@@ -25,7 +25,13 @@ class _LoadingScreenState extends State<LoadingScreen> {
         'https://world.openfoodfacts.org/api/v2/product/${widget.barcode}.json',
       );
       
-      final response = await http.get(url);
+      // Adicionar timeout de 15 segundos
+      final response = await http.get(url).timeout(
+        const Duration(seconds: 15),
+        onTimeout: () => throw Exception(
+          'Timeout ao consultar servidor. Tente novamente.',
+        ),
+      );
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
@@ -41,13 +47,19 @@ class _LoadingScreenState extends State<LoadingScreen> {
             ),
           );
         } else {
-          _showError('Produto não encontrado na base de dados.');
+          _showError(
+            'Produto não encontrado na base de dados.\n\nVerifique se o código de barras está correto.',
+          );
         }
       } else {
-        _showError('Erro ao consultar servidor. Tente novamente.');
+        _showError(
+          'Erro ao consultar servidor (${response.statusCode}).\nTente novamente mais tarde.',
+        );
       }
-    } catch (e) {
-      _showError('Erro de conexão: Verifique sua internet.');
+    } on Exception catch (e) {
+      _showError(
+        'Erro de conexão: ${e.toString().replaceAll('Exception: ', '')}\n\nVerifique sua internet.',
+      );
     }
   }
 

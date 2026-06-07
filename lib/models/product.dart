@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
-/// Classificação nutricional de um produto (A/B/C/D)
+/// Classificação nutricional de um produto (A-F)
+/// Baseado em algoritmo de score de nutrientes críticos
 enum NutrientClassification {
-  a('A', 'Bom'),
-  b('B', 'Adequado'),
-  c('C', 'Com cuidado'),
-  d('D', 'Alto'),
+  a('A', 'Excelente', Color(0xFF2E7D32)),      // Verde escuro
+  b('B', 'Muito Bom', Color(0xFF558B2F)),      // Verde claro
+  c('C', 'Bom', Color(0xFFF57F17)),            // Amarelo escuro
+  d('D', 'Regular', Color(0xFFF9A825)),        // Laranja claro
+  e('E', 'Pobre', Color(0xFFF57C00)),          // Laranja escuro
+  f('F', 'Muito Pobre', Color(0xFFD32F2F));    // Vermelho escuro
+
+  final String label;
+  final String description;
+  final Color color;
+
+  const NutrientClassification(this.label, this.description, this.color);
 }
 
 /// Modelo de dados para um produto alimentício
@@ -38,74 +47,93 @@ class Product {
     this.createdAt,
   });
 
-  /// Calcula a classificação geral do produto (A/B/C/D)
-  /// baseado em um score dos nutrientes críticos
+  /// Calcula a classificação nutricional (A-F)
+  /// Baseado em algoritmo de score dos nutrientes críticos
+  /// Score: 0-10 (A), 11-25 (B), 26-40 (C), 41-60 (D), 61-85 (E), 86+ (F)
   NutrientClassification getClassification() {
     double score = 0;
 
-    // Açúcar: crítico para saúde bucal e metabólica
-    if (sugar > 12) {
+    // AÇÚCAR (0-30 pontos) - crítico para saúde bucal e metabólica
+    if (sugar > 15) {
       score += 30; // Muito alto
+    } else if (sugar > 12) {
+      score += 25; // Alto
     } else if (sugar > 8) {
-      score += 20; // Alto
-    } else if (sugar > 4) {
+      score += 20; // Moderado-Alto
+    } else if (sugar > 5) {
       score += 10; // Moderado
+    } else if (sugar > 2) {
+      score += 5; // Baixo
     }
 
-    // Sódio: importante para HAS
-    if (sodium > 600) {
+    // SÓDIO (0-30 pontos) - importante para hipertensão
+    if (sodium > 800) {
       score += 30; // Muito alto
+    } else if (sodium > 600) {
+      score += 25; // Alto
     } else if (sodium > 400) {
-      score += 20; // Alto
+      score += 20; // Moderado-Alto
     } else if (sodium > 200) {
       score += 10; // Moderado
+    } else if (sodium > 100) {
+      score += 5; // Baixo
     }
 
-    // Gordura saturada (estimada como 30% da gordura total para MVP)
-    final saturatedFat = fat * 0.3;
-    if (saturatedFat > 4) {
+    // GORDURA SATURADA (0-25 pontos)
+    // Considerando gordura saturada como 30-40% da gordura total
+    final saturatedFat = fat * 0.35;
+    if (saturatedFat > 5) {
       score += 25; // Muito alto
+    } else if (saturatedFat > 3.5) {
+      score += 20; // Alto
     } else if (saturatedFat > 2) {
-      score += 15; // Alto
+      score += 15; // Moderado-Alto
     } else if (saturatedFat > 1) {
+      score += 10; // Moderado
+    } else if (saturatedFat > 0.5) {
+      score += 5; // Baixo
+    }
+
+    // CALORIAS (0-15 pontos) - relativo à porção
+    if (calories > 400) {
+      score += 15; // Muito calórico
+    } else if (calories > 300) {
+      score += 12; // Calórico
+    } else if (calories > 200) {
       score += 8; // Moderado
+    } else if (calories > 100) {
+      score += 4; // Baixo
     }
 
-    // Calorias (relativo à porção)
-    if (calories > 300) {
-      score += 10; // Calórico
-    }
-
-    // Classificação final
-    if (score >= 60) {
-      return NutrientClassification.d; // D: Alto (vermelho)
-    } else if (score >= 40) {
-      return NutrientClassification.c; // C: Com cuidado (laranja)
-    } else if (score >= 20) {
-      return NutrientClassification.b; // B: Adequado (amarelo)
+    // Classificação final (escala A-F)
+    if (score > 85) {
+      return NutrientClassification.f; // F: Muito Pobre (vermelho)
+    } else if (score > 60) {
+      return NutrientClassification.e; // E: Pobre (laranja escuro)
+    } else if (score > 40) {
+      return NutrientClassification.d; // D: Regular (laranja claro)
+    } else if (score > 25) {
+      return NutrientClassification.c; // C: Bom (amarelo escuro)
+    } else if (score > 10) {
+      return NutrientClassification.b; // B: Muito Bom (verde claro)
     } else {
-      return NutrientClassification.a; // A: Bom (verde)
+      return NutrientClassification.a; // A: Excelente (verde escuro)
     }
   }
 
   /// Retorna a cor visual para a classificação
   Color getClassificationColor() {
-    final classification = getClassification();
-    switch (classification) {
-      case NutrientClassification.a:
-        return const Color(0xFF4CAF50); // Verde
-      case NutrientClassification.b:
-        return const Color(0xFFFBC02D); // Amarelo
-      case NutrientClassification.c:
-        return const Color(0xFFFFA726); // Laranja
-      case NutrientClassification.d:
-        return const Color(0xFFEF5350); // Vermelho
-    }
+    return getClassification().color;
   }
 
-  /// Retorna o label legível da classificação
+  /// Retorna o label legível da classificação (ex: "A")
   String getClassificationLabel() {
     return getClassification().label;
+  }
+
+  /// Retorna a descrição da classificação (ex: "Excelente")
+  String getClassificationDescription() {
+    return getClassification().description;
   }
 
   /// Define quais nutrientes estão em nível ALTO

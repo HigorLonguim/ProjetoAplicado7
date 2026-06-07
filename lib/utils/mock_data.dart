@@ -1,4 +1,4 @@
-import 'package:origen/models/models.dart';
+import '../models/models.dart';
 
 /// Dados mock para demonstração e testes
 /// Produtos reais ou similares vendidos no Brasil

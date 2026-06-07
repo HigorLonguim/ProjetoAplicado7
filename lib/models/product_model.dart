@@ -6,6 +6,7 @@ class ProductModel {
   final double sugar;
   final double sodium;
   final double fat;
+  final double protein;
 
   ProductModel({
     required this.name,
@@ -15,6 +16,7 @@ class ProductModel {
     required this.sugar,
     required this.sodium,
     required this.fat,
+    required this.protein,
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
@@ -29,6 +31,7 @@ class ProductModel {
       sugar: (nutriments['sugars_100g'] ?? 0.0).toDouble(),
       sodium: (nutriments['sodium_100g'] ?? 0.0).toDouble(),
       fat: (nutriments['fat_100g'] ?? 0.0).toDouble(),
+      protein: (nutriments['proteins_100g'] ?? 0.0).toDouble(),
     );
   }
 }
