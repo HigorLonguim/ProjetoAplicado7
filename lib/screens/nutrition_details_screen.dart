@@ -13,10 +13,14 @@ class NutritionDetailsScreen extends StatelessWidget {
     // Dados nutricionais por 100g
     final nutritionData = [
       ('Energia', '${product.calories.toStringAsFixed(0)} kcal', ''),
-      ('Açúcares totais', '${product.sugar.toStringAsFixed(1)}g', product.sugar > 10 ? 'CRÍTICO' : (product.sugar > 5 ? 'ALTO' : 'OK')),
+      ('Açúcares totais', '${product.sugar.toStringAsFixed(1)}g', _getNutrientStatus('sugars', product.sugar > 10, product.sugar > 5)),
+      ('Carboidratos', '${product.carbohydrates.toStringAsFixed(1)}g', ''),
+      ('Fibra', '${product.fiber.toStringAsFixed(1)}g', product.fiber > 3 ? 'BOM' : ''),
       ('Proteínas', '${product.protein.toStringAsFixed(1)}g', product.protein > 10 ? 'ALTO' : (product.protein > 5 ? 'BOM' : 'MÉDIO')),
-      ('Gorduras totais', '${product.fat.toStringAsFixed(1)}g', product.fat > 20 ? 'CRÍTICO' : (product.fat > 5 ? 'ALTO' : 'OK')),
-      ('Sódio', '${(product.sodium * 1000).toStringAsFixed(0)}mg', product.sodium > 0.8 ? 'CRÍTICO' : (product.sodium > 0.6 ? 'ALTO' : 'OK')),
+      ('Gorduras totais', '${product.fat.toStringAsFixed(1)}g', _getNutrientStatus('fat', product.fat > 20, product.fat > 5)),
+      ('Gordura saturada', '${product.saturatedFat.toStringAsFixed(1)}g', _getNutrientStatus('saturated-fat', product.saturatedFat > 5, product.saturatedFat > 1.5)),
+      ('Sódio', '${(product.sodium * 1000).toStringAsFixed(0)}mg', _getNutrientStatus('salt', product.sodium > 0.8, product.sodium > 0.6)),
+      if (product.caffeine > 0) ('Cafeína', '${product.caffeine.toStringAsFixed(1)}mg', product.caffeine > 100 ? 'ALTO' : ''),
     ];
 
     Color getStatusColor(String status) {
@@ -125,6 +129,56 @@ class NutritionDetailsScreen extends StatelessWidget {
                 ),
           ),
           const SizedBox(height: 8),
+          // Indicação de origem da classificação
+          if (product.nutriscoreGrade != null)
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.green.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.green.withValues(alpha: 0.3)),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.verified, size: 18, color: Colors.green),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Classificação Nutri-Score (Open Food Facts)',
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: Colors.green.shade700,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
+                  ),
+                ],
+              ),
+            )
+          else
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.blue.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.blue.withValues(alpha: 0.3)),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.info, size: 18, color: Colors.blue),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Classificação calculada localmente (cálculo customizado)',
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: Colors.blue.shade700,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          const SizedBox(height: 16),
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
@@ -135,7 +189,9 @@ class NutritionDetailsScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'O sistema de classificação considera:',
+                  product.nutriscoreGrade != null 
+                      ? 'Nutri-Score (Open Food Facts):'
+                      : 'Algoritmo local de classificação:',
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         fontWeight: FontWeight.w600,
                       ),
@@ -144,25 +200,33 @@ class NutritionDetailsScreen extends StatelessWidget {
                 _ClassificationPoint(
                   icon: Icons.water_drop_outlined,
                   label: 'Açúcar',
-                  description: 'Crítico acima de 15g/100g',
+                  description: product.nutriscoreGrade != null 
+                      ? 'Considera ingestão diária' 
+                      : 'Crítico acima de 15g/100g',
                 ),
                 const SizedBox(height: 8),
                 _ClassificationPoint(
                   icon: Icons.grain_outlined,
                   label: 'Sódio',
-                  description: 'Crítico acima de 800mg/100g',
+                  description: product.nutriscoreGrade != null 
+                      ? 'Considera ingestão diária' 
+                      : 'Crítico acima de 800mg/100g',
                 ),
                 const SizedBox(height: 8),
                 _ClassificationPoint(
                   icon: Icons.water_drop_outlined,
                   label: 'Gordura',
-                  description: 'Crítica acima de 20g/100g',
+                  description: product.nutriscoreGrade != null 
+                      ? 'Inclui gordura saturada' 
+                      : 'Crítica acima de 20g/100g',
                 ),
                 const SizedBox(height: 8),
                 _ClassificationPoint(
                   icon: Icons.local_fire_department_outlined,
                   label: 'Calorias',
-                  description: 'Alta acima de 400 kcal/100g',
+                  description: product.nutriscoreGrade != null 
+                      ? 'Valor energético total' 
+                      : 'Alta acima de 400 kcal/100g',
                 ),
               ],
             ),
@@ -171,6 +235,27 @@ class NutritionDetailsScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  /// Helper para obter status de nutriente usando nutrient_levels da API ou fallback
+  String _getNutrientStatus(String nutrientKey, bool isCritical, bool isHigh) {
+    if (product.nutrientLevels != null && product.nutrientLevels!.containsKey(nutrientKey)) {
+      final level = product.nutrientLevels![nutrientKey]?.toLowerCase() ?? '';
+      switch (level) {
+        case 'high':
+          return 'ALTO';
+        case 'low':
+          return 'BAIXO';
+        case 'moderate':
+          return 'MODERADO';
+        default:
+          return '';
+      }
+    }
+    // Fallback para lógica local
+    if (isCritical) return 'CRÍTICO';
+    if (isHigh) return 'ALTO';
+    return '';
   }
 }
 
