@@ -200,14 +200,6 @@ class HomeScreen extends StatelessWidget {
           return ListView(
             padding: const EdgeInsets.all(20),
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Icon(Icons.menu),
-                  Icon(Icons.notifications_none_outlined),
-                ],
-              ),
-              const SizedBox(height: 16),
               phoneMockup,
               const SizedBox(height: 16),
               overviewColumn,
