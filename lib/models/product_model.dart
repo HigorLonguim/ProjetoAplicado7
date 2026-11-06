@@ -1,95 +1,93 @@
 class ProductModel {
-  final String name;
-  final String brand;
-  final String? imageUrl;
-  final double calories;
-  final double sugar;
-  final double sodium;
-  final double fat;
-  final double protein;
-  // Campos nutricionais adicionais (por 100g)
-  final double carbohydrates;
-  final double fiber;
-  final double saturatedFat;
-  final double caffeine;
-  // Classificações fornecidas pela API
-  final String? nutriscoreGrade; // 'a', 'b', 'c', 'd', 'e'
-  final Map<String, String>? nutrientLevels; // ex: {'salt': 'low', 'sugars': 'high'}
-  final String? ecoScore; // ecoscore_grade
-  final int? novaGroup; // 1, 2, 3, 4
-
-  ProductModel({
+  const ProductModel({
+    required this.barcode,
     required this.name,
     required this.brand,
     this.imageUrl,
-    required this.calories,
-    required this.sugar,
-    required this.sodium,
-    required this.fat,
-    required this.protein,
-    this.carbohydrates = 0.0,
-    this.fiber = 0.0,
-    this.saturatedFat = 0.0,
-    this.caffeine = 0.0,
+    this.calories,
+    this.sugar,
+    this.sodium,
+    this.fat,
+    this.protein,
+    this.carbohydrates,
+    this.fiber,
+    this.saturatedFat,
+    this.caffeine,
     this.nutriscoreGrade,
     this.nutrientLevels,
     this.ecoScore,
     this.novaGroup,
   });
 
-  factory ProductModel.fromJson(Map<String, dynamic> json) {
-    final product = json['product'] ?? {};
-    final nutriments = product['nutriments'] ?? {};
-    
-    // Energia: usar kcal se disponível, senão converter kJ para kcal
-    double caloriesVal = 0.0;
-    if (nutriments.containsKey('energy-kcal_100g')) {
-      caloriesVal = (nutriments['energy-kcal_100g'] ?? 0.0).toDouble();
-    } else if (nutriments.containsKey('energy-kj_100g')) {
-      final kj = (nutriments['energy-kj_100g'] ?? 0.0).toDouble();
-      caloriesVal = kj / 4.184; // conversão: 1 kcal = 4.184 kJ
-    }
-    
-    // Sódio: tentar sodium_100g antes de salt_100g
-    double sodiumVal = 0.0;
-    if (nutriments.containsKey('sodium_100g')) {
-      sodiumVal = (nutriments['sodium_100g'] ?? 0.0).toDouble();
-    } else if (nutriments.containsKey('salt_100g')) {
-      final salt = (nutriments['salt_100g'] ?? 0.0).toDouble();
-      sodiumVal = salt * 0.393; // conversão: ~39.3% do sal é sódio
-    }
-    
-    // Cafeína: buscar por 100g ou 100ml
-    double caffeineVal = 0.0;
-    if (nutriments.containsKey('caffeine_100g')) {
-      caffeineVal = (nutriments['caffeine_100g'] ?? 0.0).toDouble();
-    } else if (nutriments.containsKey('caffeine_100ml')) {
-      caffeineVal = (nutriments['caffeine_100ml'] ?? 0.0).toDouble();
-    }
-    
-    // Extrair nutrient_levels da API (ex: {'salt': 'low', 'sugars': 'high', ...})
-    Map<String, String>? nutrientLevelsMap;
-    if (product.containsKey('nutrient_levels') && product['nutrient_levels'] is Map) {
-      nutrientLevelsMap = Map<String, String>.from(product['nutrient_levels']);
+  final String barcode;
+  final String name;
+  final String brand;
+  final String? imageUrl;
+  final double? calories;
+  final double? sugar;
+  final double? sodium;
+  final double? fat;
+  final double? protein;
+  final double? carbohydrates;
+  final double? fiber;
+  final double? saturatedFat;
+  final double? caffeine;
+  final String? nutriscoreGrade;
+  final Map<String, String>? nutrientLevels;
+  final String? ecoScore;
+  final int? novaGroup;
+
+  bool get hasNutritionData => [calories, sugar, sodium, fat, protein].any((value) => value != null);
+
+  String? get validNutriscore {
+    final grade = nutriscoreGrade?.toLowerCase();
+    return const {'a', 'b', 'c', 'd', 'e'}.contains(grade) ? grade : null;
+  }
+
+  String? nutrientLevel(String key) => nutrientLevels?[key]?.toLowerCase();
+
+  factory ProductModel.fromOpenFoodFacts(String barcode, Map<String, dynamic> json) {
+    final product = json['product'] is Map ? Map<String, dynamic>.from(json['product']) : <String, dynamic>{};
+    final nutrients = product['nutriments'] is Map ? Map<String, dynamic>.from(product['nutriments']) : <String, dynamic>{};
+
+    double? number(String key) {
+      final value = nutrients[key];
+      if (value is num) return value.toDouble();
+      return double.tryParse(value?.toString() ?? '');
     }
 
+    String text(dynamic value, String fallback) {
+      final result = value?.toString().trim() ?? '';
+      return result.isEmpty ? fallback : result;
+    }
+
+    final energyKcal = number('energy-kcal_100g');
+    final energyKj = number('energy-kj_100g');
+    final sodium = number('sodium_100g');
+    final salt = number('salt_100g');
+    final levels = product['nutrient_levels'] is Map
+        ? Map<String, String>.from((product['nutrient_levels'] as Map).map((key, value) => MapEntry(key.toString(), value.toString())))
+        : null;
+    final novaValue = product['nova_group'];
+
     return ProductModel(
-      name: product['product_name'] ?? 'Produto desconhecido',
-      brand: product['brands'] ?? 'Marca desconhecida',
-      imageUrl: product['image_url'],
-      calories: caloriesVal,
-      sugar: (nutriments['sugars_100g'] ?? 0.0).toDouble(),
-      sodium: sodiumVal,
-      fat: (nutriments['fat_100g'] ?? 0.0).toDouble(),
-      protein: (nutriments['proteins_100g'] ?? 0.0).toDouble(),
-      carbohydrates: (nutriments['carbohydrates_100g'] ?? 0.0).toDouble(),
-      fiber: (nutriments['fiber_100g'] ?? 0.0).toDouble(),
-      saturatedFat: (nutriments['saturated-fat_100g'] ?? 0.0).toDouble(),
-      caffeine: caffeineVal,
-      nutriscoreGrade: product['nutriscore_grade'] as String?,
-      nutrientLevels: nutrientLevelsMap,
-      ecoScore: product['ecoscore_grade'] as String?,
-      novaGroup: product['nova_group'] as int?,
+      barcode: barcode,
+      name: text(product['product_name_pt'] ?? product['product_name'], 'Produto sem nome informado'),
+      brand: text(product['brands'], 'Marca não informada'),
+      imageUrl: product['image_front_url']?.toString() ?? product['image_url']?.toString(),
+      calories: energyKcal ?? (energyKj == null ? null : energyKj / 4.184),
+      sugar: number('sugars_100g'),
+      sodium: sodium ?? (salt == null ? null : salt * .393),
+      fat: number('fat_100g'),
+      protein: number('proteins_100g'),
+      carbohydrates: number('carbohydrates_100g'),
+      fiber: number('fiber_100g'),
+      saturatedFat: number('saturated-fat_100g'),
+      caffeine: number('caffeine_100g') ?? number('caffeine_100ml'),
+      nutriscoreGrade: product['nutriscore_grade']?.toString(),
+      nutrientLevels: levels,
+      ecoScore: product['ecoscore_grade']?.toString(),
+      novaGroup: novaValue is num ? novaValue.toInt() : int.tryParse(novaValue?.toString() ?? ''),
     );
   }
 }

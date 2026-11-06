@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'screens/app_shell.dart';
+import 'theme/app_theme.dart';
 
 void main() {
   runApp(const OrigemApp());
@@ -11,19 +12,17 @@ class OrigemApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = ColorScheme.fromSeed(
-      seedColor: const Color(0xFF1B5E20),
-      brightness: Brightness.light,
-    );
-
     return MaterialApp(
       title: 'Origem',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: colorScheme,
-        scaffoldBackgroundColor: const Color(0xFFF7F6F2),
-        appBarTheme: const AppBarTheme(centerTitle: false),
+      theme: AppTheme.light,
+      builder: (context, child) => Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset('assets/brand/background.jpg', fit: BoxFit.cover),
+          ColoredBox(color: AppColors.navy.withValues(alpha: .52)),
+          child ?? const SizedBox.shrink(),
+        ],
       ),
       home: const AppShell(),
     );

@@ -14,8 +14,10 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const OrigemApp());
 
-    expect(find.text('Origem'), findsWidgets);
     expect(find.text('Escanear produto'), findsOneWidget);
-    expect(find.text('Visão geral'), findsOneWidget);
+    expect(
+      find.text('Escolhas mais claras começam pela origem.'),
+      findsOneWidget,
+    );
   });
 }

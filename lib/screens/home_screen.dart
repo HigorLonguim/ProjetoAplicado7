@@ -1,259 +1,347 @@
 import 'package:flutter/material.dart';
+import '../models/history_item.dart';
+import '../services/history_service.dart';
+import '../theme/app_theme.dart';
+import '../widgets/brand.dart';
+import 'login_screen.dart';
 
-import 'scanner_screen.dart';
-import 'tips_screen.dart';
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({
+    super.key,
+    required this.onOpenScanner,
+    required this.onOpenPlanner,
+    required this.onOpenTips,
+    required this.onOpenHistory,
+  });
+  final VoidCallback onOpenScanner;
+  final VoidCallback onOpenPlanner;
+  final VoidCallback onOpenTips;
+  final VoidCallback onOpenHistory;
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  late Future<List<HistoryItem>> _history;
+
+  @override
+  void initState() {
+    super.initState();
+    _refresh();
+  }
+
+  void _refresh() {
+    _history = HistoryService().getItems();
+  }
+
+  Future<void> _openAccount() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const AccountScreen()),
+    );
+    setState(_refresh);
+  }
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final textTheme = Theme.of(context).textTheme;
-
     return SafeArea(
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          final isWide = constraints.maxWidth >= 980;
-
-          final overviewColumn = Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: const [
-              _InfoCard(
-                title: 'Visão geral',
-                description:
-                    'O Origem ajuda voce a entender os rotulos dos alimentos em segundos e decidir melhor.',
-                icon: Icons.summarize_outlined,
-              ),
-              SizedBox(height: 16),
-              _InfoCard(
-                title: 'Fluxo principal',
-                description: 'Escanear -> Ver resultado -> Entender -> Decidir',
-                icon: Icons.alt_route_outlined,
-              ),
-            ],
-          );
-
-          final phoneMockup = Container(
-            decoration: BoxDecoration(
-              color: colorScheme.surface,
-              borderRadius: BorderRadius.circular(32),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.08),
-                  blurRadius: 30,
-                  offset: const Offset(0, 20),
+      child: RefreshIndicator(
+        onRefresh: () async => setState(_refresh),
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(20, 14, 20, 28),
+          children: [
+            Row(
+              children: [
+                IconButton.filledTonal(
+                  tooltip: 'Minha conta',
+                  onPressed: _openAccount,
+                  icon: const Icon(Icons.person_outline_rounded),
                 ),
+                const Spacer(),
+                const OrigemMark(size: 48),
               ],
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(32),
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(18, 18, 18, 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Icon(Icons.menu),
-                        Icon(Icons.notifications_none_outlined),
-                      ],
-                    ),
-                    const SizedBox(height: 24),
-                    Center(
-                      child: Container(
-                        width: 104,
-                        height: 104,
-                        decoration: BoxDecoration(
-                          color: colorScheme.primaryContainer,
-                          borderRadius: BorderRadius.circular(28),
+            const SizedBox(height: 18),
+            Container(
+              padding: const EdgeInsets.all(22),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [AppColors.navyLight, AppColors.border],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(30),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.navy.withValues(alpha: .22),
+                    blurRadius: 26,
+                    offset: const Offset(0, 12),
+                  ),
+                ],
+              ),
+              child: LayoutBuilder(
+                builder: (context, constraints) {
+                  final wide = constraints.maxWidth > 620;
+                  final text = Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Text(
+                        'SEU GUIA DE RÓTULOS',
+                        style: TextStyle(
+                          color: AppColors.peach,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 1.2,
+                          fontSize: 12,
                         ),
-                        child: Icon(
-                          Icons.eco_outlined,
-                          size: 48,
-                          color: colorScheme.onPrimaryContainer,
-                        ),
                       ),
-                    ),
-                    const SizedBox(height: 18),
-                    Text(
-                      'Origem',
-                      style: textTheme.headlineMedium?.copyWith(
-                        fontWeight: FontWeight.w800,
+                      const SizedBox(height: 10),
+                      Text(
+                        'Escolhas mais claras começam pela origem.',
+                        style: Theme.of(context).textTheme.headlineMedium
+                            ?.copyWith(color: Colors.white),
                       ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'Entenda rótulos. Faça escolhas melhores.',
-                      style: textTheme.bodyLarge?.copyWith(
-                        color: colorScheme.onSurfaceVariant,
+                      const SizedBox(height: 9),
+                      const Text(
+                        'Escaneie um produto para entender sua composição, comparar informações e decidir com mais segurança.',
+                        style: TextStyle(color: Colors.white70, height: 1.45),
                       ),
-                    ),
-                    const SizedBox(height: 20),
-                    SizedBox(
-                      width: double.infinity,
-                      height: 52,
-                      child: FilledButton.icon(
-                        onPressed: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (_) => const ScannerScreen(),
-                            ),
-                          );
-                        },
-                        icon: const Icon(Icons.qr_code_scanner),
-                        label: const Text('Escanear produto'),
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    SizedBox(
-                      width: double.infinity,
-                      height: 48,
-                      child: OutlinedButton(
-                        onPressed: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (_) => const TipsScreen(),
-                            ),
-                          );
-                        },
-                        child: const Text('Ver dicas de saúde'),
-                      ),
-                    ),
-                    const SizedBox(height: 18),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Histórico',
-                          style: textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        Icon(Icons.chevron_right, color: colorScheme.onSurfaceVariant),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Row(
+                      const SizedBox(height: 16),
+                      Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
                         children: [
-                          Container(
-                            width: 44,
-                            height: 44,
-                            decoration: BoxDecoration(
-                              color: colorScheme.primaryContainer,
-                              borderRadius: BorderRadius.circular(14),
-                            ),
-                            child: Icon(
-                              Icons.local_grocery_store_outlined,
-                              color: colorScheme.onPrimaryContainer,
-                            ),
+                          _HeroBenefit(
+                            icon: Icons.calendar_month_rounded,
+                            label: 'Planejar',
+                            color: AppColors.olive,
+                            onTap: widget.onOpenPlanner,
                           ),
-                          const SizedBox(width: 12),
-                          const Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Iogurte Natural',
-                                  style: TextStyle(fontWeight: FontWeight.w700),
-                                ),
-                                SizedBox(height: 4),
-                                Text('Marca A • hoje, 10:30'),
-                              ],
-                            ),
+                          _HeroBenefit(
+                            icon: Icons.school_rounded,
+                            label: 'Aprender',
+                            color: AppColors.orange,
+                            onTap: widget.onOpenTips,
                           ),
                         ],
                       ),
+                      const SizedBox(height: 20),
+                      DecoratedBox(
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [AppColors.orange, AppColors.peach],
+                          ),
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: FilledButton.icon(
+                          onPressed: widget.onOpenScanner,
+                          style: FilledButton.styleFrom(
+                            backgroundColor: Colors.transparent,
+                            shadowColor: Colors.transparent,
+                            foregroundColor: AppColors.navy,
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 20,
+                              vertical: 15,
+                            ),
+                          ),
+                          icon: const Icon(Icons.qr_code_scanner_rounded),
+                          label: const Text(
+                            'Escanear produto',
+                            style: TextStyle(fontWeight: FontWeight.w800),
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                  final illustration = Container(
+                    width: wide ? 330 : constraints.maxWidth,
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: AppColors.navy.withValues(alpha: .72),
+                      borderRadius: BorderRadius.circular(22),
+                      border: Border.all(
+                        color: AppColors.orange.withValues(alpha: .28),
+                      ),
                     ),
-                  ],
-                ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15),
+                      child: Image.asset(
+                        'assets/brand/origem_wordmark_user.png',
+                        fit: BoxFit.contain,
+                        semanticLabel: 'Assinatura visual Origem',
+                      ),
+                    ),
+                  );
+                  return wide
+                      ? Row(
+                          children: [
+                            Expanded(child: text),
+                            const SizedBox(width: 20),
+                            illustration,
+                          ],
+                        )
+                      : Column(
+                          children: [
+                            text,
+                            const SizedBox(height: 22),
+                            illustration,
+                          ],
+                        );
+                },
               ),
             ),
-          );
-
-          if (isWide) {
-            return Padding(
-              padding: const EdgeInsets.all(24),
-              child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1200),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Expanded(child: overviewColumn),
-                      const SizedBox(width: 24),
-                      Expanded(child: phoneMockup),
-                    ],
-                  ),
+            const SizedBox(height: 28),
+            Row(
+              children: [
+                Text(
+                  'Últimas consultas',
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
-              ),
-            );
-          }
-
-          return ListView(
-            padding: const EdgeInsets.all(20),
-            children: [
-              phoneMockup,
-              const SizedBox(height: 16),
-              overviewColumn,
-            ],
-          );
-        },
+                const Spacer(),
+                TextButton(
+                  onPressed: widget.onOpenHistory,
+                  child: const Text('Ver todas'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            FutureBuilder<List<HistoryItem>>(
+              future: _history,
+              builder: (context, snapshot) {
+                final items = snapshot.data ?? [];
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Padding(
+                    padding: EdgeInsets.all(28),
+                    child: Center(child: CircularProgressIndicator()),
+                  );
+                }
+                if (items.isEmpty) {
+                  return const _EmptyHistory();
+                }
+                return Column(
+                  children: items
+                      .take(3)
+                      .map(
+                        (item) => Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: _HistoryTile(item: item),
+                        ),
+                      )
+                      .toList(),
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
 }
 
-class _InfoCard extends StatelessWidget {
-  const _InfoCard({
-    required this.title,
-    required this.description,
+class _HeroBenefit extends StatelessWidget {
+  const _HeroBenefit({
     required this.icon,
+    required this.label,
+    required this.color,
+    required this.onTap,
   });
-
-  final String title;
-  final String description;
   final IconData icon;
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
 
   @override
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
-    return Container(
-      padding: const EdgeInsets.all(18),
-      decoration: BoxDecoration(
-        color: colorScheme.surface,
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: colorScheme.outlineVariant),
+  Widget build(BuildContext context) => Material(
+    color: color.withValues(alpha: .16),
+    shape: StadiumBorder(side: BorderSide(color: color.withValues(alpha: .7))),
+    child: InkWell(
+      onTap: onTap,
+      customBorder: const StadiumBorder(),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 9),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 17, color: color),
+            const SizedBox(width: 7),
+            Text(
+              label,
+              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800),
+            ),
+            const SizedBox(width: 4),
+            const Icon(Icons.arrow_forward_rounded, size: 15),
+          ],
+        ),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+    ),
+  );
+}
+
+class _EmptyHistory extends StatelessWidget {
+  const _EmptyHistory();
+  @override
+  Widget build(BuildContext context) => Card(
+    child: Padding(
+      padding: const EdgeInsets.all(22),
+      child: Row(
         children: [
-          Icon(icon, color: colorScheme.primary),
-          const SizedBox(height: 12),
-          Text(
-            title.toUpperCase(),
-            style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 1.1,
-                ),
+          const Icon(
+            Icons.manage_search_rounded,
+            color: AppColors.olive,
+            size: 32,
           ),
-          const SizedBox(height: 8),
-          Text(
-            description,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: colorScheme.onSurfaceVariant,
-                ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Text(
+              'Seus produtos consultados aparecerão aqui.',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+              ),
+            ),
           ),
         ],
       ),
-    );
-  }
+    ),
+  );
+}
+
+class _HistoryTile extends StatelessWidget {
+  const _HistoryTile({required this.item});
+  final HistoryItem item;
+  @override
+  Widget build(BuildContext context) => Card(
+    child: ListTile(
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      leading: ClipRRect(
+        borderRadius: BorderRadius.circular(14),
+        child: SizedBox(
+          width: 48,
+          height: 48,
+          child: item.productImage == null
+              ? const ColoredBox(
+                  color: Color(0xFFE9E7DF),
+                  child: Icon(Icons.inventory_2_outlined),
+                )
+              : Image.network(
+                  item.productImage!,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) =>
+                      const Icon(Icons.inventory_2_outlined),
+                ),
+        ),
+      ),
+      title: Text(
+        item.productName,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+        style: const TextStyle(fontWeight: FontWeight.w700),
+      ),
+      subtitle: Text(
+        item.productBrand,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+      ),
+    ),
+  );
 }
