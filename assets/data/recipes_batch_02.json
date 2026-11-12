@@ -1,0 +1,1985 @@
+{
+  "schemaVersion": 1,
+  "batch": 2,
+  "totalBatches": 8,
+  "currency": "BRL",
+  "recipes": [
+    {
+      "id": "escondidinho-de-carne-com-mandioca",
+      "title": "Escondidinho de carne com mandioca",
+      "description": "Travessa brasileira de purê de mandioca e carne moída, própria para porcionar.",
+      "estimatedCost": 44.6,
+      "minutes": 65,
+      "servings": 8,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Comida caseira",
+        "Equipamento:Fogão",
+        "Equipamento:Forno",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "1,2 kg de mandioca descascada",
+        "700 g de carne bovina moída",
+        "1 xícara de leite",
+        "3 tomates picados",
+        "1 cebola picada",
+        "1 colher de sopa de manteiga",
+        "1 colher de sopa de azeite",
+        "Sal, alho e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Cozinhe a mandioca até ficar macia, retire os fios centrais e amasse com leite, manteiga e sal.",
+        "Refogue cebola e alho no azeite, doure a carne e adicione os tomates.",
+        "Cozinhe até o molho reduzir e finalize com cheiro-verde.",
+        "Monte a carne e o purê em uma assadeira e leve ao forno a 200 °C por 20 minutos."
+      ],
+      "portionGrams": 400,
+      "calories": 510,
+      "proteinGrams": 30,
+      "carbGrams": 62,
+      "fatGrams": 17,
+      "healthScore": 7
+    },
+    {
+      "id": "arroz-carreteiro-simplificado",
+      "title": "Arroz carreteiro simplificado",
+      "description": "Arroz de uma panela com carne em tiras, tomate e pimentão para servir em família.",
+      "estimatedCost": 37.5,
+      "minutes": 45,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Pratos da família",
+        "Comida caseira",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "600 g de carne bovina em tiras finas",
+        "2 xícaras de arroz cru",
+        "2 tomates picados",
+        "1 cebola picada",
+        "1/2 pimentão verde picado",
+        "4 xícaras de água quente",
+        "1 colher de sopa de óleo",
+        "Alho, sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Doure a carne no óleo em uma panela grande.",
+        "Junte a cebola, o alho, o pimentão e os tomates e refogue por 5 minutos.",
+        "Acrescente o arroz, o sal e a água quente.",
+        "Cozinhe tampado em fogo baixo até o arroz ficar macio e finalize com cheiro-verde."
+      ],
+      "portionGrams": 420,
+      "calories": 525,
+      "proteinGrams": 32,
+      "carbGrams": 65,
+      "fatGrams": 15,
+      "healthScore": 7
+    },
+    {
+      "id": "creme-de-milho-com-frango",
+      "title": "Creme de milho com frango",
+      "description": "Frango desfiado coberto com creme de milho, preparado no fogão e finalizado no forno.",
+      "estimatedCost": 30.3,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Pratos da família",
+        "Comida caseira",
+        "Equipamento:Liquidificador",
+        "Equipamento:Fogão",
+        "Equipamento:Forno",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Leite",
+        "Aproveita:Cebola",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de frango cozido e desfiado",
+        "2 xícaras de milho",
+        "2 xícaras de leite",
+        "1/2 cebola picada",
+        "1 colher de sopa de amido de milho",
+        "1 colher de sopa de azeite",
+        "Sal, alho e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Bata no liquidificador o milho, o leite e o amido até obter um creme.",
+        "Refogue a cebola e o alho no azeite, acrescente o frango e tempere.",
+        "Despeje o creme de milho e cozinhe, mexendo, até engrossar.",
+        "Transfira para uma assadeira e leve ao forno a 220 °C por 15 minutos."
+      ],
+      "portionGrams": 370,
+      "calories": 410,
+      "proteinGrams": 32,
+      "carbGrams": 39,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "salada-de-frango-com-abacate",
+      "title": "Salada de frango com abacate",
+      "description": "Salada completa com frango, abacate, folhas e molho de limão.",
+      "estimatedCost": 29.9,
+      "minutes": 18,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Frango",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "3 xícaras de frango cozido e desfiado",
+        "1 abacate pequeno em cubos",
+        "2 tomates em cubos",
+        "1 pepino em rodelas",
+        "4 xícaras de folhas verdes",
+        "Suco de 1 limão",
+        "1 colher de sopa de azeite",
+        "Sal e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Distribua as folhas em uma travessa.",
+        "Acrescente o frango, o abacate, os tomates e o pepino.",
+        "Misture limão, azeite, sal e pimenta e regue a salada somente na hora de servir."
+      ],
+      "portionGrams": 330,
+      "calories": 375,
+      "proteinGrams": 33,
+      "carbGrams": 17,
+      "fatGrams": 21,
+      "healthScore": 9
+    },
+    {
+      "id": "wrap-de-frango-com-cenoura",
+      "title": "Wrap de frango com cenoura",
+      "description": "Wrap fresco e rápido com frango desfiado, cenoura e molho de iogurte.",
+      "estimatedCost": 20.4,
+      "minutes": 15,
+      "servings": 3,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Frango",
+        "Aproveita:Iogurte",
+        "Contém:Glúten",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 discos de pão folha ou tortilha de trigo",
+        "2 xícaras de frango cozido e desfiado",
+        "1 cenoura ralada",
+        "1/2 pepino em tiras",
+        "1 pote de iogurte natural de 170 g",
+        "Suco de 1/2 limão",
+        "Sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Misture o iogurte, o limão, o sal e o cheiro-verde.",
+        "Distribua o frango, a cenoura e o pepino entre os discos.",
+        "Regue com o molho, dobre as laterais e enrole firmemente."
+      ],
+      "portionGrams": 270,
+      "calories": 390,
+      "proteinGrams": 31,
+      "carbGrams": 43,
+      "fatGrams": 11,
+      "healthScore": 8
+    },
+    {
+      "id": "cuscuz-de-micro-ondas-com-atum",
+      "title": "Cuscuz de micro-ondas com atum",
+      "description": "Cuscuz individual rápido com atum e tomate para uma refeição de despensa.",
+      "estimatedCost": 9.6,
+      "minutes": 10,
+      "servings": 1,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Atum",
+        "Aproveita:Tomate",
+        "Contém:Atum",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "1/2 xícara de flocão de milho",
+        "1/3 de xícara de água",
+        "1/2 lata de atum em água escorrido",
+        "1/2 tomate pequeno picado",
+        "1 colher de sopa de cheiro-verde",
+        "Sal a gosto"
+      ],
+      "steps": [
+        "Misture o flocão, a água e o sal em um recipiente próprio para micro-ondas e descanse por 5 minutos.",
+        "Tampe sem vedar e cozinhe no micro-ondas por 2 minutos.",
+        "Solte com um garfo e misture o atum, o tomate e o cheiro-verde.",
+        "Aqueça por mais 30 segundos."
+      ],
+      "portionGrams": 300,
+      "calories": 360,
+      "proteinGrams": 24,
+      "carbGrams": 48,
+      "fatGrams": 8,
+      "healthScore": 8
+    },
+    {
+      "id": "arroz-doce-de-banana-sem-acucar",
+      "title": "Arroz-doce de banana sem açúcar",
+      "description": "Sobremesa ou lanche cremoso que aproveita arroz cozido e banana madura.",
+      "estimatedCost": 9.3,
+      "minutes": 20,
+      "servings": 4,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Banana",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cozido",
+        "2 bananas maduras amassadas",
+        "2 xícaras de leite",
+        "1 canela em pau",
+        "Canela em pó a gosto"
+      ],
+      "steps": [
+        "Coloque o arroz, o leite, as bananas e a canela em pau em uma panela.",
+        "Cozinhe em fogo baixo por 12 a 15 minutos, mexendo até ficar cremoso.",
+        "Retire a canela em pau, distribua em potes e finalize com canela em pó."
+      ],
+      "portionGrams": 230,
+      "calories": 260,
+      "proteinGrams": 7,
+      "carbGrams": 52,
+      "fatGrams": 3,
+      "healthScore": 7
+    },
+    {
+      "id": "pate-de-frango-com-iogurte",
+      "title": "Patê de frango com iogurte",
+      "description": "Patê leve para aproveitar frango cozido em sanduíches e lanches.",
+      "estimatedCost": 13.2,
+      "minutes": 10,
+      "servings": 4,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Frango",
+        "Aproveita:Iogurte",
+        "Aproveita:Cebola",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de frango cozido e desfiado",
+        "1 pote de iogurte natural de 170 g",
+        "2 colheres de sopa de cebola bem picada",
+        "1 cenoura pequena ralada",
+        "Suco de 1/2 limão",
+        "Sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Misture o frango, o iogurte, a cebola e a cenoura.",
+        "Tempere com limão, sal e cheiro-verde.",
+        "Mantenha refrigerado em recipiente fechado e consuma em até dois dias."
+      ],
+      "portionGrams": 130,
+      "calories": 175,
+      "proteinGrams": 24,
+      "carbGrams": 8,
+      "fatGrams": 5,
+      "healthScore": 8
+    },
+    {
+      "id": "chips-de-batata-e-cenoura-na-air-fryer",
+      "title": "Chips de batata e cenoura na air fryer",
+      "description": "Lâminas crocantes de legumes para um lanche simples feito na air fryer.",
+      "estimatedCost": 7.8,
+      "minutes": 25,
+      "servings": 3,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Air fryer",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "2 batatas médias",
+        "2 cenouras médias",
+        "1 colher de sopa de azeite",
+        "Sal, páprica e alecrim a gosto"
+      ],
+      "steps": [
+        "Corte as batatas e cenouras em lâminas muito finas e seque bem.",
+        "Misture com azeite e temperos.",
+        "Asse na air fryer a 180 °C em pequenas porções por 12 a 16 minutos, mexendo duas vezes.",
+        "Retire as lâminas já crocantes e deixe esfriar antes de servir."
+      ],
+      "portionGrams": 150,
+      "calories": 180,
+      "proteinGrams": 3,
+      "carbGrams": 31,
+      "fatGrams": 6,
+      "healthScore": 7
+    },
+    {
+      "id": "mousse-rapida-de-banana-e-cacau",
+      "title": "Mousse rápida de banana e cacau",
+      "description": "Creme gelado de banana, iogurte e cacau preparado no liquidificador.",
+      "estimatedCost": 8.9,
+      "minutes": 8,
+      "servings": 3,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Aproveita:Banana",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 bananas maduras congeladas em rodelas",
+        "1 pote de iogurte natural de 170 g",
+        "2 colheres de sopa de cacau em pó",
+        "1/2 colher de chá de canela"
+      ],
+      "steps": [
+        "Retire as bananas do congelador 5 minutos antes de usar.",
+        "Bata as bananas, o iogurte, o cacau e a canela até formar um creme.",
+        "Distribua em três potes e sirva imediatamente ou mantenha refrigerado por até 4 horas."
+      ],
+      "portionGrams": 180,
+      "calories": 185,
+      "proteinGrams": 6,
+      "carbGrams": 38,
+      "fatGrams": 2,
+      "healthScore": 8
+    },
+    {
+      "id": "pao-de-queijo-de-frigideira",
+      "title": "Pão de queijo de frigideira",
+      "description": "Lanche rápido de tapioca, ovo e queijo preparado sem forno.",
+      "estimatedCost": 8.7,
+      "minutes": 10,
+      "servings": 2,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Contém:Ovos",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "1 ovo",
+        "4 colheres de sopa de goma de tapioca hidratada",
+        "3 colheres de sopa de queijo muçarela ralado",
+        "1 colher de sopa de iogurte natural",
+        "Sal a gosto"
+      ],
+      "steps": [
+        "Misture o ovo, a tapioca, o queijo, o iogurte e o sal.",
+        "Despeje em uma frigideira antiaderente pequena e tampe.",
+        "Cozinhe em fogo baixo até firmar, vire e doure o outro lado."
+      ],
+      "portionGrams": 120,
+      "calories": 215,
+      "proteinGrams": 10,
+      "carbGrams": 22,
+      "fatGrams": 10,
+      "healthScore": 6
+    },
+    {
+      "id": "salada-de-feijao-fradinho-com-atum",
+      "title": "Salada de feijão-fradinho com atum",
+      "description": "Salada rica em proteína e fibras com feijão-fradinho, atum e legumes frescos.",
+      "estimatedCost": 24.6,
+      "minutes": 18,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Mais fibras",
+        "Aproveita:Atum",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Atum",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "3 xícaras de feijão-fradinho cozido e frio",
+        "2 latas de atum em água escorrido",
+        "2 tomates sem sementes picados",
+        "1/2 cebola roxa fatiada",
+        "1/2 pimentão amarelo picado",
+        "Suco de 1 limão",
+        "1 colher de sopa de azeite",
+        "Sal e coentro a gosto"
+      ],
+      "steps": [
+        "Misture o feijão-fradinho, o atum, os tomates, a cebola e o pimentão.",
+        "Tempere com limão, azeite, sal e coentro.",
+        "Deixe descansar por 10 minutos na geladeira antes de servir."
+      ],
+      "portionGrams": 330,
+      "calories": 390,
+      "proteinGrams": 30,
+      "carbGrams": 43,
+      "fatGrams": 10,
+      "healthScore": 9
+    },
+    {
+      "id": "risoto-simples-de-abobora-e-queijo",
+      "title": "Risoto simples de abóbora e queijo",
+      "description": "Arroz cremoso de abóbora feito em uma panela com finalização de queijo.",
+      "estimatedCost": 22.9,
+      "minutes": 38,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Comida caseira",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cru",
+        "3 xícaras de abóbora em cubos pequenos",
+        "1 cebola picada",
+        "5 xícaras de água quente",
+        "1/2 xícara de queijo parmesão ralado",
+        "1 colher de sopa de manteiga",
+        "Sal, alho e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho na manteiga.",
+        "Junte a abóbora e o arroz e mexa por 2 minutos.",
+        "Adicione a água quente aos poucos, mexendo e aguardando a absorção antes de acrescentar mais.",
+        "Quando o arroz estiver macio e cremoso, desligue o fogo e misture o queijo."
+      ],
+      "portionGrams": 390,
+      "calories": 465,
+      "proteinGrams": 14,
+      "carbGrams": 77,
+      "fatGrams": 11,
+      "healthScore": 7
+    },
+    {
+      "id": "feijao-tropeiro-vegetariano",
+      "title": "Feijão tropeiro vegetariano",
+      "description": "Feijão com couve, ovos e farinha de mandioca em uma versão sem carne.",
+      "estimatedCost": 21.6,
+      "minutes": 30,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Comida caseira",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Ovos",
+        "Aproveita:Cebola",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "3 xícaras de feijão cozido e escorrido",
+        "4 ovos",
+        "1 cebola picada",
+        "3 folhas de couve fatiadas",
+        "1 xícara de farinha de mandioca",
+        "1 colher de sopa de azeite",
+        "Alho, sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Abra espaço na panela, acrescente os ovos e mexa até cozinhar.",
+        "Junte o feijão e a couve e refogue por 4 minutos.",
+        "Adicione a farinha aos poucos, misture e finalize com cheiro-verde."
+      ],
+      "portionGrams": 310,
+      "calories": 415,
+      "proteinGrams": 20,
+      "carbGrams": 55,
+      "fatGrams": 13,
+      "healthScore": 8
+    },
+    {
+      "id": "creme-de-abobora-com-grao-de-bico",
+      "title": "Creme de abóbora com grão-de-bico",
+      "description": "Sopa cremosa de abóbora com grão-de-bico para acrescentar fibras e proteína.",
+      "estimatedCost": 19.4,
+      "minutes": 40,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Equipamento:Liquidificador",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "1 kg de abóbora em cubos",
+        "3 xícaras de grão-de-bico cozido",
+        "1 cebola picada",
+        "1,5 litro de água",
+        "1 colher de sopa de azeite",
+        "2 dentes de alho",
+        "Sal, gengibre e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola, o alho e o gengibre no azeite.",
+        "Junte a abóbora, metade do grão-de-bico, a água e o sal e cozinhe até ficar macio.",
+        "Bata com cuidado no liquidificador e devolva à panela.",
+        "Acrescente o grão-de-bico restante e aqueça por 5 minutos."
+      ],
+      "portionGrams": 410,
+      "calories": 300,
+      "proteinGrams": 12,
+      "carbGrams": 51,
+      "fatGrams": 7,
+      "healthScore": 10
+    },
+    {
+      "id": "frango-ao-molho-de-mostarda-e-iogurte",
+      "title": "Frango ao molho de mostarda e iogurte",
+      "description": "Cubos de frango em molho cremoso de iogurte e mostarda, prontos em meia hora.",
+      "estimatedCost": 31.7,
+      "minutes": 30,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Iogurte",
+        "Aproveita:Cebola",
+        "Contém:Laticínios",
+        "Contém:Mostarda"
+      ],
+      "ingredients": [
+        "600 g de peito de frango em cubos",
+        "1 pote de iogurte natural de 170 g",
+        "1 colher de sopa de mostarda",
+        "1/2 cebola picada",
+        "1 colher de sopa de azeite",
+        "1/2 xícara de água",
+        "Sal, alho e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Doure o frango no azeite e tempere com sal e pimenta.",
+        "Acrescente a cebola e o alho e refogue até ficarem macios.",
+        "Junte a água e a mostarda e cozinhe por 5 minutos.",
+        "Desligue o fogo, misture o iogurte e sirva imediatamente."
+      ],
+      "portionGrams": 280,
+      "calories": 325,
+      "proteinGrams": 43,
+      "carbGrams": 8,
+      "fatGrams": 13,
+      "healthScore": 8
+    },
+    {
+      "id": "pasta-de-amendoim-com-banana-no-pao",
+      "title": "Pasta de amendoim com banana no pão",
+      "description": "Lanche energético de pão integral, banana e pasta de amendoim.",
+      "estimatedCost": 8.2,
+      "minutes": 5,
+      "servings": 2,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Mais fibras",
+        "Aproveita:Pão",
+        "Aproveita:Banana",
+        "Contém:Amendoim",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "4 fatias de pão integral",
+        "1 banana madura em rodelas",
+        "2 colheres de sopa de pasta de amendoim integral",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Espalhe a pasta de amendoim sobre as fatias de pão.",
+        "Distribua as rodelas de banana sobre duas fatias e polvilhe canela.",
+        "Feche os sanduíches e sirva."
+      ],
+      "portionGrams": 170,
+      "calories": 350,
+      "proteinGrams": 12,
+      "carbGrams": 52,
+      "fatGrams": 12,
+      "healthScore": 7
+    },
+    {
+      "id": "panqueca-de-banana-e-aveia",
+      "title": "Panqueca de banana e aveia",
+      "description": "Panquecas macias e naturalmente doces para um café da manhã rápido.",
+      "estimatedCost": 8.6,
+      "minutes": 15,
+      "servings": 2,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Banana",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Ovos",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 bananas maduras amassadas",
+        "2 ovos",
+        "6 colheres de sopa de aveia em flocos",
+        "3 colheres de sopa de leite",
+        "1/2 colher de chá de canela"
+      ],
+      "steps": [
+        "Misture as bananas, os ovos, a aveia, o leite e a canela.",
+        "Aqueça uma frigideira antiaderente e coloque pequenas porções da massa.",
+        "Cozinhe em fogo baixo até firmar, vire e doure o outro lado."
+      ],
+      "portionGrams": 230,
+      "calories": 330,
+      "proteinGrams": 14,
+      "carbGrams": 48,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "aveia-dormida-com-maca-e-iogurte",
+      "title": "Aveia dormida com maçã e iogurte",
+      "description": "Café da manhã preparado de véspera com maçã, aveia e iogurte.",
+      "estimatedCost": 9.4,
+      "minutes": 10,
+      "servings": 2,
+      "tags": [
+        "Café da manhã",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Vegetariana",
+        "Aproveita:Leite",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "1 maçã com casca em cubos pequenos",
+        "1 xícara de aveia em flocos",
+        "1 pote de iogurte natural de 170 g",
+        "1/2 xícara de leite",
+        "1 colher de sopa de sementes de chia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Misture a aveia, o iogurte, o leite, a chia e a canela.",
+        "Distribua em dois potes e cubra com a maçã.",
+        "Tampe, leve à geladeira por pelo menos 6 horas e consuma gelado."
+      ],
+      "portionGrams": 280,
+      "calories": 310,
+      "proteinGrams": 12,
+      "carbGrams": 51,
+      "fatGrams": 8,
+      "healthScore": 9
+    },
+    {
+      "id": "crepioca-de-espinafre-e-queijo",
+      "title": "Crepioca de espinafre e queijo",
+      "description": "Crepioca salgada com folhas e queijo para café da manhã ou lanche.",
+      "estimatedCost": 10.7,
+      "minutes": 15,
+      "servings": 2,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Contém:Ovos",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 ovos",
+        "6 colheres de sopa de goma de tapioca hidratada",
+        "1 xícara de espinafre fatiado",
+        "4 colheres de sopa de queijo muçarela ralado",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Misture os ovos, a tapioca, o espinafre e o sal.",
+        "Despeje metade em uma frigideira antiaderente e cozinhe até firmar.",
+        "Adicione metade do queijo, dobre e repita com o restante."
+      ],
+      "portionGrams": 180,
+      "calories": 275,
+      "proteinGrams": 14,
+      "carbGrams": 28,
+      "fatGrams": 12,
+      "healthScore": 7
+    },
+    {
+      "id": "bolo-salgado-de-milho-e-queijo",
+      "title": "Bolo salgado de milho e queijo",
+      "description": "Bolo salgado de liquidificador com milho e queijo para servir em fatias.",
+      "estimatedCost": 21.5,
+      "minutes": 45,
+      "servings": 8,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Pratos da família",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Aproveita:Ovos",
+        "Contém:Ovos",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de milho",
+        "1 xícara de leite",
+        "3 ovos",
+        "1/2 xícara de fubá",
+        "1/2 xícara de queijo muçarela ralado",
+        "2 colheres de sopa de óleo",
+        "1 colher de sopa de fermento químico",
+        "Sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 180 °C e unte uma forma pequena.",
+        "Bata o milho, o leite, os ovos, o fubá, o óleo e o sal no liquidificador.",
+        "Misture o queijo, o cheiro-verde e o fermento.",
+        "Asse por 30 a 35 minutos, até o centro ficar firme."
+      ],
+      "portionGrams": 150,
+      "calories": 235,
+      "proteinGrams": 9,
+      "carbGrams": 27,
+      "fatGrams": 11,
+      "healthScore": 6
+    },
+    {
+      "id": "minipizza-de-pao-na-air-fryer",
+      "title": "Minipizza de pão na air fryer",
+      "description": "Lanche rápido que transforma fatias de pão em pequenas pizzas caseiras.",
+      "estimatedCost": 13.6,
+      "minutes": 12,
+      "servings": 2,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Pratos da família",
+        "Equipamento:Air fryer",
+        "Aproveita:Pão",
+        "Aproveita:Tomate",
+        "Contém:Glúten",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "4 fatias de pão integral",
+        "1 tomate maduro amassado",
+        "6 colheres de sopa de queijo muçarela ralado",
+        "1 colher de chá de azeite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Tempere o tomate amassado com azeite e sal.",
+        "Espalhe o tomate sobre o pão e cubra com queijo e orégano.",
+        "Asse na air fryer a 180 °C por 5 a 7 minutos, até o queijo derreter."
+      ],
+      "portionGrams": 190,
+      "calories": 320,
+      "proteinGrams": 15,
+      "carbGrams": 39,
+      "fatGrams": 12,
+      "healthScore": 6
+    },
+    {
+      "id": "vitamina-de-mamao-com-aveia",
+      "title": "Vitamina de mamão com aveia",
+      "description": "Vitamina cremosa de mamão, leite e aveia para começar o dia.",
+      "estimatedCost": 8.8,
+      "minutes": 5,
+      "servings": 2,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de mamão em cubos",
+        "2 xícaras de leite gelado",
+        "4 colheres de sopa de aveia em flocos",
+        "1/2 colher de chá de canela"
+      ],
+      "steps": [
+        "Coloque o mamão, o leite, a aveia e a canela no liquidificador.",
+        "Bata até obter uma bebida homogênea.",
+        "Sirva imediatamente em dois copos."
+      ],
+      "portionGrams": 350,
+      "calories": 240,
+      "proteinGrams": 10,
+      "carbGrams": 40,
+      "fatGrams": 6,
+      "healthScore": 8
+    },
+    {
+      "id": "omelete-de-caneca-com-legumes",
+      "title": "Omelete de caneca com legumes",
+      "description": "Omelete individual de micro-ondas com tomate, cenoura e cheiro-verde.",
+      "estimatedCost": 5.7,
+      "minutes": 6,
+      "servings": 1,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Tomate",
+        "Contém:Ovos",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 ovos",
+        "1 colher de sopa de leite",
+        "2 colheres de sopa de tomate picado",
+        "2 colheres de sopa de cenoura ralada",
+        "1 colher de sopa de cheiro-verde",
+        "Sal a gosto"
+      ],
+      "steps": [
+        "Bata os ovos e o leite em uma caneca grande própria para micro-ondas.",
+        "Misture o tomate, a cenoura, o cheiro-verde e o sal.",
+        "Cozinhe por 1 minuto, mexa e cozinhe em intervalos de 20 segundos até firmar."
+      ],
+      "portionGrams": 190,
+      "calories": 205,
+      "proteinGrams": 15,
+      "carbGrams": 6,
+      "fatGrams": 13,
+      "healthScore": 8
+    },
+    {
+      "id": "cuscuz-com-sardinha-e-tomate",
+      "title": "Cuscuz com sardinha e tomate",
+      "description": "Cuscuz de milho acompanhado de sardinha refogada com tomate e cebola.",
+      "estimatedCost": 16.8,
+      "minutes": 25,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Comida caseira",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "1 e 1/2 xícara de flocão de milho",
+        "3/4 de xícara de água",
+        "1 lata de sardinha escorrida",
+        "1 tomate picado",
+        "1/2 cebola picada",
+        "1 colher de chá de azeite",
+        "Sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Hidrate o flocão com a água e sal por 10 minutos e cozinhe em cuscuzeira por 8 minutos.",
+        "Refogue a cebola e o tomate no azeite.",
+        "Junte a sardinha, aqueça por 2 minutos e finalize com cheiro-verde.",
+        "Sirva o refogado sobre o cuscuz."
+      ],
+      "portionGrams": 310,
+      "calories": 390,
+      "proteinGrams": 20,
+      "carbGrams": 51,
+      "fatGrams": 12,
+      "healthScore": 8
+    },
+    {
+      "id": "baiao-de-dois-vegetariano",
+      "title": "Baião de dois vegetariano",
+      "description": "Arroz e feijão-fradinho com queijo coalho em uma versão sem carne.",
+      "estimatedCost": 25.4,
+      "minutes": 35,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Pratos da família",
+        "Comida caseira",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de arroz cozido",
+        "3 xícaras de feijão-fradinho cozido e escorrido",
+        "200 g de queijo coalho em cubos",
+        "1 cebola picada",
+        "1/2 pimentão vermelho picado",
+        "1 colher de sopa de azeite",
+        "Sal, alho, coentro e cominho a gosto"
+      ],
+      "steps": [
+        "Doure os cubos de queijo em uma panela e reserve.",
+        "Refogue a cebola, o alho e o pimentão no azeite.",
+        "Junte o feijão e o arroz e misture até aquecer.",
+        "Acrescente o queijo, o cominho e o coentro e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 515,
+      "proteinGrams": 22,
+      "carbGrams": 74,
+      "fatGrams": 15,
+      "healthScore": 8
+    },
+    {
+      "id": "feijoada-leve-com-legumes",
+      "title": "Feijoada leve com legumes",
+      "description": "Feijão-preto com carne magra, abóbora e couve para uma refeição caseira.",
+      "estimatedCost": 39.2,
+      "minutes": 65,
+      "servings": 8,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Comida caseira",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "3 xícaras de feijão-preto cru deixado de molho",
+        "500 g de lombo suíno em cubos",
+        "2 xícaras de abóbora em cubos",
+        "1 cebola picada",
+        "3 folhas de couve fatiadas",
+        "2 litros de água",
+        "1 colher de sopa de óleo",
+        "Alho, louro e sal a gosto"
+      ],
+      "steps": [
+        "Escorra o feijão e coloque na panela de pressão com o lombo, o louro e a água.",
+        "Cozinhe sob pressão por 30 minutos e aguarde a pressão sair.",
+        "Refogue a cebola e o alho no óleo e junte ao feijão com a abóbora.",
+        "Cozinhe sem pressão até a abóbora ficar macia e acrescente a couve nos minutos finais."
+      ],
+      "portionGrams": 430,
+      "calories": 445,
+      "proteinGrams": 34,
+      "carbGrams": 55,
+      "fatGrams": 11,
+      "healthScore": 8
+    },
+    {
+      "id": "polenta-com-carne-moida",
+      "title": "Polenta com carne moída",
+      "description": "Polenta cremosa coberta com carne moída ao molho de tomate.",
+      "estimatedCost": 29.8,
+      "minutes": 45,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Pratos da família",
+        "Comida caseira",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de fubá",
+        "7 xícaras de água",
+        "500 g de carne bovina moída",
+        "3 tomates picados",
+        "1 cebola picada",
+        "1 colher de sopa de azeite",
+        "Alho, sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Dissolva o fubá em duas xícaras de água fria e despeje em uma panela com a água restante quente.",
+        "Cozinhe em fogo baixo por 25 minutos, mexendo para não empelotar.",
+        "Refogue a cebola e o alho no azeite, doure a carne e adicione os tomates.",
+        "Cozinhe o molho por 10 minutos e sirva sobre a polenta."
+      ],
+      "portionGrams": 450,
+      "calories": 490,
+      "proteinGrams": 28,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "arroz-integral-com-lentilha-e-cenoura",
+      "title": "Arroz integral com lentilha e cenoura",
+      "description": "Mistura nutritiva de arroz integral, lentilha e legumes feita em uma panela.",
+      "estimatedCost": 18.7,
+      "minutes": 50,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz integral cru",
+        "1 xícara de lentilha crua",
+        "1 cebola picada",
+        "2 cenouras raladas",
+        "7 xícaras de água quente",
+        "1 colher de sopa de azeite",
+        "Alho, sal e cominho a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Adicione o arroz, a lentilha e o cominho e misture por 2 minutos.",
+        "Junte a água e o sal e cozinhe em fogo baixo até os grãos ficarem macios.",
+        "Misture a cenoura nos 5 minutos finais do cozimento."
+      ],
+      "portionGrams": 360,
+      "calories": 395,
+      "proteinGrams": 15,
+      "carbGrams": 74,
+      "fatGrams": 6,
+      "healthScore": 10
+    },
+    {
+      "id": "yakisoba-vegetariano-caseiro",
+      "title": "Yakisoba vegetariano caseiro",
+      "description": "Macarrão com legumes variados e molho de shoyu preparado em uma panela larga.",
+      "estimatedCost": 25.9,
+      "minutes": 30,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Cebola",
+        "Contém:Glúten",
+        "Contém:Soja"
+      ],
+      "ingredients": [
+        "350 g de macarrão para yakisoba",
+        "1 cebola em pétalas",
+        "1 cenoura em tiras",
+        "1 xícara de brócolis em floretes",
+        "1 xícara de couve-flor em floretes",
+        "1/2 pimentão vermelho em tiras",
+        "3 colheres de sopa de molho shoyu comum",
+        "1 colher de sopa de óleo",
+        "1 xícara de água"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e escorra.",
+        "Aqueça o óleo e salteie a cebola, a cenoura, o brócolis, a couve-flor e o pimentão.",
+        "Junte o shoyu e a água e cozinhe até os legumes ficarem macios, mas firmes.",
+        "Adicione o macarrão e misture por 2 minutos."
+      ],
+      "portionGrams": 390,
+      "calories": 430,
+      "proteinGrams": 14,
+      "carbGrams": 78,
+      "fatGrams": 8,
+      "healthScore": 8
+    },
+    {
+      "id": "lasanha-de-berinjela-com-ricota",
+      "title": "Lasanha de berinjela com ricota",
+      "description": "Camadas de berinjela, molho de tomate e ricota assadas até gratinar.",
+      "estimatedCost": 31.6,
+      "minutes": 60,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Pratos da família",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Forno",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 berinjelas grandes em fatias longitudinais",
+        "5 tomates maduros picados",
+        "1 cebola picada",
+        "400 g de ricota amassada",
+        "1 xícara de queijo muçarela ralado",
+        "1 colher de sopa de azeite",
+        "Alho, sal, manjericão e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Grelhe as fatias de berinjela em frigideira até amaciarem.",
+        "Refogue cebola e alho no azeite, junte os tomates e cozinhe por 15 minutos.",
+        "Monte camadas de molho, berinjela e ricota e finalize com muçarela.",
+        "Asse a 200 °C por 25 minutos."
+      ],
+      "portionGrams": 360,
+      "calories": 330,
+      "proteinGrams": 21,
+      "carbGrams": 27,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "pimentao-recheado-com-quinoa-e-feijao",
+      "title": "Pimentão recheado com quinoa e feijão",
+      "description": "Pimentões assados com recheio vegetariano de quinoa, feijão e tomate.",
+      "estimatedCost": 27.3,
+      "minutes": 50,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Forno",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "4 pimentões médios cortados ao meio",
+        "1 xícara de quinoa crua",
+        "2 xícaras de feijão cozido e escorrido",
+        "2 tomates picados",
+        "1/2 cebola picada",
+        "2 xícaras de água",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Cozinhe a quinoa na água até os grãos ficarem macios.",
+        "Refogue cebola e alho no azeite, junte os tomates, o feijão e a quinoa.",
+        "Tempere e recheie as metades de pimentão.",
+        "Asse a 200 °C por 25 minutos, até os pimentões amaciarem."
+      ],
+      "portionGrams": 350,
+      "calories": 365,
+      "proteinGrams": 16,
+      "carbGrams": 62,
+      "fatGrams": 7,
+      "healthScore": 10
+    },
+    {
+      "id": "ovos-ao-molho-com-grao-de-bico",
+      "title": "Ovos ao molho com grão-de-bico",
+      "description": "Ovos cozidos diretamente em molho de tomate com grão-de-bico e especiarias.",
+      "estimatedCost": 18.9,
+      "minutes": 30,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "3 xícaras de grão-de-bico cozido",
+        "4 tomates maduros picados",
+        "1 cebola picada",
+        "1 colher de sopa de azeite",
+        "1/2 xícara de água",
+        "Alho, cominho, páprica e sal a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite e junte os tomates e as especiarias.",
+        "Adicione a água e o grão-de-bico e cozinhe por 10 minutos.",
+        "Abra quatro cavidades no molho, coloque um ovo em cada uma e tampe.",
+        "Cozinhe em fogo baixo até as claras firmarem."
+      ],
+      "portionGrams": 350,
+      "calories": 370,
+      "proteinGrams": 21,
+      "carbGrams": 44,
+      "fatGrams": 13,
+      "healthScore": 9
+    },
+    {
+      "id": "chili-de-feijao-vermelho",
+      "title": "Chili de feijão-vermelho",
+      "description": "Ensopado vegetariano encorpado com feijão, tomate, milho e especiarias.",
+      "estimatedCost": 22.5,
+      "minutes": 35,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "4 xícaras de feijão-vermelho cozido",
+        "4 tomates picados",
+        "1 cebola picada",
+        "1 xícara de milho",
+        "1 pimentão vermelho picado",
+        "1 xícara de água",
+        "1 colher de sopa de azeite",
+        "Alho, cominho, páprica, pimenta e sal a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola, o alho e o pimentão no azeite.",
+        "Adicione os tomates, o cominho e a páprica e cozinhe por 5 minutos.",
+        "Junte o feijão, o milho e a água e cozinhe em fogo baixo por 15 minutos.",
+        "Ajuste o sal e a pimenta antes de servir."
+      ],
+      "portionGrams": 390,
+      "calories": 345,
+      "proteinGrams": 16,
+      "carbGrams": 61,
+      "fatGrams": 6,
+      "healthScore": 9
+    },
+    {
+      "id": "sopa-de-ervilha-com-lombo",
+      "title": "Sopa de ervilha com lombo",
+      "description": "Sopa espessa de ervilha seca com cubos de lombo suíno e legumes.",
+      "estimatedCost": 27.8,
+      "minutes": 55,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Cozinhar em lote",
+        "Comida caseira",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Batata",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de ervilha seca",
+        "400 g de lombo suíno em cubos pequenos",
+        "2 batatas em cubos",
+        "1 cenoura em cubos",
+        "1 cebola picada",
+        "1,8 litro de água",
+        "1 colher de sopa de azeite",
+        "Alho, louro e sal a gosto"
+      ],
+      "steps": [
+        "Doure o lombo no azeite e refogue a cebola e o alho.",
+        "Junte a ervilha, o louro e a água e cozinhe até a ervilha começar a desmanchar.",
+        "Adicione as batatas e a cenoura e cozinhe até ficarem macias.",
+        "Ajuste o sal e retire o louro antes de servir."
+      ],
+      "portionGrams": 430,
+      "calories": 400,
+      "proteinGrams": 29,
+      "carbGrams": 51,
+      "fatGrams": 9,
+      "healthScore": 8
+    },
+    {
+      "id": "abobora-assada-com-frango-e-quinoa",
+      "title": "Abóbora assada com frango e quinoa",
+      "description": "Assadeira completa de abóbora, frango e quinoa para uma refeição equilibrada.",
+      "estimatedCost": 34.8,
+      "minutes": 55,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Fresco e leve",
+        "Equipamento:Fogão",
+        "Equipamento:Forno",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "600 g de peito de frango em cubos",
+        "4 xícaras de abóbora em cubos",
+        "1 e 1/2 xícara de quinoa crua",
+        "1 cebola em pétalas",
+        "3 xícaras de água",
+        "1 colher de sopa de azeite",
+        "Sal, alho, páprica e alecrim a gosto"
+      ],
+      "steps": [
+        "Cozinhe a quinoa na água até ficar macia e reserve.",
+        "Tempere o frango, a abóbora e a cebola com azeite, alho, sal, páprica e alecrim.",
+        "Asse a 210 °C por 30 minutos, mexendo na metade do tempo.",
+        "Misture a quinoa à assadeira e asse por mais 5 minutos."
+      ],
+      "portionGrams": 430,
+      "calories": 465,
+      "proteinGrams": 38,
+      "carbGrams": 51,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "carne-cozida-com-mandioca",
+      "title": "Carne cozida com mandioca",
+      "description": "Ensopado brasileiro de carne e mandioca com caldo encorpado.",
+      "estimatedCost": 46.3,
+      "minutes": 75,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Comida caseira",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "900 g de acém em cubos",
+        "800 g de mandioca descascada em pedaços",
+        "2 tomates picados",
+        "1 cebola picada",
+        "4 xícaras de água quente",
+        "1 colher de sopa de óleo",
+        "Alho, louro, sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Doure a carne no óleo em uma panela de pressão.",
+        "Junte a cebola, o alho, os tomates, o louro, o sal e a água.",
+        "Cozinhe sob pressão por 30 minutos e aguarde a pressão sair.",
+        "Adicione a mandioca e cozinhe sem pressão até ficar macia e o caldo engrossar."
+      ],
+      "portionGrams": 470,
+      "calories": 540,
+      "proteinGrams": 39,
+      "carbGrams": 55,
+      "fatGrams": 18,
+      "healthScore": 8
+    },
+    {
+      "id": "lombo-assado-com-laranja-e-cebola",
+      "title": "Lombo assado com laranja e cebola",
+      "description": "Lombo suíno assado lentamente com suco de laranja e cebolas.",
+      "estimatedCost": 45.7,
+      "minutes": 90,
+      "servings": 8,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Comida caseira",
+        "Equipamento:Forno",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "1,2 kg de lombo suíno",
+        "Suco de 3 laranjas",
+        "2 cebolas em pétalas",
+        "1 colher de sopa de azeite",
+        "4 dentes de alho amassados",
+        "Sal, páprica e alecrim a gosto"
+      ],
+      "steps": [
+        "Tempere o lombo com o suco, o alho, o sal, a páprica e o alecrim e marine por 30 minutos.",
+        "Coloque em uma assadeira com a marinada e as cebolas e cubra com papel-alumínio.",
+        "Asse a 200 °C por 45 minutos.",
+        "Retire o papel e asse por mais 20 minutos, regando com o caldo."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 46,
+      "carbGrams": 10,
+      "fatGrams": 18,
+      "healthScore": 7
+    },
+    {
+      "id": "macarrao-com-sardinha-e-tomate",
+      "title": "Macarrão com sardinha e tomate",
+      "description": "Massa econômica com sardinha, tomate e ervas pronta em meia hora.",
+      "estimatedCost": 21.9,
+      "minutes": 28,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "350 g de macarrão tipo espaguete",
+        "2 latas de sardinha escorrida",
+        "4 tomates maduros picados",
+        "1/2 cebola picada",
+        "1 colher de sopa de azeite",
+        "Alho, sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Refogue a cebola e o alho no azeite, junte os tomates e cozinhe por 8 minutos.",
+        "Adicione a sardinha em pedaços e aqueça delicadamente.",
+        "Misture o macarrão e um pouco da água reservada e finalize com cheiro-verde."
+      ],
+      "portionGrams": 390,
+      "calories": 505,
+      "proteinGrams": 28,
+      "carbGrams": 70,
+      "fatGrams": 13,
+      "healthScore": 8
+    },
+    {
+      "id": "bobo-de-camarao-simplificado",
+      "title": "Bobó de camarão simplificado",
+      "description": "Creme de mandioca com camarões, tomate e leite de coco inspirado na cozinha baiana.",
+      "estimatedCost": 59.8,
+      "minutes": 60,
+      "servings": 6,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Pratos da família",
+        "Comida caseira",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Equipamento:Liquidificador",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Marisco"
+      ],
+      "ingredients": [
+        "700 g de camarão limpo",
+        "800 g de mandioca descascada",
+        "3 tomates picados",
+        "1 cebola picada",
+        "200 ml de leite de coco",
+        "1 colher de sopa de azeite",
+        "Suco de 1 limão",
+        "Alho, sal, páprica e coentro a gosto"
+      ],
+      "steps": [
+        "Cozinhe a mandioca até ficar macia e bata no liquidificador com parte da água do cozimento.",
+        "Tempere os camarões com limão e sal e salteie no azeite por 2 minutos; reserve.",
+        "Refogue cebola, alho e tomates, junte o creme de mandioca e o leite de coco.",
+        "Acrescente os camarões e cozinhe por mais 3 minutos; finalize com coentro."
+      ],
+      "portionGrams": 420,
+      "calories": 455,
+      "proteinGrams": 31,
+      "carbGrams": 55,
+      "fatGrams": 13,
+      "healthScore": 8
+    },
+    {
+      "id": "salmao-com-batata-doce-na-air-fryer",
+      "title": "Salmão com batata-doce na air fryer",
+      "description": "Postas de salmão com cubos de batata-doce em uma refeição prática.",
+      "estimatedCost": 62.5,
+      "minutes": 35,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Fresco e leve",
+        "Equipamento:Air fryer",
+        "Aproveita:Batata",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "4 postas de salmão de 150 g",
+        "2 batatas-doces médias em cubos pequenos",
+        "1 colher de sopa de azeite",
+        "Suco de 1 limão",
+        "Sal, alho e ervas a gosto"
+      ],
+      "steps": [
+        "Tempere a batata-doce com metade do azeite e sal e asse a 190 °C por 12 minutos.",
+        "Tempere o salmão com limão, alho, sal e o azeite restante.",
+        "Acomode as postas junto às batatas e asse por mais 10 a 12 minutos.",
+        "Verifique o ponto do peixe antes de servir."
+      ],
+      "portionGrams": 350,
+      "calories": 475,
+      "proteinGrams": 35,
+      "carbGrams": 34,
+      "fatGrams": 23,
+      "healthScore": 9
+    },
+    {
+      "id": "frango-ao-molho-de-amendoim",
+      "title": "Frango ao molho de amendoim",
+      "description": "Frango em molho cremoso de amendoim, tomate e especiarias.",
+      "estimatedCost": 33.4,
+      "minutes": 35,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Amendoim"
+      ],
+      "ingredients": [
+        "700 g de peito de frango em cubos",
+        "3 colheres de sopa de pasta de amendoim integral",
+        "2 tomates picados",
+        "1 cebola picada",
+        "1 e 1/2 xícara de água",
+        "1 colher de sopa de óleo",
+        "Alho, gengibre, páprica e sal a gosto"
+      ],
+      "steps": [
+        "Doure o frango no óleo e acrescente a cebola, o alho e o gengibre.",
+        "Junte os tomates e cozinhe até começarem a desmanchar.",
+        "Dissolva a pasta de amendoim na água e despeje na panela.",
+        "Cozinhe em fogo baixo por 10 minutos, mexendo até o molho engrossar."
+      ],
+      "portionGrams": 310,
+      "calories": 420,
+      "proteinGrams": 45,
+      "carbGrams": 13,
+      "fatGrams": 21,
+      "healthScore": 7
+    },
+    {
+      "id": "tofu-com-legumes-ao-shoyu",
+      "title": "Tofu com legumes ao shoyu",
+      "description": "Cubos de tofu dourados com legumes e molho de shoyu.",
+      "estimatedCost": 30.6,
+      "minutes": 30,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Cebola",
+        "Contém:Soja",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "500 g de tofu firme em cubos",
+        "1 cebola em pétalas",
+        "1 cenoura em palitos",
+        "1 abobrinha em meias-luas",
+        "1 xícara de brócolis em floretes",
+        "3 colheres de sopa de molho shoyu comum",
+        "1 colher de sopa de óleo"
+      ],
+      "steps": [
+        "Seque bem o tofu e doure os cubos no óleo; reserve.",
+        "Na mesma panela, salteie a cebola, a cenoura, a abobrinha e o brócolis.",
+        "Devolva o tofu, adicione o shoyu e misture por 2 minutos.",
+        "Sirva enquanto os legumes ainda estiverem firmes."
+      ],
+      "portionGrams": 300,
+      "calories": 275,
+      "proteinGrams": 20,
+      "carbGrams": 18,
+      "fatGrams": 15,
+      "healthScore": 9
+    },
+    {
+      "id": "cogumelos-recheados-com-quinoa",
+      "title": "Cogumelos recheados com quinoa",
+      "description": "Cogumelos grandes assados com recheio de quinoa, tomate e ervas.",
+      "estimatedCost": 32.8,
+      "minutes": 40,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Fresco e leve",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Forno",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "12 cogumelos grandes",
+        "1 xícara de quinoa crua",
+        "1 tomate sem sementes picado",
+        "1/2 cebola picada",
+        "2 xícaras de água",
+        "1 colher de sopa de azeite",
+        "Sal, alho, salsinha e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Retire os talos dos cogumelos e pique-os.",
+        "Cozinhe a quinoa na água até ficar macia.",
+        "Refogue a cebola, o alho, os talos e o tomate no azeite e misture à quinoa.",
+        "Recheie os cogumelos e asse a 200 °C por 18 minutos."
+      ],
+      "portionGrams": 270,
+      "calories": 260,
+      "proteinGrams": 11,
+      "carbGrams": 42,
+      "fatGrams": 7,
+      "healthScore": 9
+    },
+    {
+      "id": "caponata-de-berinjela-com-azeitona",
+      "title": "Caponata de berinjela com azeitona",
+      "description": "Antepasto assado de berinjela, pimentões e azeitonas para servir com pão.",
+      "estimatedCost": 24.7,
+      "minutes": 55,
+      "servings": 6,
+      "tags": [
+        "Lanches",
+        "Cozinhar em lote",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Forno",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 berinjelas em cubos",
+        "1 pimentão vermelho em cubos",
+        "1 pimentão amarelo em cubos",
+        "1 cebola em pétalas",
+        "1/2 xícara de azeitonas fatiadas",
+        "3 colheres de sopa de azeite",
+        "2 colheres de sopa de vinagre",
+        "Sal, alho e orégano a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C.",
+        "Misture berinjela, pimentões, cebola, alho, azeite, vinagre, sal e orégano.",
+        "Asse por 35 minutos, mexendo duas vezes.",
+        "Misture as azeitonas e deixe esfriar antes de armazenar."
+      ],
+      "portionGrams": 150,
+      "calories": 180,
+      "proteinGrams": 3,
+      "carbGrams": 16,
+      "fatGrams": 12,
+      "healthScore": 8
+    },
+    {
+      "id": "torta-de-brocolis-e-cenoura",
+      "title": "Torta de brócolis e cenoura",
+      "description": "Torta vegetariana de liquidificador recheada com brócolis e cenoura.",
+      "estimatedCost": 26.9,
+      "minutes": 55,
+      "servings": 8,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Pratos da família",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Aproveita:Ovos",
+        "Contém:Glúten",
+        "Contém:Laticínios",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "2 xícaras de brócolis picado e pré-cozido",
+        "1 cenoura ralada",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de leite",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 colher de sopa de fermento químico",
+        "Sal, cebola e orégano a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 180 °C e unte uma assadeira.",
+        "Misture o brócolis, a cenoura, a cebola e o orégano.",
+        "Bata farinha, leite, ovos, óleo e sal no liquidificador e misture o fermento.",
+        "Monte metade da massa, o recheio e a massa restante e asse por 35 minutos."
+      ],
+      "portionGrams": 230,
+      "calories": 335,
+      "proteinGrams": 10,
+      "carbGrams": 35,
+      "fatGrams": 17,
+      "healthScore": 7
+    },
+    {
+      "id": "mingau-de-fuba-com-canela",
+      "title": "Mingau de fubá com canela",
+      "description": "Mingau tradicional, cremoso e econômico preparado com leite e fubá.",
+      "estimatedCost": 6.8,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Comida caseira",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de leite",
+        "5 colheres de sopa de fubá",
+        "2 colheres de sopa de açúcar",
+        "1 canela em pau",
+        "Canela em pó a gosto"
+      ],
+      "steps": [
+        "Dissolva o fubá em uma xícara de leite frio.",
+        "Junte o leite restante, o açúcar e a canela em pau.",
+        "Cozinhe em fogo baixo por 10 a 12 minutos, mexendo até engrossar.",
+        "Retire a canela em pau e sirva com canela em pó."
+      ],
+      "portionGrams": 270,
+      "calories": 245,
+      "proteinGrams": 8,
+      "carbGrams": 42,
+      "fatGrams": 6,
+      "healthScore": 6
+    },
+    {
+      "id": "salada-de-frutas-com-iogurte",
+      "title": "Salada de frutas com iogurte",
+      "description": "Taças de frutas frescas com iogurte natural e sementes de chia.",
+      "estimatedCost": 14.5,
+      "minutes": 12,
+      "servings": 4,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Aproveita:Banana",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 bananas em rodelas",
+        "1 maçã em cubos",
+        "1 xícara de mamão em cubos",
+        "1 laranja em gomos cortados",
+        "2 potes de iogurte natural de 170 g",
+        "1 colher de sopa de sementes de chia"
+      ],
+      "steps": [
+        "Misture delicadamente as bananas, a maçã, o mamão e a laranja.",
+        "Distribua as frutas em quatro taças.",
+        "Cubra com o iogurte, finalize com chia e sirva imediatamente."
+      ],
+      "portionGrams": 260,
+      "calories": 190,
+      "proteinGrams": 7,
+      "carbGrams": 37,
+      "fatGrams": 3,
+      "healthScore": 9
+    },
+    {
+      "id": "maca-assada-com-castanhas",
+      "title": "Maçã assada com castanhas",
+      "description": "Maçãs recheadas com castanhas, aveia e canela, assadas até ficarem macias.",
+      "estimatedCost": 15.2,
+      "minutes": 35,
+      "servings": 4,
+      "tags": [
+        "Lanches",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Forno",
+        "Contém:Castanhas",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "4 maçãs grandes",
+        "1/2 xícara de castanhas-do-pará picadas",
+        "4 colheres de sopa de aveia em flocos",
+        "2 colheres de sopa de uvas-passas",
+        "1 colher de chá de canela",
+        "1/2 xícara de água"
+      ],
+      "steps": [
+        "Preaqueça o forno a 190 °C e retire o miolo das maçãs sem perfurar a base.",
+        "Misture castanhas, aveia, passas e canela e recheie as maçãs.",
+        "Coloque em uma assadeira com a água no fundo.",
+        "Asse por 25 minutos, até ficarem macias."
+      ],
+      "portionGrams": 210,
+      "calories": 275,
+      "proteinGrams": 5,
+      "carbGrams": 42,
+      "fatGrams": 11,
+      "healthScore": 8
+    },
+    {
+      "id": "falafel-de-air-fryer-com-gergelim",
+      "title": "Falafel de air fryer com gergelim",
+      "description": "Bolinho de grão-de-bico com ervas e gergelim, dourado sem imersão em óleo.",
+      "estimatedCost": 18.4,
+      "minutes": 35,
+      "servings": 4,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Equipamento:Air fryer",
+        "Aproveita:Cebola",
+        "Contém:Gergelim"
+      ],
+      "ingredients": [
+        "3 xícaras de grão-de-bico cozido e bem escorrido",
+        "1/2 cebola picada",
+        "2 dentes de alho",
+        "1/2 xícara de salsinha",
+        "2 colheres de sopa de sementes de gergelim",
+        "1 colher de sopa de azeite",
+        "Cominho, sal e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Processe o grão-de-bico, a cebola, o alho, a salsinha e os temperos até formar uma massa granulada.",
+        "Misture o gergelim e modele 16 bolinhos, apertando bem.",
+        "Pincele com azeite e asse na air fryer a 190 °C por 16 minutos, virando na metade."
+      ],
+      "portionGrams": 200,
+      "calories": 310,
+      "proteinGrams": 14,
+      "carbGrams": 43,
+      "fatGrams": 10,
+      "healthScore": 9
+    }
+  ]
+}

@@ -1,76 +1,42 @@
 import 'package:flutter/material.dart';
+import '../models/history_item.dart';
+import '../services/history_service.dart';
+import '../theme/app_theme.dart';
 
-class HistoryScreen extends StatelessWidget {
+class HistoryScreen extends StatefulWidget {
   const HistoryScreen({super.key});
+  @override
+  State<HistoryScreen> createState() => _HistoryScreenState();
+}
+
+class _HistoryScreenState extends State<HistoryScreen> {
+  late Future<List<HistoryItem>> _items;
+  @override void initState() { super.initState(); _reload(); }
+  void _reload() => _items = HistoryService().getItems();
+  String _date(DateTime date) {
+    final now = DateTime.now();
+    final difference = now.difference(date);
+    if (difference.inMinutes < 1) return 'agora';
+    if (difference.inHours < 1) return 'há ${difference.inMinutes} min';
+    if (difference.inDays < 1) return 'há ${difference.inHours} h';
+    if (difference.inDays == 1) return 'ontem';
+    return '${date.day.toString().padLeft(2, '0')}/${date.month.toString().padLeft(2, '0')}/${date.year}';
+  }
 
   @override
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
-    final items = [
-      ('iogurte Natural', 'Marca A', 'Hoje, 13:10', '120 kcal'),
-      ('Biscoito Recheado', 'Marca B', 'Ontem, 19:45', '150 kcal'),
-      ('Suco de Uva', 'Marca C', 'Ontem, 09:55', '90 kcal'),
-      ('Pão Integral', 'Marca D', '2 dias atrás', '110 kcal'),
-      ('Cereal Matinal', 'Marca E', '3 dias atrás', '130 kcal'),
-    ];
-
-    return Scaffold(
-      appBar: AppBar(
-        leading: const BackButton(),
-        title: const Text('Histórico'),
-      ),
-      body: ListView(
-        padding: const EdgeInsets.all(20),
-        children: [
-          Text(
-            'Seus últimos produtos escaneados',
-            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: colorScheme.onSurfaceVariant,
-                ),
-          ),
-          const SizedBox(height: 16),
-          for (final item in items) ...[
-            Container(
-              padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                color: colorScheme.surface,
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: colorScheme.outlineVariant),
-              ),
-              child: Row(
-                children: [
-                  Container(
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      color: colorScheme.surfaceContainerHighest,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: Icon(Icons.image_outlined, color: colorScheme.onSurfaceVariant),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(item.$1, style: const TextStyle(fontWeight: FontWeight.w700)),
-                        const SizedBox(height: 3),
-                        Text('${item.$2} • ${item.$4}'),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Text(item.$3, textAlign: TextAlign.right),
-                  const SizedBox(width: 6),
-                  const Icon(Icons.chevron_right),
-                ],
-              ),
-            ),
-            const SizedBox(height: 12),
-          ],
-        ],
-      ),
-    );
-  }
+  Widget build(BuildContext context) => Scaffold(
+    appBar: AppBar(title: const Text('Histórico'), actions: [IconButton(tooltip: 'Limpar histórico', onPressed: () async {
+      final confirm = await showDialog<bool>(context: context, builder: (_) => AlertDialog(title: const Text('Limpar histórico?'), content: const Text('As consultas registradas neste dispositivo serão removidas.'), actions: [TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancelar')), FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Limpar'))]));
+      if (confirm == true) { await HistoryService().clear(); setState(_reload); }
+    }, icon: const Icon(Icons.delete_sweep_outlined))]),
+    body: FutureBuilder<List<HistoryItem>>(future: _items, builder: (context, snapshot) {
+      if (snapshot.connectionState == ConnectionState.waiting) return const Center(child: CircularProgressIndicator());
+      final items = snapshot.data ?? [];
+      if (items.isEmpty) return Center(child: Padding(padding: const EdgeInsets.all(30), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [const Icon(Icons.history_toggle_off_rounded, size: 70, color: AppColors.olive), const SizedBox(height: 18), Text('Nenhuma consulta ainda', style: Theme.of(context).textTheme.headlineSmall), const SizedBox(height: 8), const Text('Os produtos escaneados aparecerão aqui.', textAlign: TextAlign.center)])));
+      return ListView.separated(padding: const EdgeInsets.all(20), itemCount: items.length, separatorBuilder: (_, __) => const SizedBox(height: 10), itemBuilder: (context, index) {
+        final item = items[index];
+        return Card(child: ListTile(contentPadding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7), leading: ClipRRect(borderRadius: BorderRadius.circular(14), child: SizedBox(width: 50, height: 50, child: item.productImage == null ? const ColoredBox(color: Color(0xFFE9E7DF), child: Icon(Icons.inventory_2_outlined)) : Image.network(item.productImage!, fit: BoxFit.cover, errorBuilder: (_, __, ___) => const Icon(Icons.inventory_2_outlined)))), title: Text(item.productName, style: const TextStyle(fontWeight: FontWeight.w700)), subtitle: Text('${item.productBrand} • ${_date(item.scannedAt)}'), trailing: const Icon(Icons.chevron_right_rounded)));
+      });
+    }),
+  );
 }

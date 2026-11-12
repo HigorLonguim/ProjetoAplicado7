@@ -1,0 +1,1927 @@
+{
+  "schemaVersion": 1,
+  "batch": 8,
+  "totalBatches": 8,
+  "currency": "BRL",
+  "recipes": [
+    {
+      "id": "arroz-crocante-com-legumes",
+      "title": "Arroz crocante com legumes",
+      "description": "Arroz crocante com legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cozido",
+        "2 xícaras de legumes picados",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, gengibre a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "arroz-refogado-com-ovo-e-couve",
+      "title": "Arroz refogado com ovo e couve",
+      "description": "Arroz refogado com ovo e couve com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 21,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Ovos",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cozido",
+        "3 ovos com e couve",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "arroz-com-feijao-e-abobora-salteada",
+      "title": "Arroz com feijão e abóbora salteada",
+      "description": "Arroz com feijão e abóbora salteada com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 24,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cozido",
+        "2 xícaras de feijão e abóbora",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "arroz-frio-com-pepino-e-cenoura",
+      "title": "Arroz frio com pepino e cenoura",
+      "description": "Arroz frio com pepino e cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cozido",
+        "2 xícaras de pepino e cenoura",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "panela-de-arroz-com-sardinha",
+      "title": "Panela de arroz com sardinha",
+      "description": "Panela de arroz com sardinha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 38.8,
+      "minutes": 21,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cozido",
+        "500 g de sardinha",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomate e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "tutu-rapido-de-feijao",
+      "title": "Tutú rápido de feijão",
+      "description": "Tutú rápido de feijão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 26,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão cozido",
+        "2 xícaras de farinha de mandioca",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "pasta-de-feijao-branco-com-limao",
+      "title": "Pasta de feijão-branco com limão",
+      "description": "Pasta de feijão-branco com limão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 20,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de limão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e salsinha a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "salada-de-feijao-com-tomate-e-milho",
+      "title": "Salada de feijão com tomate e milho",
+      "description": "Salada de feijão com tomate e milho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 23,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão cozido",
+        "2 xícaras de tomate e milho",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "feijao-refogado-com-ovo",
+      "title": "Feijão refogado com ovo",
+      "description": "Feijão refogado com ovo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 26,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão cozido",
+        "3 ovos com ",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cebola e cominho a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "bolinho-assado-de-feijao-e-aveia",
+      "title": "Bolinho assado de feijão e aveia",
+      "description": "Bolinho assado de feijão e aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 20,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão cozido",
+        "2 xícaras de aveia",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, páprica a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "pudim-salgado-de-pao-e-legumes",
+      "title": "Pudim salgado de pão e legumes",
+      "description": "Pudim salgado de pão e legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 28,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Pão",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de pão amanhecido",
+        "2 xícaras de legumes picados",
+        "2 ovos",
+        "1 xícara de leite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "farofa-de-pao-com-ervas",
+      "title": "Farofa de pão com ervas",
+      "description": "Farofa de pão com ervas com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 31,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Pão",
+        "Aproveita:Cebola",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de pão amanhecido",
+        "2 xícaras de cebola",
+        "2 ovos",
+        "1 xícara de leite",
+        "Sal e salsinha a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "torrada-de-pao-com-tomate-assado",
+      "title": "Torrada de pão com tomate assado",
+      "description": "Torrada de pão com tomate assado com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 25,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Pão",
+        "Aproveita:Tomate",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de pão amanhecido",
+        "2 xícaras de tomate",
+        "2 ovos",
+        "1 xícara de leite",
+        "Sal e manjericão a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "sopa-de-pao-com-feijao-branco",
+      "title": "Sopa de pão com feijão-branco",
+      "description": "Sopa de pão com feijão-branco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 28,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Pão",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de pão amanhecido",
+        "2 xícaras de feijão-branco",
+        "2 ovos",
+        "1 xícara de leite",
+        "Sal e alho e tomilho a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "croquete-de-pao-com-queijo",
+      "title": "Croquete de pão com queijo",
+      "description": "Croquete de pão com queijo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 31,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Pão",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de pão amanhecido",
+        "2 xícaras de queijo minas",
+        "2 ovos",
+        "1 xícara de leite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "ovos-ao-forno-com-arroz-e-legumes",
+      "title": "Ovos ao forno com arroz e legumes",
+      "description": "Ovos ao forno com arroz e legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de arroz cozido e legumes",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "salada-de-batata-com-ovo-e-iogurte",
+      "title": "Salada de batata com ovo e iogurte",
+      "description": "Salada de batata com ovo e iogurte com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 21,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Mostarda"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de batata e iogurte",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, mostarda a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "cuscuz-mexido-com-ovos",
+      "title": "Cuscuz mexido com ovos",
+      "description": "Cuscuz mexido com ovos com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 24,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de flocão de milho",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "panela-de-ovos-com-espinafre-e-feijao",
+      "title": "Panela de ovos com espinafre e feijão",
+      "description": "Panela de ovos com espinafre e feijão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de espinafre e feijão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "pate-de-ovo-com-cenoura",
+      "title": "Patê de ovo com cenoura",
+      "description": "Patê de ovo com cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 21,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de cenoura e iogurte",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, salsinha a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "bolo-de-banana-madura-e-aveia",
+      "title": "Bolo de banana madura e aveia",
+      "description": "Bolo de banana madura e aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 26,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Banana",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de banana madura",
+        "2 xícaras de aveia",
+        "2 ovos",
+        "4 colheres de sopa de aveia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "doce-rapido-de-banana-com-cacau",
+      "title": "Doce rápido de banana com cacau",
+      "description": "Doce rápido de banana com cacau com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 12,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Vegetariana",
+        "Rápido e fácil",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de banana madura",
+        "2 xícaras de cacau",
+        "1/2 xícara de água ou leite, conforme necessário",
+        "Sal ou canela e canela a gosto"
+      ],
+      "steps": [
+        "Misture os ingredientes em recipiente grande próprio para micro-ondas.",
+        "Cozinhe em intervalos de 2 minutos, mexendo entre eles.",
+        "Continue até todos os ingredientes estarem macios e completamente cozidos."
+      ],
+      "portionGrams": 260,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "sorvete-de-banana-com-amendoim",
+      "title": "Sorvete de banana com amendoim",
+      "description": "Sorvete de banana com amendoim com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 23,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Banana",
+        "Contém:Amendoim",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de banana congelada",
+        "2 xícaras de amendoim",
+        "2 ovos",
+        "4 colheres de sopa de aveia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "pao-de-banana-de-frigideira",
+      "title": "Pão de banana de frigideira",
+      "description": "Pão de banana de frigideira com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 26,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Banana",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de banana madura",
+        "3 ovos com ",
+        "2 ovos",
+        "4 colheres de sopa de aveia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "crumble-de-banana-com-castanhas",
+      "title": "Crumble de banana com castanhas",
+      "description": "Crumble de banana com castanhas com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 20,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Banana",
+        "Contém:Castanhas",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de banana madura",
+        "2 xícaras de castanhas e aveia",
+        "2 ovos",
+        "4 colheres de sopa de aveia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "creme-de-milho-com-leite",
+      "title": "Creme de milho com leite",
+      "description": "Creme de milho com leite com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 25,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de milho",
+        "2 xícaras de leite",
+        "2 xícaras de leite",
+        "Sal ou canela e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "sopa-branca-de-couve-flor",
+      "title": "Sopa branca de couve-flor",
+      "description": "Sopa branca de couve-flor com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 28,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de couve-flor",
+        "2 xícaras de leite",
+        "2 xícaras de leite",
+        "Sal ou canela e alho e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "arroz-cremoso-com-leite-e-legumes",
+      "title": "Arroz cremoso com leite e legumes",
+      "description": "Arroz cremoso com leite e legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 22,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Aproveita:Arroz",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de arroz cozido",
+        "2 xícaras de leite e legumes",
+        "2 xícaras de leite",
+        "Sal ou canela e orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "pudim-de-chia-com-manga",
+      "title": "Pudim de chia com manga",
+      "description": "Pudim de chia com manga com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 25,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de chia",
+        "2 xícaras de leite e manga",
+        "2 xícaras de leite",
+        "Sal ou canela e baunilha a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "molho-branco-leve-com-espinafre",
+      "title": "Molho branco leve com espinafre",
+      "description": "Molho branco leve com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 28,
+      "servings": 5,
+      "tags": [
+        "Café da manhã",
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de espinafre",
+        "2 xícaras de leite",
+        "2 xícaras de leite",
+        "Sal ou canela e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "fritada-de-macarrao-com-legumes",
+      "title": "Fritada de macarrão com legumes",
+      "description": "Fritada de macarrão com legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 24,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Ovos",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de macarrão cozido",
+        "3 ovos com e legumes",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "salada-de-macarrao-com-feijao-branco",
+      "title": "Salada de macarrão com feijão-branco",
+      "description": "Salada de macarrão com feijão-branco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 27,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de macarrão cozido",
+        "2 xícaras de feijão-branco",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "macarrao-assado-com-abobora",
+      "title": "Macarrão assado com abóbora",
+      "description": "Macarrão assado com abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 30,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de macarrão cozido",
+        "2 xícaras de abóbora",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, sálvia a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "sopa-de-macarrao-com-lentilha",
+      "title": "Sopa de macarrão com lentilha",
+      "description": "Sopa de macarrão com lentilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 24,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de macarrão cozido",
+        "2 xícaras de lentilha",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "macarrao-salteado-com-ovo-e-repolho",
+      "title": "Macarrão salteado com ovo e repolho",
+      "description": "Macarrão salteado com ovo e repolho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 27,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Ovos",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de macarrão cozido",
+        "3 ovos com e repolho",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, gengibre a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "salpicao-leve-de-frango",
+      "title": "Salpicão leve de frango",
+      "description": "Salpicão leve de frango com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 37.1,
+      "minutes": 31,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "500 g de frango cozido e desfiado",
+        "2 xícaras de cenoura e iogurte",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "panqueca-recheada-de-frango-e-espinafre",
+      "title": "Panqueca recheada de frango e espinafre",
+      "description": "Panqueca recheada de frango e espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 38.8,
+      "minutes": 25,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de frango cozido e desfiado",
+        "2 xícaras de espinafre",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "sopa-cremosa-de-frango-e-milho",
+      "title": "Sopa cremosa de frango e milho",
+      "description": "Sopa cremosa de frango e milho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 40.5,
+      "minutes": 28,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de frango cozido e desfiado",
+        "2 xícaras de milho",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cúrcuma a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "cuscuz-de-frango-com-tomate",
+      "title": "Cuscuz de frango com tomate",
+      "description": "Cuscuz de frango com tomate com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 42.2,
+      "minutes": 31,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de frango cozido e desfiado",
+        "2 xícaras de flocão e tomate",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, coentro a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "bolinho-de-frango-com-mandioca",
+      "title": "Bolinho de frango com mandioca",
+      "description": "Bolinho de frango com mandioca com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 25,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de frango cozido e desfiado",
+        "2 xícaras de mandioca",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, páprica a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "salada-morna-de-batata-e-lentilha",
+      "title": "Salada morna de batata e lentilha",
+      "description": "Salada morna de batata e lentilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 28,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata",
+        "Contém:Mostarda"
+      ],
+      "ingredients": [
+        "3 xícaras de batata cozida",
+        "2 xícaras de lentilha",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, mostarda a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "ninho-de-batata-com-ovo",
+      "title": "Ninho de batata com ovo",
+      "description": "Ninho de batata com ovo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 31,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "3 xícaras de batata cozida",
+        "3 ovos com ",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "pure-de-batata-com-couve-flor",
+      "title": "Purê de batata com couve-flor",
+      "description": "Purê de batata com couve-flor com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 25,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "3 xícaras de batata cozida",
+        "2 xícaras de couve-flor",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, noz-moscada a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "bolinho-de-batata-com-espinafre",
+      "title": "Bolinho de batata com espinafre",
+      "description": "Bolinho de batata com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 28,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "3 xícaras de batata cozida",
+        "2 xícaras de espinafre",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, páprica a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "sopa-rustica-de-batata-e-feijao",
+      "title": "Sopa rústica de batata e feijão",
+      "description": "Sopa rústica de batata e feijão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 31,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "3 xícaras de batata cozida",
+        "2 xícaras de feijão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e louro a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "arroz-frio-com-atum-e-pepino",
+      "title": "Arroz frio com atum e pepino",
+      "description": "Arroz frio com atum e pepino com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 40.5,
+      "minutes": 15,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Atum",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de arroz cozido e pepino",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "batata-recheada-fria-com-atum",
+      "title": "Batata recheada fria com atum",
+      "description": "Batata recheada fria com atum com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 42.2,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata",
+        "Aproveita:Iogurte",
+        "Aproveita:Atum",
+        "Contém:Laticínios",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de batata e iogurte",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, salsinha a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com salsinha e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "omelete-de-atum-com-tomate",
+      "title": "Omelete de atum com tomate",
+      "description": "Omelete de atum com tomate com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 21,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Atum",
+        "Contém:Ovos",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "3 ovos com e tomate",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com orégano e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "feijao-branco-com-atum-e-cebola",
+      "title": "Feijão-branco com atum e cebola",
+      "description": "Feijão-branco com atum e cebola com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 32,
+      "minutes": 15,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Atum",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de feijão-branco",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão e salsinha a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e salsinha e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "pate-de-atum-com-cenoura-e-limao",
+      "title": "Patê de atum com cenoura e limão",
+      "description": "Patê de atum com cenoura e limão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Aproveita:Atum",
+        "Contém:Laticínios",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de cenoura e iogurte",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    }
+  ]
+}

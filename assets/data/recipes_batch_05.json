@@ -1,0 +1,1924 @@
+{
+  "schemaVersion": 1,
+  "batch": 5,
+  "totalBatches": 8,
+  "currency": "BRL",
+  "recipes": [
+    {
+      "id": "ensopado-de-feijao-branco-com-espinafre",
+      "title": "Ensopado de feijão-branco com espinafre",
+      "description": "Ensopado de feijão-branco com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Mais fibras",
+        "Vegetariana",
+        "Cozinhar em lote",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de espinafre",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e páprica a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "ensopado-de-grao-de-bico-com-batata-doce",
+      "title": "Ensopado de grão-de-bico com batata-doce",
+      "description": "Ensopado de grão-de-bico com batata-doce com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Mais fibras",
+        "Vegetariana",
+        "Cozinhar em lote",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de batata-doce",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho e coentro a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "ensopado-de-ervilha-com-abobora",
+      "title": "Ensopado de ervilha com abóbora",
+      "description": "Ensopado de ervilha com abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 54,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Mais fibras",
+        "Vegetariana",
+        "Cozinhar em lote",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de ervilha seca",
+        "2 xícaras de abóbora",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, gengibre e cúrcuma a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "ensopado-de-lentilha-com-couve-flor",
+      "title": "Ensopado de lentilha com couve-flor",
+      "description": "Ensopado de lentilha com couve-flor com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Mais fibras",
+        "Vegetariana",
+        "Cozinhar em lote",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de couve-flor",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, curry e coentro a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "ensopado-de-feijao-preto-com-mandioca",
+      "title": "Ensopado de feijão-preto com mandioca",
+      "description": "Ensopado de feijão-preto com mandioca com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Mais fibras",
+        "Vegetariana",
+        "Cozinhar em lote",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-preto cozido",
+        "2 xícaras de mandioca",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "curry-de-tofu-com-espinafre",
+      "title": "Curry de tofu com espinafre",
+      "description": "Curry de tofu com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 44,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Soja"
+      ],
+      "ingredients": [
+        "3 xícaras de tofu",
+        "2 xícaras de espinafre",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, curry e gengibre a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "curry-de-lentilha-vermelha",
+      "title": "Curry de lentilha vermelha",
+      "description": "Curry de lentilha vermelha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha vermelha",
+        "2 xícaras de tomate",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, curry e coentro a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "curry-de-couve-flor-e-ervilha",
+      "title": "Curry de couve-flor e ervilha",
+      "description": "Curry de couve-flor e ervilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 41,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "3 xícaras de couve-flor",
+        "2 xícaras de ervilha",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, curry e cúrcuma a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "curry-de-batata-doce-com-grao-de-bico",
+      "title": "Curry de batata-doce com grão-de-bico",
+      "description": "Curry de batata-doce com grão-de-bico com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 44,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de batata-doce",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, curry e gengibre a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "curry-de-abobrinha-com-feijao-branco",
+      "title": "Curry de abobrinha com feijão-branco",
+      "description": "Curry de abobrinha com feijão-branco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de abobrinha",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, curry e manjericão a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "abobora-recheada-com-quinoa-e-espinafre",
+      "title": "Abóbora recheada com quinoa e espinafre",
+      "description": "Abóbora recheada com quinoa e espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 53,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Forno",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "2 xícaras de quinoa cozida",
+        "2 xícaras de abóbora",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e espinafre e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "couve-flor-assada-com-molho-de-tahine",
+      "title": "Couve-flor assada com molho de tahine",
+      "description": "Couve-flor assada com molho de tahine com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 56,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Forno",
+        "Aproveita:Tomate",
+        "Contém:Gergelim"
+      ],
+      "ingredients": [
+        "3 xícaras de couve-flor",
+        "2 xícaras de tahine",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e limão e páprica a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "berinjela-assada-com-feijao-branco",
+      "title": "Berinjela assada com feijão-branco",
+      "description": "Berinjela assada com feijão-branco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 50,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Forno",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de berinjela",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e tomate e manjericão a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "batata-doce-recheada-com-lentilha",
+      "title": "Batata-doce recheada com lentilha",
+      "description": "Batata-doce recheada com lentilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 53,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Forno",
+        "Aproveita:Tomate",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de batata-doce",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e cominho e limão a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "tomate-recheado-com-cuscuz-marroquino",
+      "title": "Tomate recheado com cuscuz marroquino",
+      "description": "Tomate recheado com cuscuz marroquino com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 56,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Forno",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "2 xícaras de cuscuz marroquino",
+        "2 xícaras de tomate",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e hortelã e limão a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "salada-de-quinoa-com-manga",
+      "title": "Salada de quinoa com manga",
+      "description": "Salada de quinoa com manga com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de quinoa cozida",
+        "2 xícaras de manga",
+        "2 tomates picados",
+        "1/2 cebola fatiada",
+        "Suco de 1 limão",
+        "1 colher de sopa de azeite",
+        "Sal e limão e hortelã a gosto",
+        "1 pote de iogurte natural para o molho"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e hortelã e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "salada-de-lentilha-com-beterraba",
+      "title": "Salada de lentilha com beterraba",
+      "description": "Salada de lentilha com beterraba com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 21,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de beterraba",
+        "2 tomates picados",
+        "1/2 cebola fatiada",
+        "Suco de 1 limão",
+        "1 colher de sopa de azeite",
+        "Sal e limão e salsinha a gosto",
+        "1 pote de iogurte natural para o molho"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e salsinha e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "salada-de-feijao-branco-com-rucula",
+      "title": "Salada de feijão-branco com rúcula",
+      "description": "Salada de feijão-branco com rúcula com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 24,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de rúcula",
+        "2 tomates picados",
+        "1/2 cebola fatiada",
+        "Suco de 1 limão",
+        "1 colher de sopa de azeite",
+        "Sal e tomate e limão a gosto",
+        "1 pote de iogurte natural para o molho"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com tomate e limão e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "salada-de-grao-de-bico-com-abacate",
+      "title": "Salada de grão-de-bico com abacate",
+      "description": "Salada de grão-de-bico com abacate com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 18,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de abacate",
+        "2 tomates picados",
+        "1/2 cebola fatiada",
+        "Suco de 1 limão",
+        "1 colher de sopa de azeite",
+        "Sal e tomate e coentro a gosto",
+        "1 pote de iogurte natural para o molho"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com tomate e coentro e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "salada-de-ervilha-com-cenoura-e-hortela",
+      "title": "Salada de ervilha com cenoura e hortelã",
+      "description": "Salada de ervilha com cenoura e hortelã com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 21,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Mais fibras",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de ervilha cozida",
+        "2 xícaras de cenoura",
+        "2 tomates picados",
+        "1/2 cebola fatiada",
+        "Suco de 1 limão",
+        "1 colher de sopa de azeite",
+        "Sal e limão e hortelã a gosto",
+        "1 pote de iogurte natural para o molho"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e hortelã e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "sopa-de-tomate-com-feijao-branco",
+      "title": "Sopa de tomate com feijão-branco",
+      "description": "Sopa de tomate com feijão-branco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Pão",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de tomate",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, manjericão e alho a gosto",
+        "5 fatias de pão integral para acompanhar",
+        "1 xícara de macarrão pequeno"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "sopa-de-cenoura-com-lentilha-vermelha",
+      "title": "Sopa de cenoura com lentilha vermelha",
+      "description": "Sopa de cenoura com lentilha vermelha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Pão",
+        "Aproveita:Macarrão",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha vermelha",
+        "2 xícaras de cenoura",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, gengibre e cominho a gosto",
+        "5 fatias de pão integral para acompanhar",
+        "1 xícara de macarrão pequeno"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "sopa-de-couve-flor-com-grao-de-bico",
+      "title": "Sopa de couve-flor com grão-de-bico",
+      "description": "Sopa de couve-flor com grão-de-bico com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Pão",
+        "Aproveita:Macarrão",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de couve-flor",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, noz-moscada e alho a gosto",
+        "5 fatias de pão integral para acompanhar",
+        "1 xícara de macarrão pequeno"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "sopa-de-beterraba-com-feijao",
+      "title": "Sopa de beterraba com feijão",
+      "description": "Sopa de beterraba com feijão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Pão",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão cozido",
+        "2 xícaras de beterraba",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão e endro a gosto",
+        "5 fatias de pão integral para acompanhar"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "sopa-de-abobrinha-com-ervilha",
+      "title": "Sopa de abobrinha com ervilha",
+      "description": "Sopa de abobrinha com ervilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Pão",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de ervilha cozida",
+        "2 xícaras de abobrinha",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, hortelã e alho a gosto",
+        "5 fatias de pão integral para acompanhar"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "macarrao-com-lentilha-a-bolonhesa",
+      "title": "Macarrão com lentilha à bolonhesa",
+      "description": "Macarrão com lentilha à bolonhesa com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 35,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de macarrão",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomate e manjericão a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "macarrao-com-creme-de-couve-flor",
+      "title": "Macarrão com creme de couve-flor",
+      "description": "Macarrão com creme de couve-flor com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de couve-flor",
+        "2 xícaras de macarrão",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "macarrao-com-abobora-e-espinafre",
+      "title": "Macarrão com abóbora e espinafre",
+      "description": "Macarrão com abóbora e espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 32,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de abóbora",
+        "2 xícaras de macarrão",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, espinafre e sálvia a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "macarrao-com-grao-de-bico-e-limao",
+      "title": "Macarrão com grão-de-bico e limão",
+      "description": "Macarrão com grão-de-bico e limão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 35,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de macarrão",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão e salsinha a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "macarrao-com-ervilha-e-hortela",
+      "title": "Macarrão com ervilha e hortelã",
+      "description": "Macarrão com ervilha e hortelã com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de ervilha",
+        "2 xícaras de macarrão",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, hortelã e limão a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "arroz-com-lentilha-e-cebola-dourada",
+      "title": "Arroz com lentilha e cebola dourada",
+      "description": "Arroz com lentilha e cebola dourada com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de arroz",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cebola e cominho a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "arroz-com-grao-de-bico-e-acafrao",
+      "title": "Arroz com grão-de-bico e açafrão",
+      "description": "Arroz com grão-de-bico e açafrão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de arroz",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, açafrão e salsinha a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "arroz-com-tofu-e-legumes",
+      "title": "Arroz com tofu e legumes",
+      "description": "Arroz com tofu e legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola",
+        "Contém:Soja"
+      ],
+      "ingredients": [
+        "3 xícaras de tofu",
+        "2 xícaras de arroz",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, gengibre e cebolinha a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "arroz-com-feijao-verde-e-abobora",
+      "title": "Arroz com feijão-verde e abóbora",
+      "description": "Arroz com feijão-verde e abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-verde cozido",
+        "2 xícaras de arroz e abóbora",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, coentro e cúrcuma a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "arroz-integral-com-cogumelos-e-ervilha",
+      "title": "Arroz integral com cogumelos e ervilha",
+      "description": "Arroz integral com cogumelos e ervilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Uma só panela",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "3 xícaras de cogumelos",
+        "2 xícaras de arroz integral e ervilha",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomilho e alho a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "hamburguer-de-lentilha-e-cenoura",
+      "title": "Hambúrguer de lentilha e cenoura",
+      "description": "Hambúrguer de lentilha e cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de cenoura",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e cominho a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "hamburguer-de-grao-de-bico-e-espinafre",
+      "title": "Hambúrguer de grão-de-bico e espinafre",
+      "description": "Hambúrguer de grão-de-bico e espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 32,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de espinafre",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e páprica a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "hamburguer-de-ervilha-e-aveia",
+      "title": "Hambúrguer de ervilha e aveia",
+      "description": "Hambúrguer de ervilha e aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 35,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de ervilha cozida",
+        "2 xícaras de aveia",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e hortelã a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "bolinho-de-quinoa-com-abobora",
+      "title": "Bolinho de quinoa com abóbora",
+      "description": "Bolinho de quinoa com abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de quinoa cozida",
+        "2 xícaras de abóbora",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e cúrcuma a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "croquete-de-feijao-branco-e-alho-poro",
+      "title": "Croquete de feijão-branco e alho-poró",
+      "description": "Croquete de feijão-branco e alho-poró com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 32,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de alho-poró",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e salsinha a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "gratinado-de-batata-com-espinafre",
+      "title": "Gratinado de batata com espinafre",
+      "description": "Gratinado de batata com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Aproveita:Batata",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de batata",
+        "2 xícaras de espinafre",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "gratinado-de-couve-flor-com-queijo",
+      "title": "Gratinado de couve-flor com queijo",
+      "description": "Gratinado de couve-flor com queijo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de couve-flor",
+        "2 xícaras de queijo minas",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "gratinado-de-abobora-com-ricota",
+      "title": "Gratinado de abóbora com ricota",
+      "description": "Gratinado de abóbora com ricota com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de abóbora",
+        "2 xícaras de ricota",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e sálvia a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "gratinado-de-berinjela-com-lentilha",
+      "title": "Gratinado de berinjela com lentilha",
+      "description": "Gratinado de berinjela com lentilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Aproveita:Tomate",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de berinjela",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e tomate e manjericão a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "gratinado-de-chuchu-com-milho",
+      "title": "Gratinado de chuchu com milho",
+      "description": "Gratinado de chuchu com milho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Vegetariana",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de chuchu",
+        "2 xícaras de milho",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e salsinha e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "tofu-mexido-com-tomate-e-curcuma",
+      "title": "Tofu mexido com tomate e cúrcuma",
+      "description": "Tofu mexido com tomate e cúrcuma com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 25,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Soja"
+      ],
+      "ingredients": [
+        "3 xícaras de tofu",
+        "2 xícaras de tomate",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cúrcuma e cebolinha a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "grao-de-bico-salteado-com-couve",
+      "title": "Grão-de-bico salteado com couve",
+      "description": "Grão-de-bico salteado com couve com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 28,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de couve",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e limão a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "lentilha-salteada-com-abobrinha",
+      "title": "Lentilha salteada com abobrinha",
+      "description": "Lentilha salteada com abobrinha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 31,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de abobrinha",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho e hortelã a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "feijao-branco-com-tomate-e-manjericao",
+      "title": "Feijão-branco com tomate e manjericão",
+      "description": "Feijão-branco com tomate e manjericão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 25,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de tomate",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e manjericão a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "ervilha-com-cogumelos-e-cebola",
+      "title": "Ervilha com cogumelos e cebola",
+      "description": "Ervilha com cogumelos e cebola com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 28,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Mais fibras",
+        "Equipamento:Fogão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de ervilha cozida",
+        "2 xícaras de cogumelos",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomilho e cebola a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    }
+  ]
+}

@@ -1,0 +1,1912 @@
+{
+  "schemaVersion": 1,
+  "batch": 7,
+  "totalBatches": 8,
+  "currency": "BRL",
+  "recipes": [
+    {
+      "id": "acem-desfiado-com-tomate",
+      "title": "Acém desfiado com tomate",
+      "description": "Acém desfiado com tomate com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 65,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Comida caseira",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "3 xícaras de acém bovino",
+        "2 xícaras de tomate",
+        "4 xícaras de água quente",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e louro a gosto"
+      ],
+      "steps": [
+        "Doure os ingredientes principais e refogue os temperos na panela de pressão.",
+        "Adicione a água, tampe e cozinhe sob pressão pelo tempo adequado ao ingrediente.",
+        "Aguarde a pressão sair naturalmente, abra e cozinhe sem tampa até o caldo encorpar."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "frango-desfiado-com-legumes",
+      "title": "Frango desfiado com legumes",
+      "description": "Frango desfiado com legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 68,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Comida caseira",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de peito de frango",
+        "2 xícaras de legumes picados",
+        "4 xícaras de água quente",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, páprica a gosto"
+      ],
+      "steps": [
+        "Doure os ingredientes principais e refogue os temperos na panela de pressão.",
+        "Adicione a água, tampe e cozinhe sob pressão pelo tempo adequado ao ingrediente.",
+        "Aguarde a pressão sair naturalmente, abra e cozinhe sem tampa até o caldo encorpar."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "pernil-desfiado-com-cebola",
+      "title": "Pernil desfiado com cebola",
+      "description": "Pernil desfiado com cebola com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 35.4,
+      "minutes": 71,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Comida caseira",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de pernil suíno",
+        "2 xícaras de cebola",
+        "4 xícaras de água quente",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, alho e alecrim a gosto"
+      ],
+      "steps": [
+        "Doure os ingredientes principais e refogue os temperos na panela de pressão.",
+        "Adicione a água, tampe e cozinhe sob pressão pelo tempo adequado ao ingrediente.",
+        "Aguarde a pressão sair naturalmente, abra e cozinhe sem tampa até o caldo encorpar."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "feijao-branco-com-carne-magra",
+      "title": "Feijão-branco com carne magra",
+      "description": "Feijão-branco com carne magra com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 37.1,
+      "minutes": 65,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Comida caseira",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de carne bovina em cubos",
+        "2 xícaras de feijão-branco",
+        "4 xícaras de água quente",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, louro a gosto"
+      ],
+      "steps": [
+        "Doure os ingredientes principais e refogue os temperos na panela de pressão.",
+        "Adicione a água, tampe e cozinhe sob pressão pelo tempo adequado ao ingrediente.",
+        "Aguarde a pressão sair naturalmente, abra e cozinhe sem tampa até o caldo encorpar."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "grao-de-bico-com-musculo",
+      "title": "Grão-de-bico com músculo",
+      "description": "Grão-de-bico com músculo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 68,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Comida caseira",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "3 xícaras de músculo bovino",
+        "2 xícaras de grão-de-bico",
+        "4 xícaras de água quente",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho a gosto"
+      ],
+      "steps": [
+        "Doure os ingredientes principais e refogue os temperos na panela de pressão.",
+        "Adicione a água, tampe e cozinhe sob pressão pelo tempo adequado ao ingrediente.",
+        "Aguarde a pressão sair naturalmente, abra e cozinhe sem tampa até o caldo encorpar."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "frango-assado-com-raizes",
+      "title": "Frango assado com raízes",
+      "description": "Frango assado com raízes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 40.5,
+      "minutes": 56,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Frango",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "500 g de sobrecoxa de frango",
+        "2 xícaras de raízes variadas",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e alecrim a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "carne-assada-com-cenoura-e-alho",
+      "title": "Carne assada com cenoura e alho",
+      "description": "Carne assada com cenoura e alho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 50,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "3 xícaras de lagarto bovino",
+        "2 xícaras de cenoura",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e alho e tomilho a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "peixe-inteiro-com-legumes",
+      "title": "Peixe inteiro com legumes",
+      "description": "Peixe inteiro com legumes com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 53,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Tomate",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "500 g de peixe inteiro limpo",
+        "2 xícaras de legumes picados",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e limão e coentro a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "pernil-com-batata-doce",
+      "title": "Pernil com batata-doce",
+      "description": "Pernil com batata-doce com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 32,
+      "minutes": 56,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Tomate",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "500 g de pernil suíno",
+        "2 xícaras de batata-doce",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e páprica e alecrim a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "rocambole-de-carne-com-espinafre",
+      "title": "Rocambole de carne com espinafre",
+      "description": "Rocambole de carne com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 50,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "500 g de carne moída",
+        "2 xícaras de espinafre",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e alho e orégano a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "sopa-de-cevada-com-carne",
+      "title": "Sopa de cevada com carne",
+      "description": "Sopa de cevada com carne com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 35.4,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "500 g de carne bovina em cubos",
+        "2 xícaras de cevada",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, louro a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "sopa-de-frango-com-grao-de-bico",
+      "title": "Sopa de frango com grão-de-bico",
+      "description": "Sopa de frango com grão-de-bico com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 37.1,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de frango desfiado",
+        "2 xícaras de grão-de-bico",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cúrcuma a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "sopa-de-legumes-com-feijao-branco",
+      "title": "Sopa de legumes com feijão-branco",
+      "description": "Sopa de legumes com feijão-branco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de legumes picados",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomilho a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "sopa-de-lentilha-com-carne-moida",
+      "title": "Sopa de lentilha com carne moída",
+      "description": "Sopa de lentilha com carne moída com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 40.5,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de carne moída",
+        "2 xícaras de lentilha",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "sopa-de-mandioca-com-alho-poro",
+      "title": "Sopa de mandioca com alho-poró",
+      "description": "Sopa de mandioca com alho-poró com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Mais fibras",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "3 xícaras de mandioca",
+        "2 xícaras de alho-poró",
+        "1,5 litro de água",
+        "1 cenoura em cubos",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, noz-moscada a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e o alho no azeite.",
+        "Junte os demais ingredientes e a água e cozinhe até ficarem macios.",
+        "Ajuste os temperos e sirva quente."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "macarrao-ao-ragu-de-carne",
+      "title": "Macarrão ao ragu de carne",
+      "description": "Macarrão ao ragu de carne com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 32,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "500 g de carne bovina desfiada",
+        "2 xícaras de macarrão",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomate e louro a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "macarrao-com-atum-e-abobora",
+      "title": "Macarrão com atum e abóbora",
+      "description": "Macarrão com atum e abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 32,
+      "minutes": 35,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Atum",
+        "Contém:Glúten",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de macarrão e abóbora",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, sálvia a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "macarrao-com-almondegas-de-peru",
+      "title": "Macarrão com almôndegas de peru",
+      "description": "Macarrão com almôndegas de peru com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "500 g de almôndegas de peru",
+        "2 xícaras de macarrão",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomate e manjericão a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "macarrao-com-atum-e-ervilha",
+      "title": "Macarrão com atum e ervilha",
+      "description": "Macarrão com atum e ervilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 35.4,
+      "minutes": 32,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Atum",
+        "Contém:Glúten",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de macarrão e ervilha",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão e salsinha a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "macarrao-com-carne-suina-e-repolho",
+      "title": "Macarrão com carne suína e repolho",
+      "description": "Macarrão com carne suína e repolho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 37.1,
+      "minutes": 35,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Macarrão",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "500 g de lombo suíno em tiras",
+        "2 xícaras de macarrão e repolho",
+        "350 g de macarrão",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, gengibre a gosto"
+      ],
+      "steps": [
+        "Cozinhe o macarrão até ficar al dente e reserve parte da água.",
+        "Prepare o molho com os demais ingredientes em uma panela.",
+        "Misture a massa ao molho, ajuste a textura com a água reservada e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "arroz-com-carne-moida-e-cenoura",
+      "title": "Arroz com carne moída e cenoura",
+      "description": "Arroz com carne moída e cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 38.8,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de carne moída",
+        "2 xícaras de arroz e cenoura",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, páprica a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "arroz-com-frango-e-lentilha",
+      "title": "Arroz com frango e lentilha",
+      "description": "Arroz com frango e lentilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 40.5,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Frango",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de frango em cubos",
+        "2 xícaras de arroz e lentilha",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cominho a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "arroz-com-porco-e-abobora",
+      "title": "Arroz com porco e abóbora",
+      "description": "Arroz com porco e abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 42.2,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de lombo suíno em cubos",
+        "2 xícaras de arroz e abóbora",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, sálvia a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "arroz-com-peixe-e-ervilha",
+      "title": "Arroz com peixe e ervilha",
+      "description": "Arroz com peixe e ervilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "500 g de peixe em cubos",
+        "2 xícaras de arroz e ervilha",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, limão a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "arroz-com-carne-seca-e-feijao-verde",
+      "title": "Arroz com carne-seca e feijão-verde",
+      "description": "Arroz com carne-seca e feijão-verde com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 32,
+      "minutes": 42,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Pratos da família",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Arroz",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de carne-seca desfiada",
+        "2 xícaras de arroz e feijão-verde",
+        "2 xícaras de arroz cru",
+        "4 xícaras de água quente",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, coentro a gosto"
+      ],
+      "steps": [
+        "Refogue os ingredientes e os temperos no azeite.",
+        "Junte o cereal e a água e cozinhe em fogo baixo.",
+        "Desligue quando o líquido for absorvido, descanse por 5 minutos e solte com um garfo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "torta-familiar-de-carne-e-milho",
+      "title": "Torta familiar de carne e milho",
+      "description": "Torta familiar de carne e milho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 58,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Liquidificador",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "500 g de carne moída",
+        "2 xícaras de milho",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de leite",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 180 °C e prepare o recheio.",
+        "Bata os ingredientes da massa no liquidificador e misture o fermento.",
+        "Monte massa, recheio e massa em uma assadeira.",
+        "Asse por 35 a 40 minutos, até o centro ficar firme."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "torta-familiar-de-atum-e-ervilha",
+      "title": "Torta familiar de atum e ervilha",
+      "description": "Torta familiar de atum e ervilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 35.4,
+      "minutes": 61,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Liquidificador",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Atum",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de ervilha",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de leite",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 180 °C e prepare o recheio.",
+        "Bata os ingredientes da massa no liquidificador e misture o fermento.",
+        "Monte massa, recheio e massa em uma assadeira.",
+        "Asse por 35 a 40 minutos, até o centro ficar firme."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "torta-familiar-de-frango-e-palmito",
+      "title": "Torta familiar de frango e palmito",
+      "description": "Torta familiar de frango e palmito com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 37.1,
+      "minutes": 55,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Liquidificador",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Frango",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "500 g de frango desfiado",
+        "2 xícaras de palmito",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de leite",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 180 °C e prepare o recheio.",
+        "Bata os ingredientes da massa no liquidificador e misture o fermento.",
+        "Monte massa, recheio e massa em uma assadeira.",
+        "Asse por 35 a 40 minutos, até o centro ficar firme."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "torta-familiar-de-lentilha-e-cenoura",
+      "title": "Torta familiar de lentilha e cenoura",
+      "description": "Torta familiar de lentilha e cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 58,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Liquidificador",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de cenoura",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de leite",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 180 °C e prepare o recheio.",
+        "Bata os ingredientes da massa no liquidificador e misture o fermento.",
+        "Monte massa, recheio e massa em uma assadeira.",
+        "Asse por 35 a 40 minutos, até o centro ficar firme."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "torta-familiar-de-abobora-e-ricota",
+      "title": "Torta familiar de abóbora e ricota",
+      "description": "Torta familiar de abóbora e ricota com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 61,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Liquidificador",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de abóbora",
+        "2 xícaras de ricota",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de leite",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 180 °C e prepare o recheio.",
+        "Bata os ingredientes da massa no liquidificador e misture o fermento.",
+        "Monte massa, recheio e massa em uma assadeira.",
+        "Asse por 35 a 40 minutos, até o centro ficar firme."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "ensopado-de-carne-com-feijao-verde",
+      "title": "Ensopado de carne com feijão-verde",
+      "description": "Ensopado de carne com feijão-verde com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 42.2,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de carne bovina em cubos",
+        "2 xícaras de feijão-verde",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, louro a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "ensopado-de-frango-com-lentilha",
+      "title": "Ensopado de frango com lentilha",
+      "description": "Ensopado de frango com lentilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Frango",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de frango em cubos",
+        "2 xícaras de lentilha",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, cúrcuma a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "ensopado-de-peixe-com-mandioca",
+      "title": "Ensopado de peixe com mandioca",
+      "description": "Ensopado de peixe com mandioca com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 32,
+      "minutes": 54,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "500 g de peixe em cubos",
+        "2 xícaras de mandioca",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, coentro a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "ensopado-suino-com-feijao-branco",
+      "title": "Ensopado suíno com feijão-branco",
+      "description": "Ensopado suíno com feijão-branco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola"
+      ],
+      "ingredients": [
+        "500 g de lombo suíno em cubos",
+        "2 xícaras de feijão-branco",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, tomilho a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "ensopado-de-peru-com-batata-doce",
+      "title": "Ensopado de peru com batata-doce",
+      "description": "Ensopado de peru com batata-doce com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 35.4,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Uma só panela",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Tomate",
+        "Aproveita:Cebola",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "500 g de peru em cubos",
+        "2 xícaras de batata-doce",
+        "2 tomates picados",
+        "1 cebola pequena picada",
+        "1 colher de sopa de azeite",
+        "Sal, alho, páprica a gosto"
+      ],
+      "steps": [
+        "Refogue a cebola e os temperos no azeite.",
+        "Adicione os ingredientes principais e cozinhe em fogo médio.",
+        "Junte água aos poucos quando necessário e cozinhe até tudo ficar macio e seguro para consumo."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "gratinado-familiar-de-frango-e-batata",
+      "title": "Gratinado familiar de frango e batata",
+      "description": "Gratinado familiar de frango e batata com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 37.1,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Aproveita:Frango",
+        "Aproveita:Batata",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "500 g de frango desfiado",
+        "2 xícaras de batata",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "gratinado-familiar-de-carne-e-mandioca",
+      "title": "Gratinado familiar de carne e mandioca",
+      "description": "Gratinado familiar de carne e mandioca com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 38.8,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "500 g de carne moída",
+        "2 xícaras de mandioca",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e páprica a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "gratinado-familiar-de-peixe-e-abobora",
+      "title": "Gratinado familiar de peixe e abóbora",
+      "description": "Gratinado familiar de peixe e abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 40.5,
+      "minutes": 48,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "500 g de peixe desfiado",
+        "2 xícaras de abóbora",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e salsinha a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "gratinado-familiar-de-lentilha-e-arroz",
+      "title": "Gratinado familiar de lentilha e arroz",
+      "description": "Gratinado familiar de lentilha e arroz com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 51,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Aproveita:Arroz",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de arroz cozido",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e tomilho a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "gratinado-familiar-de-peru-e-couve-flor",
+      "title": "Gratinado familiar de peru e couve-flor",
+      "description": "Gratinado familiar de peru e couve-flor com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 45,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "500 g de peru desfiado",
+        "2 xícaras de couve-flor",
+        "1 xícara de leite",
+        "1/2 xícara de queijo muçarela ralado",
+        "Sal e noz-moscada a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "cacarola-de-frango-com-milho",
+      "title": "Caçarola de frango com milho",
+      "description": "Caçarola de frango com milho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 32,
+      "minutes": 53,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Frango",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "500 g de frango desfiado",
+        "2 xícaras de milho",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e páprica a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "cacarola-de-carne-com-feijao",
+      "title": "Caçarola de carne com feijão",
+      "description": "Caçarola de carne com feijão com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 56,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "500 g de carne moída",
+        "2 xícaras de feijão cozido",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e cominho a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "cacarola-de-atum-com-arroz",
+      "title": "Caçarola de atum com arroz",
+      "description": "Caçarola de atum com arroz com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 35.4,
+      "minutes": 50,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate",
+        "Aproveita:Atum",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de arroz cozido",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e limão a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "cacarola-de-legumes-com-grao-de-bico",
+      "title": "Caçarola de legumes com grão-de-bico",
+      "description": "Caçarola de legumes com grão-de-bico com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 53,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de legumes picados",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e cúrcuma a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "cacarola-de-porco-com-batata",
+      "title": "Caçarola de porco com batata",
+      "description": "Caçarola de porco com batata com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 38.8,
+      "minutes": 56,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Pratos da família",
+        "Equipamento:Forno",
+        "Aproveita:Tomate",
+        "Aproveita:Batata"
+      ],
+      "ingredients": [
+        "500 g de lombo suíno em cubos",
+        "2 xícaras de batata",
+        "2 tomates picados",
+        "1 colher de sopa de azeite",
+        "Sal e alecrim a gosto"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "marmita-de-frango-arroz-integral-e-brocolis",
+      "title": "Marmita de frango, arroz integral e brócolis",
+      "description": "Marmita de frango, arroz integral e brócolis com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 40.5,
+      "minutes": 20,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Fresco e leve",
+        "Rápido e fácil",
+        "Aproveita:Arroz",
+        "Aproveita:Frango",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "500 g de frango grelhado",
+        "2 xícaras de arroz integral e brócolis",
+        "1 tomate picado",
+        "1 cenoura ralada",
+        "Suco de 1 limão",
+        "Sal e limão a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "marmita-de-carne-feijao-e-abobora",
+      "title": "Marmita de carne, feijão e abóbora",
+      "description": "Marmita de carne, feijão e abóbora com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 42.2,
+      "minutes": 23,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Fresco e leve",
+        "Rápido e fácil",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "500 g de carne bovina em tiras",
+        "2 xícaras de feijão e abóbora",
+        "1 tomate picado",
+        "1 cenoura ralada",
+        "Suco de 1 limão",
+        "Sal e páprica a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com páprica e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "marmita-de-atum-quinoa-e-cenoura",
+      "title": "Marmita de atum, quinoa e cenoura",
+      "description": "Marmita de atum, quinoa e cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 26,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Fresco e leve",
+        "Rápido e fácil",
+        "Aproveita:Tomate",
+        "Aproveita:Atum",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "500 g de atum",
+        "2 xícaras de quinoa e cenoura",
+        "1 tomate picado",
+        "1 cenoura ralada",
+        "Suco de 1 limão",
+        "Sal e limão a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com limão e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "marmita-de-lentilha-arroz-e-couve",
+      "title": "Marmita de lentilha, arroz e couve",
+      "description": "Marmita de lentilha, arroz e couve com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 20,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Fresco e leve",
+        "Rápido e fácil",
+        "Aproveita:Arroz",
+        "Aproveita:Tomate"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de arroz e couve",
+        "1 tomate picado",
+        "1 cenoura ralada",
+        "Suco de 1 limão",
+        "Sal e alho a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com alho e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "marmita-de-porco-batata-doce-e-repolho",
+      "title": "Marmita de porco, batata-doce e repolho",
+      "description": "Marmita de porco, batata-doce e repolho com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 23,
+      "servings": 5,
+      "tags": [
+        "Almoço",
+        "Jantar",
+        "Cozinhar em lote",
+        "Fresco e leve",
+        "Rápido e fácil",
+        "Aproveita:Tomate",
+        "Aproveita:Batata",
+        "Contém:Mostarda"
+      ],
+      "ingredients": [
+        "500 g de lombo suíno",
+        "2 xícaras de batata-doce e repolho",
+        "1 tomate picado",
+        "1 cenoura ralada",
+        "Suco de 1 limão",
+        "Sal e mostarda a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com mostarda e sirva."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    }
+  ]
+}

@@ -1,309 +1,198 @@
 import 'package:flutter/material.dart';
+import '../services/auth_service.dart';
+import '../theme/app_theme.dart';
+import '../widgets/brand.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
-
+class AccountScreen extends StatefulWidget {
+  const AccountScreen({super.key});
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<AccountScreen> createState() => _AccountScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
-  bool _obscurePassword = true;
+class _AccountScreenState extends State<AccountScreen> {
+  final _auth = AuthService();
+  LocalUser? _user;
+  bool _hasAccount = false;
+  bool _loggedIn = false;
+  bool _loading = true;
 
   @override
-  void dispose() {
-    _emailController.dispose();
-    _passwordController.dispose();
-    super.dispose();
+  void initState() {
+    super.initState();
+    _load();
   }
 
-  void _submit() {
-    if (_formKey.currentState?.validate() ?? false) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Login de exemplo enviado.'),
-        ),
-      );
+  Future<void> _load() async {
+    try {
+      final hasAccount = await _auth.hasAccount;
+      final loggedIn = await _auth.isLoggedIn;
+      final user = await _auth.currentUser;
+      if (!mounted) return;
+      setState(() {
+        _hasAccount = hasAccount;
+        _loggedIn = loggedIn;
+        _user = user;
+        _loading = false;
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _hasAccount = false;
+        _loggedIn = false;
+        _user = null;
+        _loading = false;
+      });
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final textTheme = Theme.of(context).textTheme;
-
     return Scaffold(
-      body: Container(
+      appBar: AppBar(title: const Text('Minha conta')),
+      body: _loading
+          ? const Center(child: CircularProgressIndicator())
+          : SingleChildScrollView(
+              padding: const EdgeInsets.all(20),
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 520),
+                  child: _loggedIn && _user != null
+                      ? _ProfileCard(user: _user!, onLogout: () async { await _auth.logout(); await _load(); })
+                      : _AuthForm(
+                          registerMode: !_hasAccount,
+                          onSuccess: _load,
+                          auth: _auth,
+                        ),
+                ),
+              ),
+            ),
+    );
+  }
+}
+
+class _ProfileCard extends StatelessWidget {
+  const _ProfileCard({required this.user, required this.onLogout});
+  final LocalUser user;
+  final VoidCallback onLogout;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [
+      Container(
+        width: double.infinity,
+        padding: const EdgeInsets.all(26),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              const Color(0xFFF7F6F2),
-              colorScheme.primaryContainer.withValues(alpha: 0.35),
-              const Color(0xFFEAF2EC),
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
+          gradient: const LinearGradient(colors: [AppColors.navyLight, AppColors.navy]),
+          borderRadius: BorderRadius.circular(28),
         ),
-        child: SafeArea(
-          child: LayoutBuilder(
-            builder: (context, constraints) {
-              final isWide = constraints.maxWidth >= 900;
-
-              final visualPanel = Container(
-                padding: const EdgeInsets.all(32),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      colorScheme.primary,
-                      colorScheme.tertiary,
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
-                  borderRadius: BorderRadius.circular(32),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: 56,
-                          height: 56,
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.14),
-                            borderRadius: BorderRadius.circular(18),
-                            border: Border.all(
-                              color: Colors.white.withValues(alpha: 0.18),
-                            ),
-                          ),
-                          child: Icon(
-                            Icons.eco_outlined,
-                            color: colorScheme.onPrimary,
-                          ),
-                        ),
-                        Text(
-                          'Origem',
-                          style: textTheme.titleLarge?.copyWith(
-                            color: colorScheme.onPrimary,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 32),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Comece sua jornada com uma entrada simples e segura.',
-                          style: textTheme.displaySmall?.copyWith(
-                            color: colorScheme.onPrimary,
-                            fontWeight: FontWeight.w800,
-                            height: 1.05,
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          'Esta tela e um ponto de partida fiel ao wireframe basico do projeto, pronta para receber a identidade final.',
-                          style: textTheme.bodyLarge?.copyWith(
-                            color: colorScheme.onPrimary.withValues(alpha: 0.9),
-                            height: 1.5,
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 32),
-                    Wrap(
-                      spacing: 12,
-                      runSpacing: 12,
-                      children: const [
-                        _HighlightChip(label: 'Acesso rapido'),
-                        _HighlightChip(label: 'Fluxo limpo'),
-                        _HighlightChip(label: 'Base responsiva'),
-                      ],
-                    ),
-                  ],
-                ),
-              );
-
-              final formPanel = Container(
-                padding: const EdgeInsets.all(28),
-                decoration: BoxDecoration(
-                  color: colorScheme.surface,
-                  borderRadius: BorderRadius.circular(32),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.08),
-                      blurRadius: 30,
-                      offset: const Offset(0, 18),
-                    ),
-                  ],
-                ),
-                child: Form(
-                  key: _formKey,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        'Entrar',
-                        style: textTheme.headlineMedium?.copyWith(
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        'Use seus dados para acessar o aplicativo.',
-                        style: textTheme.bodyLarge?.copyWith(
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                      const SizedBox(height: 28),
-                      TextFormField(
-                        controller: _emailController,
-                        keyboardType: TextInputType.emailAddress,
-                        textInputAction: TextInputAction.next,
-                        decoration: const InputDecoration(
-                          labelText: 'E-mail',
-                          hintText: 'voce@exemplo.com',
-                        ),
-                        validator: (value) {
-                          if (value == null || value.trim().isEmpty) {
-                            return 'Informe seu e-mail.';
-                          }
-                          if (!value.contains('@')) {
-                            return 'Digite um e-mail valido.';
-                          }
-                          return null;
-                        },
-                      ),
-                      const SizedBox(height: 16),
-                      TextFormField(
-                        controller: _passwordController,
-                        obscureText: _obscurePassword,
-                        textInputAction: TextInputAction.done,
-                        onFieldSubmitted: (_) => _submit(),
-                        decoration: InputDecoration(
-                          labelText: 'Senha',
-                          hintText: 'Sua senha',
-                          suffixIcon: IconButton(
-                            onPressed: () {
-                              setState(() {
-                                _obscurePassword = !_obscurePassword;
-                              });
-                            },
-                            icon: Icon(
-                              _obscurePassword
-                                  ? Icons.visibility_outlined
-                                  : Icons.visibility_off_outlined,
-                            ),
-                          ),
-                        ),
-                        validator: (value) {
-                          if (value == null || value.isEmpty) {
-                            return 'Informe sua senha.';
-                          }
-                          if (value.length < 6) {
-                            return 'Use ao menos 6 caracteres.';
-                          }
-                          return null;
-                        },
-                      ),
-                      const SizedBox(height: 18),
-                      Row(
-                        children: [
-                          Checkbox(
-                            value: true,
-                            onChanged: (_) {},
-                          ),
-                          const Expanded(
-                            child: Text('Manter conectado neste dispositivo.'),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      SizedBox(
-                        width: double.infinity,
-                        height: 54,
-                        child: FilledButton(
-                          onPressed: _submit,
-                          child: const Text('Entrar'),
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      Center(
-                        child: TextButton(
-                          onPressed: () {},
-                          child: const Text('Esqueci minha senha'),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              );
-
-              if (isWide) {
-                return Center(
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 1180),
-                    child: Padding(
-                      padding: const EdgeInsets.all(24),
-                      child: Row(
-                        children: [
-                          Expanded(child: visualPanel),
-                          const SizedBox(width: 24),
-                          Expanded(child: formPanel),
-                        ],
-                      ),
-                    ),
-                  ),
-                );
-              }
-
-              return SingleChildScrollView(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  children: [
-                    visualPanel,
-                    const SizedBox(height: 20),
-                    formPanel,
-                  ],
-                ),
-              );
-            },
+        child: Column(children: [
+          CircleAvatar(
+            radius: 38,
+            backgroundColor: AppColors.peach,
+            child: Text(user.name.characters.first.toUpperCase(), style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: AppColors.navy)),
           ),
+          const SizedBox(height: 16),
+          Text(user.name, style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: Colors.white)),
+          const SizedBox(height: 4),
+          Text(user.email, style: const TextStyle(color: Colors.white70)),
+        ]),
+      ),
+      const SizedBox(height: 18),
+      Card(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Row(children: [
+            const Icon(Icons.lock_outline_rounded, color: AppColors.olive),
+            const SizedBox(width: 14),
+            const Expanded(child: Text('Conta local protegida por senha. Seus dados ficam neste dispositivo.')),
+          ]),
+        ),
+      ),
+      const SizedBox(height: 22),
+      OutlinedButton.icon(onPressed: onLogout, icon: const Icon(Icons.logout_rounded), label: const Text('Sair da conta')),
+    ]);
+  }
+}
+
+class _AuthForm extends StatefulWidget {
+  const _AuthForm({required this.registerMode, required this.onSuccess, required this.auth});
+  final bool registerMode;
+  final VoidCallback onSuccess;
+  final AuthService auth;
+  @override
+  State<_AuthForm> createState() => _AuthFormState();
+}
+
+class _AuthFormState extends State<_AuthForm> {
+  final _key = GlobalKey<FormState>();
+  final _name = TextEditingController();
+  final _email = TextEditingController();
+  final _password = TextEditingController();
+  bool _hidden = true;
+  bool _busy = false;
+  String? _error;
+
+  @override
+  void dispose() {
+    _name.dispose(); _email.dispose(); _password.dispose();
+    super.dispose();
+  }
+
+  Future<void> _submit() async {
+    if (!(_key.currentState?.validate() ?? false)) return;
+    setState(() { _busy = true; _error = null; });
+    try {
+      if (widget.registerMode) {
+        await widget.auth.register(name: _name.text, email: _email.text, password: _password.text);
+        widget.onSuccess();
+        return;
+      }
+      final valid = await widget.auth.login(email: _email.text, password: _password.text);
+      if (!mounted) return;
+      if (valid) widget.onSuccess();
+      setState(() { _busy = false; _error = valid ? null : 'E-mail ou senha incorretos.'; });
+    } catch (_) {
+      if (mounted) setState(() { _busy = false; _error = 'Não foi possível salvar os dados neste dispositivo.'; });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Form(
+          key: _key,
+          child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            const Center(child: OrigemMark(size: 72)),
+            const SizedBox(height: 22),
+            Text(widget.registerMode ? 'Criar conta' : 'Entrar', style: Theme.of(context).textTheme.headlineMedium),
+            const SizedBox(height: 6),
+            Text(widget.registerMode ? 'Salve seu perfil neste dispositivo.' : 'Acesse seu perfil local.', style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant)),
+            const SizedBox(height: 24),
+            if (widget.registerMode) ...[
+              TextFormField(controller: _name, textCapitalization: TextCapitalization.words, decoration: const InputDecoration(labelText: 'Nome', prefixIcon: Icon(Icons.person_outline)), validator: (value) => (value?.trim().length ?? 0) < 2 ? 'Informe seu nome.' : null),
+              const SizedBox(height: 14),
+            ],
+            TextFormField(controller: _email, keyboardType: TextInputType.emailAddress, decoration: const InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.mail_outline)), validator: (value) => !RegExp(r'^.+@.+\..+$').hasMatch(value?.trim() ?? '') ? 'Informe um e-mail válido.' : null),
+            const SizedBox(height: 14),
+            TextFormField(
+              controller: _password,
+              obscureText: _hidden,
+              onFieldSubmitted: (_) => _submit(),
+              decoration: InputDecoration(labelText: 'Senha', prefixIcon: const Icon(Icons.lock_outline), suffixIcon: IconButton(onPressed: () => setState(() => _hidden = !_hidden), icon: Icon(_hidden ? Icons.visibility_outlined : Icons.visibility_off_outlined))),
+              validator: (value) => (value?.length ?? 0) < 6 ? 'Use pelo menos 6 caracteres.' : null,
+            ),
+            if (_error != null) Padding(padding: const EdgeInsets.only(top: 12), child: Text(_error!, style: TextStyle(color: Theme.of(context).colorScheme.error))),
+            const SizedBox(height: 22),
+            GradientButton(label: widget.registerMode ? 'Criar minha conta' : 'Entrar', icon: widget.registerMode ? Icons.person_add_alt_1 : Icons.login_rounded, onPressed: _busy ? null : _submit),
+          ]),
         ),
       ),
     );
   }
 }
 
-class _HighlightChip extends StatelessWidget {
-  const _HighlightChip({required this.label});
-
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
-    return Chip(
-      backgroundColor: Colors.white.withValues(alpha: 0.12),
-      side: BorderSide(color: Colors.white.withValues(alpha: 0.16)),
-      label: Text(
-        label,
-        style: TextStyle(
-          color: colorScheme.onPrimary,
-          fontWeight: FontWeight.w600,
-        ),
-      ),
-    );
-  }
+class LoginScreen extends AccountScreen {
+  const LoginScreen({super.key});
 }
