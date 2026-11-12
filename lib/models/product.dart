@@ -74,7 +74,7 @@ class Product {
     if (nutriscoreGrade != null) {
       return _nutriscoreToClassification(nutriscoreGrade!);
     }
-    
+
     // Fallback: algoritmo local baseado em score de nutrientes
     double score = 0;
 
@@ -144,7 +144,7 @@ class Product {
       return NutrientClassification.a; // A: Excelente (verde escuro)
     }
   }
-  
+
   /// Converte grade Nutri-Score (a-e) para classificação local (A-F)
   static NutrientClassification _nutriscoreToClassification(String grade) {
     switch (grade.toLowerCase()) {
@@ -191,7 +191,7 @@ class Product {
         'saturated-fat': nutrientLevels!['saturated-fat']?.toLowerCase() == 'high',
       };
     }
-    
+
     // Fallback: thresholds locais (valores por 100g)
     return {
       'sugar': sugar > 10,
