@@ -39,7 +39,9 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  void _refresh() => _history = HistoryService().getItems();
+  void _refresh() {
+    _history = HistoryService().getItems();
+  }
 
   void _openScanner() {
     _revealController.completePresentation();
