@@ -59,11 +59,11 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
     }
   }
 
-  Color _gradeColor(String grade) => switch (grade) {
-    'a' => const Color(0xFF2E7D32),
-    'b' => const Color(0xFF619C3B),
-    'c' => const Color(0xFFF2B134),
-    'd' => const Color(0xFFE67E36),
+  Color _scoreColor(int score) => switch (score) {
+    >= 9 => const Color(0xFF2E7D32),
+    >= 7 => const Color(0xFF5D8F45),
+    >= 5 => const Color(0xFFC48A2C),
+    >= 3 => const Color(0xFFD66E3D),
     _ => const Color(0xFFC8443E),
   };
 
@@ -88,7 +88,7 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
   @override
   Widget build(BuildContext context) {
     final product = widget.product;
-    final grade = product.validNutriscore;
+    final score = product.nutritionScore;
     final hasHigh = [
       'sugars',
       'salt',
@@ -163,14 +163,14 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
             ),
           ),
           const SizedBox(height: 22),
-          if (grade != null)
+          if (score != null)
             Container(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    _gradeColor(grade),
-                    _gradeColor(grade).withValues(alpha: .78),
+                    _scoreColor(score),
+                    _scoreColor(score).withValues(alpha: .78),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(26),
@@ -185,32 +185,49 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
                       shape: BoxShape.circle,
                     ),
                     alignment: Alignment.center,
-                    child: Text(
-                      grade.toUpperCase(),
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 38,
-                        fontWeight: FontWeight.w900,
-                      ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          '$score',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 32,
+                            height: .95,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                        const Text(
+                          '/10',
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(width: 18),
-                  const Expanded(
+                  Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Nutri-Score',
-                          style: TextStyle(
+                          product.nutritionScoreLabel,
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 19,
                             fontWeight: FontWeight.w800,
                           ),
                         ),
-                        SizedBox(height: 4),
+                        const SizedBox(height: 5),
                         Text(
-                          'Classificação informada pela Open Food Facts',
-                          style: TextStyle(color: Colors.white70),
+                          product.nutritionScoreGuidance,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            height: 1.35,
+                          ),
                         ),
                       ],
                     ),
@@ -231,7 +248,7 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
                     const SizedBox(width: 12),
                     const Expanded(
                       child: Text(
-                        'Este produto não possui Nutri-Score disponível. Os dados abaixo são exibidos sem atribuir uma nota.',
+                        'Nota nutricional indisponível. Confira os valores abaixo e as informações da embalagem.',
                       ),
                     ),
                   ],
@@ -344,7 +361,7 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
                   SizedBox(width: 12),
                   Expanded(
                     child: Text(
-                      'A base consultada indica nível alto em um ou mais nutrientes. Confira os detalhes do rótulo.',
+                      'O perfil nutricional indica nível alto em um ou mais nutrientes. Confira os detalhes do rótulo.',
                     ),
                   ),
                 ],
@@ -359,7 +376,7 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
           ),
           const SizedBox(height: 12),
           Text(
-            'Dados colaborativos fornecidos pela Open Food Facts. Confirme as informações na embalagem.',
+            'Os dados podem estar incompletos ou desatualizados. Confirme sempre as informações na embalagem.',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
               color: Theme.of(context).colorScheme.onSurfaceVariant,

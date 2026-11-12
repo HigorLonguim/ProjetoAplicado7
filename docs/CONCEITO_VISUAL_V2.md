@@ -6,7 +6,7 @@ O Origem já é um produto funcional de inteligência alimentar, não apenas um 
 
 - início com ação principal de escanear e histórico recente;
 - scanner por câmera e entrada manual de código de barras;
-- consulta à Open Food Facts, resultado, Nutri-Score, nutrientes, alertas, favoritos e detalhes;
+- consulta de produto, nota nutricional de 0 a 10, nutrientes, alertas, favoritos e detalhes;
 - histórico de produtos consultados;
 - planejamento semanal de refeições em nove etapas;
 - seleção de pessoas, refeições, dias, equipamentos, estilos, alergias, rejeições, despensa e orçamento;
@@ -122,13 +122,13 @@ A tela de resultado é a tela mais importante do produto. Ela deve ser visualmen
 
 - Mostrar a embalagem do produto como objeto recortado em uma plataforma 3D simples, com rotação opcional apenas quando houver asset adequado; caso contrário, usar a imagem real sem simular volume falso.
 - Nome, marca e ações de favoritar/adicionar à lista devem estar imediatamente visíveis.
-- O Nutri-Score informado pela fonte deve aparecer como um selo de dado externo, não como julgamento criado pelo Origem.
+- A nota nutricional deve aparecer em escala de 0 a 10, acompanhada de orientação textual clara e sem caráter de diagnóstico.
 - Transformar energia, açúcares, sódio e gordura saturada em quatro “órbitas” ou arcos compactos ao redor de um núcleo, mas sempre acompanhar cada visual com número, unidade e estado textual.
 - Estados “alto”, “moderado”, “baixo”, “informado” e “sem dado” nunca podem depender apenas de cor.
 - Usar intervalos, ausência ou origem do dado com honestidade; não substituir falta de informação por zero.
 - Criar um modo “Entender este resultado” que revela explicações em camadas, sem inundar a primeira visão.
 - A seção detalhada deve usar tabela limpa e acessível, com números alinhados, filtros ou agrupamento, e não uma sequência de cards iguais.
-- Manter a mensagem de que os dados vêm da Open Food Facts e devem ser conferidos na embalagem.
+- Manter a orientação de que os dados podem estar incompletos e devem ser conferidos na embalagem.
 
 ### 7. Planejar como jornada espacial
 

@@ -619,7 +619,7 @@ class _ScannerScreenState extends State<ScannerScreen>
         ),
         const SizedBox(height: 12),
         const Text(
-          'Centralize o código. A leitura começa automaticamente e os dados são consultados na Open Food Facts.',
+          'Centralize o código. A leitura começa automaticamente e consulta os dados nutricionais do produto.',
           style: TextStyle(color: AppColors.sand, height: 1.5),
         ),
         const SizedBox(height: 16),
