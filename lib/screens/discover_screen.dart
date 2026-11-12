@@ -297,12 +297,7 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
           title: 'Que refeições?',
           subtitle: 'Escolha o que devemos planejar para cada semana.',
           values: _answers.meals,
-          options: const {
-            'Café da manhã': '☕',
-            'Almoço': '🍛',
-            'Jantar': '🍲',
-            'Lanches': '🥪',
-          },
+          options: const ['Café da manhã', 'Almoço', 'Jantar', 'Lanches'],
         );
       case 2:
         return _daysStep();
@@ -321,16 +316,16 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
             'Fresco e leve': 'Leve e fresco',
             'Mais fibras': 'Rico em fibras',
           },
-          options: const {
-            'Rápido e fácil': '⚡',
-            'Uma só panela': '🥘',
-            'Cozinhar em lote': '🍱',
-            'Pratos da família': '👨‍👩‍👧',
-            'Comida caseira': '🏡',
-            'Fresco e leve': '🥗',
-            'Mais fibras': '🌾',
-            'Vegetariana': '🥦',
-          },
+          options: const [
+            'Rápido e fácil',
+            'Uma só panela',
+            'Cozinhar em lote',
+            'Pratos da família',
+            'Comida caseira',
+            'Fresco e leve',
+            'Mais fibras',
+            'Vegetariana',
+          ],
         );
       case 5:
         return _choiceStep(
@@ -338,60 +333,60 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
           subtitle: 'Esses itens serão retirados das recomendações.',
           values: _answers.allergies,
           exclusive: 'Sem alergias',
-          options: const {
-            'Sem alergias': '✅',
-            'Amendoim': '🥜',
-            'Castanhas': '🌰',
-            'Laticínios': '🥛',
-            'Ovos': '🥚',
-            'Glúten': '🌾',
-            'Soja': '🫘',
-            'Marisco': '🦐',
-            'Peixe': '🐟',
-            'Gergelim': '🌱',
-            'Mostarda': '🟡',
-            'Aipo': '🥬',
-          },
+          options: const [
+            'Sem alergias',
+            'Amendoim',
+            'Castanhas',
+            'Laticínios',
+            'Ovos',
+            'Glúten',
+            'Soja',
+            'Marisco',
+            'Peixe',
+            'Gergelim',
+            'Mostarda',
+            'Aipo',
+          ],
         );
       case 6:
         return _choiceStep(
           title: 'Tem algo que você não gosta?',
           subtitle: 'Marque os alimentos que devem ficar fora das sugestões.',
           values: _answers.dislikes,
-          options: const {
-            'Pimentão': '🫑',
-            'Cebola': '🧅',
-            'Tomate': '🍅',
-            'Atum': '🐟',
-            'Peixe': '🐠',
-            'Brócolis': '🥦',
-            'Cogumelos': '🍄',
-            'Azeitona': '🫒',
-            'Berinjela': '🍆',
-            'Ovos': '🥚',
-            'Milho': '🌽',
-            'Abacate': '🥑',
-          },
+          options: const [
+            'Pimentão',
+            'Cebola',
+            'Tomate',
+            'Atum',
+            'Peixe',
+            'Brócolis',
+            'Cogumelos',
+            'Azeitona',
+            'Berinjela',
+            'Ovos',
+            'Milho',
+            'Abacate',
+          ],
         );
       case 7:
         return _choiceStep(
           title: 'O que você já tem?',
           subtitle: 'Isso ajuda a reduzir a compra e aproveitar a despensa.',
           values: _answers.pantry,
-          options: const {
-            'Ovos': '🥚',
-            'Leite': '🥛',
-            'Banana': '🍌',
-            'Pão': '🍞',
-            'Arroz': '🍚',
-            'Macarrão': '🍝',
-            'Frango': '🍗',
-            'Tomate': '🍅',
-            'Cebola': '🧅',
-            'Batata': '🥔',
-            'Iogurte': '🥣',
-            'Atum': '🐟',
-          },
+          options: const [
+            'Ovos',
+            'Leite',
+            'Banana',
+            'Pão',
+            'Arroz',
+            'Macarrão',
+            'Frango',
+            'Tomate',
+            'Cebola',
+            'Batata',
+            'Iogurte',
+            'Atum',
+          ],
         );
       case 8:
         return _budgetStep();
@@ -524,7 +519,7 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
     required String title,
     required String subtitle,
     required Set<String> values,
-    required Map<String, String> options,
+    required List<String> options,
     Map<String, String> displayLabels = const {},
     String? exclusive,
   }) => _frame(
@@ -537,13 +532,13 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
       mainAxisSpacing: 12,
       crossAxisSpacing: 12,
       childAspectRatio: 1.45,
-      children: options.entries
+      children: options
           .map(
-            (entry) => _OptionCard(
-              label: displayLabels[entry.key] ?? entry.key,
-              imageAsset: _plannerImageFor(entry.key),
-              selected: values.contains(entry.key),
-              onTap: () => _toggle(values, entry.key, exclusive: exclusive),
+            (option) => _OptionCard(
+              label: displayLabels[option] ?? option,
+              imageAsset: _plannerImageFor(option),
+              selected: values.contains(option),
+              onTap: () => _toggle(values, option, exclusive: exclusive),
             ),
           )
           .toList(),

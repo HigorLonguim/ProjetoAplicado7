@@ -47,7 +47,7 @@ class _ShoppingListScreenState extends State<ShoppingListScreen> {
       'Lista Origem',
       ...pending.map(
         (item) =>
-            '☐ ${item.productName} — ${_formatQuantity(item.quantity)} ${item.unit}',
+            '- ${item.productName} — ${_formatQuantity(item.quantity)} ${item.unit}',
       ),
     ].join('\n');
     await Clipboard.setData(ClipboardData(text: text));
