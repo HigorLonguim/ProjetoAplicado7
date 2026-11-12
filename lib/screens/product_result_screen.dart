@@ -7,8 +7,9 @@ import '../widgets/brand.dart';
 import 'nutrition_details_screen.dart';
 
 class ProductResultScreen extends StatefulWidget {
-  const ProductResultScreen({super.key, required this.product});
+  const ProductResultScreen({super.key, required this.product, this.heroTag});
   final ProductModel product;
+  final String? heroTag;
   @override
   State<ProductResultScreen> createState() => _ProductResultScreenState();
 }
@@ -67,11 +68,14 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
   };
 
   String _statusFor(String key, double? value) {
+    // Não mostre uma classificação sem o valor que ela descreve. Isso
+    // evita, por exemplo, "ALTO" ao lado de um nutriente não informado.
+    if (value == null) return 'SEM DADO';
     final apiLevel = widget.product.nutrientLevel(key);
     if (apiLevel == 'high') return 'ALTO';
     if (apiLevel == 'moderate') return 'MODERADO';
     if (apiLevel == 'low') return 'BAIXO';
-    return value == null ? 'SEM DADO' : 'INFORMADO';
+    return 'INFORMADO';
   }
 
   Color _statusColor(String status) => switch (status) {
@@ -113,29 +117,35 @@ class _ProductResultScreenState extends State<ProductResultScreen> {
         padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
         children: [
           Center(
-            child: Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(30),
-                border: Border.all(
-                  color: Theme.of(context).colorScheme.outlineVariant,
+            child: HeroMode(
+              enabled: widget.heroTag != null,
+              child: Hero(
+                tag: widget.heroTag ?? 'product-result-static',
+                child: Container(
+                  width: 150,
+                  height: 150,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30),
+                    border: Border.all(
+                      color: Theme.of(context).colorScheme.outlineVariant,
+                    ),
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  child: product.imageUrl == null
+                      ? const Icon(
+                          Icons.inventory_2_outlined,
+                          size: 54,
+                          color: AppColors.olive,
+                        )
+                      : Image.network(
+                          product.imageUrl!,
+                          fit: BoxFit.contain,
+                          errorBuilder: (_, __, ___) =>
+                              const Icon(Icons.inventory_2_outlined, size: 54),
+                        ),
                 ),
               ),
-              clipBehavior: Clip.antiAlias,
-              child: product.imageUrl == null
-                  ? const Icon(
-                      Icons.inventory_2_outlined,
-                      size: 54,
-                      color: AppColors.olive,
-                    )
-                  : Image.network(
-                      product.imageUrl!,
-                      fit: BoxFit.contain,
-                      errorBuilder: (_, __, ___) =>
-                          const Icon(Icons.inventory_2_outlined, size: 54),
-                    ),
             ),
           ),
           const SizedBox(height: 20),

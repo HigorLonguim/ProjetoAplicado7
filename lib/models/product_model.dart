@@ -6,6 +6,7 @@ class ProductModel {
     this.imageUrl,
     this.calories,
     this.sugar,
+    this.salt,
     this.sodium,
     this.fat,
     this.protein,
@@ -25,6 +26,9 @@ class ProductModel {
   final String? imageUrl;
   final double? calories;
   final double? sugar;
+  /// Sal em gramas por 100 g/100 ml, na unidade normalizada da OFF.
+  final double? salt;
+  /// Sódio em gramas por 100 g/100 ml, na unidade normalizada da OFF.
   final double? sodium;
   final double? fat;
   final double? protein;
@@ -63,8 +67,15 @@ class ProductModel {
 
     final energyKcal = number('energy-kcal_100g');
     final energyKj = number('energy-kj_100g');
-    final sodium = number('sodium_100g');
-    final salt = number('salt_100g');
+    final sodiumFromApi = number('sodium_100g');
+    final saltFromApi = number('salt_100g');
+    // Os campos *_100g da Open Food Facts usam gramas para nutrientes por
+    // peso. Quando apenas um dos dois existe, a própria OFF adota
+    // sódio = sal / 2,5.
+    final sodium = sodiumFromApi ??
+        (saltFromApi == null ? null : saltFromApi / 2.5);
+    final salt = saltFromApi ??
+        (sodiumFromApi == null ? null : sodiumFromApi * 2.5);
     final levels = product['nutrient_levels'] is Map
         ? Map<String, String>.from((product['nutrient_levels'] as Map).map((key, value) => MapEntry(key.toString(), value.toString())))
         : null;
@@ -77,7 +88,8 @@ class ProductModel {
       imageUrl: product['image_front_url']?.toString() ?? product['image_url']?.toString(),
       calories: energyKcal ?? (energyKj == null ? null : energyKj / 4.184),
       sugar: number('sugars_100g'),
-      sodium: sodium ?? (salt == null ? null : salt * .393),
+      salt: salt,
+      sodium: sodium,
       fat: number('fat_100g'),
       protein: number('proteins_100g'),
       carbohydrates: number('carbohydrates_100g'),

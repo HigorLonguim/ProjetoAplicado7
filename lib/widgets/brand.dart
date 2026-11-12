@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
 import '../theme/app_theme.dart';
 
 class OrigemMark extends StatelessWidget {
@@ -14,6 +16,54 @@ class OrigemMark extends StatelessWidget {
       height: size,
       fit: BoxFit.cover,
       semanticLabel: 'Símbolo do Origem',
+    ),
+  );
+}
+
+class OrigemSecondaryWordmark extends StatelessWidget {
+  const OrigemSecondaryWordmark({super.key, this.width, this.height = 48});
+
+  final double? width;
+  final double height;
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+    image: true,
+    label: 'Origem',
+    child: SizedBox(
+      width: width ?? height * 3.25,
+      height: height,
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Positioned(
+            left: 0,
+            top: 0,
+            width: height * .62,
+            height: height * .62,
+            child: SvgPicture.asset(
+              'assets/brand/origem_leaf.svg',
+              excludeFromSemantics: true,
+            ),
+          ),
+          Positioned(
+            left: height * .28,
+            bottom: -height * .08,
+            child: Text(
+              'Origem',
+              style: TextStyle(
+                color: const Color(0xFFE89060),
+                fontFamily: 'Georgia',
+                fontFamilyFallback: const ['Times New Roman', 'serif'],
+                fontSize: height * .8,
+                height: 1,
+                fontWeight: FontWeight.w600,
+                letterSpacing: -height * .045,
+              ),
+            ),
+          ),
+        ],
+      ),
     ),
   );
 }

@@ -1,119 +1,53 @@
-import '../models/recommendation.dart';
+import 'dart:convert';
+import 'dart:math' as math;
+
+import 'package:flutter/services.dart';
+
 import '../models/meal_plan.dart';
+import '../models/recommendation.dart';
 
 class RecommendationService {
-  static const catalog = <MealRecommendation>[
-    MealRecommendation(
-      id: 'bowl-grao',
-      title: 'Bowl de grão-de-bico',
-      description: 'Uma refeição completa com legumes, grãos e molho de limão.',
-      estimatedCost: 22,
-      minutes: 25,
-      servings: 2,
-      tags: {'Vegetariana', 'Sem lactose'},
-      ingredients: [
-        '1 xícara de grão-de-bico cozido',
-        '1 cenoura',
-        '1 tomate',
-        'Folhas verdes',
-        'Limão e azeite',
-      ],
-      steps: [
-        'Corte os legumes.',
-        'Aqueça o grão-de-bico com temperos.',
-        'Monte o bowl e finalize com limão e azeite.',
-      ],
-      portionGrams: 420,
-      calories: 465,
-      proteinGrams: 19,
-      carbGrams: 61,
-      fatGrams: 15,
-      healthScore: 9,
-    ),
-    MealRecommendation(
-      id: 'omelete',
-      title: 'Omelete de forno com legumes',
-      description:
-          'Prática, econômica e fácil de adaptar ao que já existe em casa.',
-      estimatedCost: 18,
-      minutes: 30,
-      servings: 3,
-      tags: {'Vegetariana', 'Sem glúten'},
-      ingredients: [
-        '5 ovos',
-        '1 tomate',
-        '1/2 abobrinha',
-        'Cebola',
-        'Ervas frescas',
-      ],
-      steps: [
-        'Bata os ovos.',
-        'Misture os legumes picados.',
-        'Asse por cerca de 20 minutos.',
-      ],
-      portionGrams: 310,
-      calories: 350,
-      proteinGrams: 23,
-      carbGrams: 14,
-      fatGrams: 22,
-      healthScore: 8,
-    ),
-    MealRecommendation(
-      id: 'frango-arroz',
-      title: 'Frango, arroz e legumes',
-      description:
-          'Combinação simples para preparar porções para mais de um dia.',
-      estimatedCost: 34,
-      minutes: 40,
-      servings: 4,
-      tags: {'Sem lactose', 'Sem glúten', 'Proteica'},
-      ingredients: [
-        '500 g de peito de frango',
-        '2 xícaras de arroz',
-        'Cenoura',
-        'Brócolis',
-        'Alho e cebola',
-      ],
-      steps: [
-        'Cozinhe o arroz.',
-        'Grelhe o frango em cubos.',
-        'Cozinhe os legumes e distribua em porções.',
-      ],
-      portionGrams: 480,
-      calories: 585,
-      proteinGrams: 42,
-      carbGrams: 68,
-      fatGrams: 14,
-      healthScore: 9,
-    ),
-    MealRecommendation(
-      id: 'massa-atum',
-      title: 'Massa rápida com atum',
-      description: 'Opção de despensa para quando o tempo está curto.',
-      estimatedCost: 27,
-      minutes: 20,
-      servings: 3,
-      tags: {'Proteica'},
-      ingredients: [
-        '250 g de macarrão',
-        '1 lata de atum',
-        'Tomate',
-        'Cebola',
-        'Cheiro-verde',
-      ],
-      steps: [
-        'Cozinhe a massa.',
-        'Refogue tomate, cebola e atum.',
-        'Misture e finalize com cheiro-verde.',
-      ],
-      portionGrams: 390,
-      calories: 530,
-      proteinGrams: 31,
-      carbGrams: 67,
-      fatGrams: 15,
-      healthScore: 7,
-    ),
+  RecommendationService({required Iterable<MealRecommendation> catalog})
+    : catalog = List.unmodifiable(catalog);
+
+  static const assetPaths = [
+    'assets/data/recipes_batch_01.json',
+    'assets/data/recipes_batch_02.json',
+    'assets/data/recipes_batch_03.json',
+    'assets/data/recipes_batch_04.json',
+    'assets/data/recipes_batch_05.json',
+    'assets/data/recipes_batch_06.json',
+    'assets/data/recipes_batch_07.json',
+    'assets/data/recipes_batch_08.json',
   ];
+
+  final List<MealRecommendation> catalog;
+
+  static Future<RecommendationService> fromAssets({AssetBundle? bundle}) async {
+    final source = bundle ?? rootBundle;
+    final recipes = <MealRecommendation>[];
+    final ids = <String>{};
+    for (final path in assetPaths) {
+      final raw = await source.loadString(path);
+      final decoded = jsonDecode(raw);
+      if (decoded is! Map<String, dynamic> || decoded['recipes'] is! List) {
+        throw FormatException('Catálogo inválido: $path');
+      }
+      for (final value in decoded['recipes'] as List) {
+        if (value is! Map<String, dynamic>) {
+          throw FormatException('Receita inválida em $path');
+        }
+        final recipe = MealRecommendation.fromJson(value);
+        if (recipe.id.isEmpty || recipe.title.isEmpty || !ids.add(recipe.id)) {
+          throw FormatException(
+            'Receita duplicada ou sem identificação: $path',
+          );
+        }
+        recipes.add(recipe);
+      }
+    }
+    return RecommendationService(catalog: recipes);
+  }
 
   List<MealRecommendation> recommend(RecommendationFilters filters) {
     final result = catalog.where((item) {
@@ -132,55 +66,180 @@ class RecommendationService {
   }
 
   List<MealRecommendation> recommendForPlan(MealPlanAnswers plan) {
-    final blocked = {...plan.allergies, ...plan.dislikes}
-        .where((item) => item != 'Sem alergias')
-        .map((item) => item.toLowerCase())
-        .toSet();
-    final availablePerCookingDay = plan.weeklyBudget / plan.cookingDays.length;
-
     final result = catalog.where((item) {
-      final content =
-          '${item.title} ${item.ingredients.join(' ')} ${item.tags.join(' ')}'
-              .toLowerCase();
-      final violatesRestriction = blocked.any((value) {
-        if (value == 'laticínios') {
-          return content.contains('leite') ||
-              content.contains('iogurte') ||
-              content.contains('queijo') ||
-              content.contains('lactose');
-        }
-        if (value == 'glúten') {
-          return content.contains('macarrão') ||
-              content.contains('pão') ||
-              content.contains('trigo');
-        }
-        if (value == 'ovos') return content.contains('ovo');
-        return content.contains(value);
-      });
-      final vegetarian =
-          !plan.styles.contains('Vegetariana') ||
-          item.tags.contains('Vegetariana');
-      return !violatesRestriction &&
-          vegetarian &&
-          item.estimatedCost <= availablePerCookingDay * 1.25;
+      if (plan.meals.isNotEmpty &&
+          item.mealTypes.intersection(plan.meals).isEmpty) {
+        return false;
+      }
+      if (!plan.equipment.containsAll(item.requiredEquipment)) return false;
+      if (_violatesAllergies(item, plan.allergies)) return false;
+      if (_violatesDislikes(item, plan.dislikes)) return false;
+      if (plan.styles.contains('Vegetariana') &&
+          !item.styles.contains('Vegetariana')) {
+        return false;
+      }
+      final preferredStyles = {...plan.styles}..remove('Vegetariana');
+      if (preferredStyles.isNotEmpty &&
+          item.styles.intersection(preferredStyles).isEmpty) {
+        return false;
+      }
+      return true;
     }).toList();
 
-    int pantryMatches(MealRecommendation item) => plan.pantry
-        .where(
-          (owned) => item.ingredients.any(
-            (ingredient) =>
-                ingredient.toLowerCase().contains(owned.toLowerCase()),
-          ),
-        )
-        .length;
+    final slots = math.max(1, plan.cookingDays.length * plan.meals.length);
+    final targetCost = plan.weeklyBudget / slots;
     result.sort((a, b) {
-      final pantry = pantryMatches(b).compareTo(pantryMatches(a));
+      final pantry = pantryMatchCount(
+        b,
+        plan,
+      ).compareTo(pantryMatchCount(a, plan));
       if (pantry != 0) return pantry;
-      if (plan.styles.contains('Rápido e fácil')) {
-        return a.minutes.compareTo(b.minutes);
-      }
-      return a.estimatedCost.compareTo(b.estimatedCost);
+      final aOver = costForPlan(a, plan) > targetCost ? 1 : 0;
+      final bOver = costForPlan(b, plan) > targetCost ? 1 : 0;
+      final budget = aOver.compareTo(bOver);
+      if (budget != 0) return budget;
+      final cost = costForPlan(a, plan).compareTo(costForPlan(b, plan));
+      return cost != 0 ? cost : a.minutes.compareTo(b.minutes);
     });
+    return result;
+  }
+
+  double costForPlan(MealRecommendation item, MealPlanAnswers plan) =>
+      item.costForServings(math.max(1, plan.portions));
+
+  int pantryMatchCount(MealRecommendation item, MealPlanAnswers plan) {
+    if (plan.pantry.isEmpty) return 0;
+    final content = _normalize('${item.title} ${item.ingredients.join(' ')}');
+    var matches = 0;
+    for (final pantryItem in plan.pantry) {
+      if (item.pantryMatches.contains(pantryItem)) {
+        matches++;
+        continue;
+      }
+      final terms = _pantryTerms[pantryItem] ?? [_normalize(pantryItem)];
+      if (terms.any((term) => _containsTerm(content, term))) matches++;
+    }
+    return matches;
+  }
+
+  static const _pantryTerms = <String, List<String>>{
+    'Ovos': ['ovo', 'ovos'],
+    'Leite': ['leite'],
+    'Banana': ['banana', 'bananas'],
+    'Pão': ['pao', 'paes'],
+    'Arroz': ['arroz'],
+    'Macarrão': ['macarrao', 'massa'],
+    'Frango': ['frango', 'sobrecoxa'],
+    'Tomate': ['tomate', 'tomates'],
+    'Cebola': ['cebola', 'cebolas'],
+    'Batata': ['batata', 'batatas'],
+    'Iogurte': ['iogurte'],
+    'Atum': ['atum'],
+  };
+
+  static bool _violatesAllergies(
+    MealRecommendation item,
+    Set<String> allergies,
+  ) {
+    final blocked = {...allergies}..remove('Sem alergias');
+    if (blocked.isEmpty) return false;
+
+    if (item.allergens.intersection(blocked).isNotEmpty) return true;
+    // Atum é uma marcação mais específica do catálogo, mas deve ser
+    // tratado como peixe para quem selecionou essa alergia.
+    if (blocked.contains('Peixe') && item.allergens.contains('Atum')) {
+      return true;
+    }
+
+    // Defesa adicional para catálogos importados ou editados manualmente: uma
+    // tag ausente nunca deve fazer um ingrediente alergênico passar no filtro.
+    var content = _normalize(item.ingredients.join(' '));
+    content = content
+        .replaceAll('leite de coco', '')
+        .replaceAll('leite de amendoas', '')
+        .replaceAll('leite de castanhas', '');
+    for (final allergy in blocked) {
+      final terms = _allergenTerms[allergy] ?? const <String>[];
+      if (terms.any((term) => _containsTerm(content, term))) return true;
+    }
+    return false;
+  }
+
+  static const _allergenTerms = <String, List<String>>{
+    'Amendoim': ['amendoim', 'pasta de amendoim'],
+    'Castanhas': [
+      'castanha',
+      'castanhas',
+      'nozes',
+      'noz',
+      'amendoa',
+      'amendoas',
+    ],
+    'Laticínios': [
+      'leite',
+      'iogurte',
+      'queijo',
+      'manteiga',
+      'requeijao',
+      'ricota',
+      'cottage',
+      'nata',
+    ],
+    'Ovos': ['ovo', 'ovos'],
+    'Glúten': [
+      'trigo',
+      'pao',
+      'macarrao',
+      'farinha de rosca',
+      'aveia',
+      'cevada',
+      'centeio',
+    ],
+    'Soja': ['soja', 'tofu', 'shoyu'],
+    'Marisco': ['camarao', 'marisco', 'siri', 'caranguejo', 'polvo', 'lula'],
+    'Peixe': [
+      'peixe',
+      'atum',
+      'sardinha',
+      'salmao',
+      'tilapia',
+      'pescada',
+      'merluza',
+      'tainha',
+      'pacu',
+    ],
+    'Gergelim': ['gergelim', 'tahine'],
+    'Mostarda': ['mostarda'],
+    'Aipo': ['aipo', 'salsao'],
+  };
+
+  static bool _containsTerm(String content, String term) {
+    final escaped = RegExp.escape(_normalize(term));
+    return RegExp('(^|[^a-z0-9])$escaped([^a-z0-9]|\$)').hasMatch(content);
+  }
+
+  static bool _violatesDislikes(MealRecommendation item, Set<String> dislikes) {
+    if (dislikes.isEmpty) return false;
+    final content = _normalize('${item.title} ${item.ingredients.join(' ')}');
+    for (final dislike in dislikes) {
+      final normalized = _normalize(dislike);
+      if (normalized == 'peixe' && item.allergens.contains('Peixe')) {
+        return true;
+      }
+      if (normalized == 'atum' && item.allergens.contains('Atum')) return true;
+      if (normalized == 'ovos' && item.allergens.contains('Ovos')) return true;
+      if (content.contains(normalized)) return true;
+    }
+    return false;
+  }
+
+  static String _normalize(String value) {
+    const accents = 'áàãâäéèêëíìîïóòõôöúùûüç';
+    const plain = 'aaaaaeeeeiiiiooooouuuuc';
+    var result = value.toLowerCase();
+    for (var index = 0; index < accents.length; index++) {
+      result = result.replaceAll(accents[index], plain[index]);
+    }
     return result;
   }
 }

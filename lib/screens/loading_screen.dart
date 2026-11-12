@@ -1,53 +1,130 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+
 import '../services/history_service.dart';
 import '../services/product_service.dart';
 import '../theme/app_theme.dart';
-import '../widgets/brand.dart';
+import '../widgets/origem_scanner.dart';
 import 'product_result_screen.dart';
 
+/// Compatibility route for callers outside the scanner. The primary scanner
+/// now performs this same narrative in place so camera state is preserved.
 class LoadingScreen extends StatefulWidget {
   const LoadingScreen({super.key, required this.barcode});
   final String barcode;
+
   @override
   State<LoadingScreen> createState() => _LoadingScreenState();
 }
 
-class _LoadingScreenState extends State<LoadingScreen> {
-  String? _error;
+class _LoadingScreenState extends State<LoadingScreen>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _motion;
+  ScannerFlowState _state = ScannerFlowState.fetching;
+  int _step = 0;
+  bool _delayed = false;
+  int _generation = 0;
+  Timer? _secondStep;
+  Timer? _thirdStep;
+  Timer? _slow;
+
   @override
-  void initState() { super.initState(); _fetch(); }
+  void initState() {
+    super.initState();
+    _motion = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2400),
+    );
+    WidgetsBinding.instance.addPostFrameCallback((_) => _fetch());
+  }
 
   Future<void> _fetch() async {
-    setState(() => _error = null);
+    final generation = ++_generation;
+    _cancelTimers();
+    setState(() {
+      _state = ScannerFlowState.fetching;
+      _step = 0;
+      _delayed = false;
+    });
+    if (!MediaQuery.disableAnimationsOf(context)) _motion.repeat();
+    _secondStep = Timer(const Duration(milliseconds: 550), () {
+      if (mounted && generation == _generation) setState(() => _step = 1);
+    });
+    _thirdStep = Timer(const Duration(milliseconds: 1250), () {
+      if (mounted && generation == _generation) setState(() => _step = 2);
+    });
+    _slow = Timer(const Duration(seconds: 7), () {
+      if (mounted && generation == _generation) setState(() => _delayed = true);
+    });
     try {
-      final product = await const ProductService().findByBarcode(widget.barcode);
+      final product = await const ProductService().findByBarcode(
+        widget.barcode,
+      );
+      if (!mounted || generation != _generation) return;
       await HistoryService().add(product);
-      if (!mounted) return;
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => ProductResultScreen(product: product)));
-    } on ProductLookupException catch (error) {
-      if (mounted) setState(() => _error = error.message);
+      if (!mounted || generation != _generation) return;
+      _cancelTimers();
+      _motion.stop();
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => ProductResultScreen(product: product),
+        ),
+      );
+    } on ProductNotFoundException {
+      _fail(ScannerFlowState.notFound, generation);
+    } on ProductOfflineException {
+      _fail(ScannerFlowState.offline, generation);
+    } on ProductConnectionException {
+      _fail(ScannerFlowState.networkError, generation);
     }
+  }
+
+  void _fail(ScannerFlowState state, int generation) {
+    if (!mounted || generation != _generation) return;
+    _cancelTimers();
+    _motion.stop();
+    setState(() => _state = state);
+  }
+
+  void _cancel() {
+    _generation++;
+    Navigator.of(context).pop();
   }
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(leading: const BackButton(), title: const Text('Consultar produto')),
-    body: Center(child: ConstrainedBox(constraints: const BoxConstraints(maxWidth: 430), child: Padding(
-      padding: const EdgeInsets.all(28),
-      child: _error == null
-        ? Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            const OrigemMark(size: 88), const SizedBox(height: 28),
-            const CircularProgressIndicator(color: AppColors.terracotta), const SizedBox(height: 24),
-            Text('Lendo o rótulo', style: Theme.of(context).textTheme.headlineSmall), const SizedBox(height: 8),
-            Text('Código ${widget.barcode}', style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant)),
-          ])
-        : Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            const Icon(Icons.cloud_off_rounded, size: 66, color: AppColors.terracotta), const SizedBox(height: 20),
-            Text('Não conseguimos concluir', style: Theme.of(context).textTheme.headlineSmall), const SizedBox(height: 12),
-            Text(_error!, textAlign: TextAlign.center), const SizedBox(height: 24),
-            GradientButton(label: 'Tentar novamente', icon: Icons.refresh_rounded, onPressed: _fetch),
-            TextButton(onPressed: () => Navigator.pop(context), child: const Text('Voltar ao scanner')),
-          ]),
-    ))),
+    backgroundColor: AppColors.petroleum,
+    body: SafeArea(
+      child: _state == ScannerFlowState.fetching
+          ? ScannerLoadingNarrative(
+              step: _step,
+              barcode: widget.barcode,
+              animation: _motion,
+              delayed: _delayed,
+              onCancel: _cancel,
+              onManual: _cancel,
+            )
+          : ScannerErrorState(
+              state: _state,
+              onRetry: _fetch,
+              onManual: _cancel,
+              onBack: _cancel,
+            ),
+    ),
   );
+
+  void _cancelTimers() {
+    _secondStep?.cancel();
+    _thirdStep?.cancel();
+    _slow?.cancel();
+  }
+
+  @override
+  void dispose() {
+    _generation++;
+    _cancelTimers();
+    _motion.dispose();
+    super.dispose();
+  }
 }

@@ -1,0 +1,1745 @@
+{
+  "schemaVersion": 1,
+  "batch": 4,
+  "totalBatches": 8,
+  "currency": "BRL",
+  "recipes": [
+    {
+      "id": "vitamina-de-manga-com-linhaca",
+      "title": "Vitamina de manga com linhaça",
+      "description": "Vitamina de manga com linhaça com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 5,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de manga",
+        "3 xícaras de linhaça",
+        "2 xícaras de leite gelado",
+        "1 colher de sopa de sementes de chia",
+        "1 banana madura"
+      ],
+      "steps": [
+        "Higienize e corte os ingredientes.",
+        "Bata tudo no liquidificador até ficar homogêneo.",
+        "Sirva imediatamente."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "vitamina-de-morango-com-chia",
+      "title": "Vitamina de morango com chia",
+      "description": "Vitamina de morango com chia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 8,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de morango",
+        "3 xícaras de chia",
+        "2 xícaras de leite gelado",
+        "1 colher de sopa de sementes de chia",
+        "1 banana madura"
+      ],
+      "steps": [
+        "Higienize e corte os ingredientes.",
+        "Bata tudo no liquidificador até ficar homogêneo.",
+        "Sirva imediatamente."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "vitamina-de-abacate-com-cacau",
+      "title": "Vitamina de abacate com cacau",
+      "description": "Vitamina de abacate com cacau com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 11,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de abacate",
+        "3 xícaras de cacau",
+        "2 xícaras de leite gelado",
+        "1 colher de sopa de sementes de chia",
+        "1 banana madura"
+      ],
+      "steps": [
+        "Higienize e corte os ingredientes.",
+        "Bata tudo no liquidificador até ficar homogêneo.",
+        "Sirva imediatamente."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "vitamina-de-goiaba-com-aveia",
+      "title": "Vitamina de goiaba com aveia",
+      "description": "Vitamina de goiaba com aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 5,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de goiaba",
+        "2 xícaras de aveia",
+        "2 xícaras de leite gelado",
+        "1 colher de sopa de sementes de chia",
+        "1 banana madura"
+      ],
+      "steps": [
+        "Higienize e corte os ingredientes.",
+        "Bata tudo no liquidificador até ficar homogêneo.",
+        "Sirva imediatamente."
+      ],
+      "portionGrams": 260,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "vitamina-de-abacaxi-com-hortela",
+      "title": "Vitamina de abacaxi com hortelã",
+      "description": "Vitamina de abacaxi com hortelã com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 8,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Equipamento:Liquidificador",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de abacaxi",
+        "3 xícaras de hortelã",
+        "2 xícaras de leite gelado",
+        "1 colher de sopa de sementes de chia",
+        "1 banana madura"
+      ],
+      "steps": [
+        "Higienize e corte os ingredientes.",
+        "Bata tudo no liquidificador até ficar homogêneo.",
+        "Sirva imediatamente."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "mingau-de-aveia-com-pera",
+      "title": "Mingau de aveia com pera",
+      "description": "Mingau de aveia com pera com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 24,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Comida caseira",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de aveia",
+        "3 xícaras de pera",
+        "3 xícaras de leite",
+        "Canela a gosto",
+        "1 banana madura"
+      ],
+      "steps": [
+        "Dissolva o ingrediente seco em parte do leite frio.",
+        "Junte os demais ingredientes e cozinhe em fogo baixo.",
+        "Mexa até engrossar e sirva quente."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "mingau-de-quinoa-com-maca",
+      "title": "Mingau de quinoa com maçã",
+      "description": "Mingau de quinoa com maçã com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Comida caseira",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de quinoa em flocos",
+        "3 xícaras de maçã",
+        "3 xícaras de leite",
+        "Canela a gosto",
+        "1 banana madura"
+      ],
+      "steps": [
+        "Dissolva o ingrediente seco em parte do leite frio.",
+        "Junte os demais ingredientes e cozinhe em fogo baixo.",
+        "Mexa até engrossar e sirva quente."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "canjica-rapida-com-coco",
+      "title": "Canjica rápida com coco",
+      "description": "Canjica rápida com coco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 21,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Comida caseira",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de milho para canjica cozido",
+        "3 xícaras de coco ralado",
+        "3 xícaras de leite",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Dissolva o ingrediente seco em parte do leite frio.",
+        "Junte os demais ingredientes e cozinhe em fogo baixo.",
+        "Mexa até engrossar e sirva quente."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "mingau-de-tapioca-com-maracuja",
+      "title": "Mingau de tapioca com maracujá",
+      "description": "Mingau de tapioca com maracujá com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 24,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Comida caseira",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de tapioca granulada",
+        "3 xícaras de maracujá",
+        "3 xícaras de leite",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Dissolva o ingrediente seco em parte do leite frio.",
+        "Junte os demais ingredientes e cozinhe em fogo baixo.",
+        "Mexa até engrossar e sirva quente."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "creme-quente-de-arroz-com-banana",
+      "title": "Creme quente de arroz com banana",
+      "description": "Creme quente de arroz com banana com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Comida caseira",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Equipamento:Panela",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Aproveita:Arroz",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de farinha de arroz",
+        "3 xícaras de banana",
+        "3 xícaras de leite",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Dissolva o ingrediente seco em parte do leite frio.",
+        "Junte os demais ingredientes e cozinhe em fogo baixo.",
+        "Mexa até engrossar e sirva quente."
+      ],
+      "portionGrams": 260,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "ovos-mexidos-com-espinafre",
+      "title": "Ovos mexidos com espinafre",
+      "description": "Ovos mexidos com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de espinafre",
+        "1 colher de chá de azeite",
+        "Sal e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "ovos-assados-no-tomate",
+      "title": "Ovos assados no tomate",
+      "description": "Ovos assados no tomate com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 21,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Aproveita:Tomate",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de tomate",
+        "1 colher de chá de azeite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "fritada-de-abobrinha-e-ervas",
+      "title": "Fritada de abobrinha e ervas",
+      "description": "Fritada de abobrinha e ervas com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 15,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de abobrinha",
+        "1 colher de chá de azeite",
+        "Sal e salsinha a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "omelete-de-cenoura-com-queijo-minas",
+      "title": "Omelete de cenoura com queijo minas",
+      "description": "Omelete de cenoura com queijo minas com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Contém:Laticínios",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de cenoura e queijo minas",
+        "1 colher de chá de azeite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "ovos-mexidos-com-cogumelos",
+      "title": "Ovos mexidos com cogumelos",
+      "description": "Ovos mexidos com cogumelos com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 21,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Fogão",
+        "Aproveita:Ovos",
+        "Contém:Ovos"
+      ],
+      "ingredients": [
+        "4 ovos",
+        "2 xícaras de cogumelos",
+        "1 colher de chá de azeite",
+        "Sal e cebolinha a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "sanduiche-de-atum-ricota-e-cenoura",
+      "title": "Sanduíche de atum, ricota e cenoura",
+      "description": "Sanduíche de atum, ricota e cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 43.9,
+      "minutes": 10,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Aproveita:Pão",
+        "Aproveita:Atum",
+        "Contém:Laticínios",
+        "Contém:Glúten",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "8 fatias de pão integral",
+        "500 g de atum",
+        "2 xícaras de ricota e cenoura ralada",
+        "Sal e salsinha a gosto"
+      ],
+      "steps": [
+        "Prepare o recheio e ajuste os temperos.",
+        "Distribua o recheio entre as fatias de pão.",
+        "Feche os sanduíches e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 425,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "sanduiche-de-rosbife-com-rucula",
+      "title": "Sanduíche de rosbife com rúcula",
+      "description": "Sanduíche de rosbife com rúcula com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 13,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Aproveita:Pão",
+        "Contém:Glúten",
+        "Contém:Mostarda"
+      ],
+      "ingredients": [
+        "8 fatias de pão integral",
+        "3 xícaras de rosbife fatiado",
+        "2 xícaras de rúcula",
+        "Sal e mostarda a gosto"
+      ],
+      "steps": [
+        "Prepare o recheio e ajuste os temperos.",
+        "Distribua o recheio entre as fatias de pão.",
+        "Feche os sanduíches e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "sanduiche-de-atum-com-grao-de-bico",
+      "title": "Sanduíche de atum com grão-de-bico",
+      "description": "Sanduíche de atum com grão-de-bico com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 33.7,
+      "minutes": 16,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Aproveita:Pão",
+        "Aproveita:Atum",
+        "Contém:Glúten",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "8 fatias de pão integral",
+        "500 g de atum",
+        "2 xícaras de grão-de-bico amassado",
+        "Sal e limão e páprica a gosto"
+      ],
+      "steps": [
+        "Prepare o recheio e ajuste os temperos.",
+        "Distribua o recheio entre as fatias de pão.",
+        "Feche os sanduíches e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "sanduiche-de-queijo-minas-com-goiabada",
+      "title": "Sanduíche de queijo minas com goiabada",
+      "description": "Sanduíche de queijo minas com goiabada com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 10,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Aproveita:Pão",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "8 fatias de pão integral",
+        "3 xícaras de queijo minas",
+        "2 xícaras de goiabada",
+        "Sal e canela a gosto"
+      ],
+      "steps": [
+        "Prepare o recheio e ajuste os temperos.",
+        "Distribua o recheio entre as fatias de pão.",
+        "Feche os sanduíches e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "sanduiche-de-sardinha-com-cenoura",
+      "title": "Sanduíche de sardinha com cenoura",
+      "description": "Sanduíche de sardinha com cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 37.1,
+      "minutes": 13,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Aproveita:Pão",
+        "Contém:Glúten",
+        "Contém:Peixe"
+      ],
+      "ingredients": [
+        "8 fatias de pão integral",
+        "500 g de sardinha",
+        "2 xícaras de cenoura ralada",
+        "Sal e limão e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Prepare o recheio e ajuste os temperos.",
+        "Distribua o recheio entre as fatias de pão.",
+        "Feche os sanduíches e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "cuscuz-de-caneca-com-queijo",
+      "title": "Cuscuz de caneca com queijo",
+      "description": "Cuscuz de caneca com queijo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de flocão de milho",
+        "2 xícaras de queijo minas",
+        "1/2 xícara de água ou leite, conforme necessário",
+        "Sal ou canela e orégano a gosto"
+      ],
+      "steps": [
+        "Misture os ingredientes em recipiente grande próprio para micro-ondas.",
+        "Cozinhe em intervalos de 2 minutos, mexendo entre eles.",
+        "Continue até todos os ingredientes estarem macios e completamente cozidos."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "pao-de-aveia-de-micro-ondas",
+      "title": "Pão de aveia de micro-ondas",
+      "description": "Pão de aveia de micro-ondas com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 12,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de aveia",
+        "3 ovos com ",
+        "1/2 xícara de água ou leite, conforme necessário",
+        "Sal ou canela e sal e ervas a gosto"
+      ],
+      "steps": [
+        "Misture os ingredientes em recipiente grande próprio para micro-ondas.",
+        "Cozinhe em intervalos de 2 minutos, mexendo entre eles.",
+        "Continue até todos os ingredientes estarem macios e completamente cozidos."
+      ],
+      "portionGrams": 260,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "batata-doce-com-canela-no-micro-ondas",
+      "title": "Batata-doce com canela no micro-ondas",
+      "description": "Batata-doce com canela no micro-ondas com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 15,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Aproveita:Batata",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de batata-doce",
+        "2 xícaras de banana",
+        "1/2 xícara de água ou leite, conforme necessário",
+        "Sal ou canela e canela a gosto"
+      ],
+      "steps": [
+        "Misture os ingredientes em recipiente grande próprio para micro-ondas.",
+        "Cozinhe em intervalos de 2 minutos, mexendo entre eles.",
+        "Continue até todos os ingredientes estarem macios e completamente cozidos."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "creme-de-maca-com-aveia",
+      "title": "Creme de maçã com aveia",
+      "description": "Creme de maçã com aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de maçã",
+        "2 xícaras de aveia",
+        "1/2 xícara de água ou leite, conforme necessário",
+        "Sal ou canela e canela a gosto"
+      ],
+      "steps": [
+        "Misture os ingredientes em recipiente grande próprio para micro-ondas.",
+        "Cozinhe em intervalos de 2 minutos, mexendo entre eles.",
+        "Continue até todos os ingredientes estarem macios e completamente cozidos."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "tapioca-de-caneca-com-coco",
+      "title": "Tapioca de caneca com coco",
+      "description": "Tapioca de caneca com coco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 12,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Vegetariana",
+        "Equipamento:Micro-ondas",
+        "Aproveita:Leite",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de goma de tapioca",
+        "2 xícaras de coco ralado",
+        "1/2 xícara de água ou leite, conforme necessário",
+        "Sal ou canela e canela a gosto"
+      ],
+      "steps": [
+        "Misture os ingredientes em recipiente grande próprio para micro-ondas.",
+        "Cozinhe em intervalos de 2 minutos, mexendo entre eles.",
+        "Continue até todos os ingredientes estarem macios e completamente cozidos."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "muffin-de-cenoura-e-aveia",
+      "title": "Muffin de cenoura e aveia",
+      "description": "Muffin de cenoura e aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 43,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de cenoura ralada",
+        "2 xícaras de aveia",
+        "2 ovos",
+        "1 xícara de leite",
+        "1 xícara de farinha de trigo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "bolo-integral-de-maca",
+      "title": "Bolo integral de maçã",
+      "description": "Bolo integral de maçã com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 46,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de maçã",
+        "2 xícaras de farinha de trigo integral",
+        "2 ovos",
+        "1 xícara de leite",
+        "1 xícara de farinha de trigo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "broa-assada-de-fuba-e-erva-doce",
+      "title": "Broa assada de fubá e erva-doce",
+      "description": "Broa assada de fubá e erva-doce com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 40,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de fubá",
+        "2 xícaras de erva-doce",
+        "2 ovos",
+        "1 xícara de leite",
+        "1 xícara de farinha de trigo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "biscoito-de-banana-e-coco",
+      "title": "Biscoito de banana e coco",
+      "description": "Biscoito de banana e coco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 43,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Aproveita:Banana",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de banana",
+        "2 xícaras de coco ralado",
+        "2 ovos",
+        "1 xícara de leite",
+        "1 xícara de farinha de trigo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "muffin-salgado-de-abobrinha",
+      "title": "Muffin salgado de abobrinha",
+      "description": "Muffin salgado de abobrinha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 46,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Cozinhar em lote",
+        "Vegetariana",
+        "Equipamento:Forno",
+        "Aproveita:Ovos",
+        "Aproveita:Leite",
+        "Contém:Laticínios",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de abobrinha ralada",
+        "2 xícaras de queijo minas",
+        "2 ovos",
+        "1 xícara de leite",
+        "1 xícara de farinha de trigo",
+        "1 colher de sopa de fermento químico"
+      ],
+      "steps": [
+        "Preaqueça o forno a 200 °C e prepare uma assadeira.",
+        "Misture e tempere os ingredientes e distribua na assadeira.",
+        "Asse por 25 a 40 minutos, até o centro estar cozido e a superfície dourada."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "bowl-de-iogurte-com-mamao-e-chia",
+      "title": "Bowl de iogurte com mamão e chia",
+      "description": "Bowl de iogurte com mamão e chia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 8,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de iogurte natural",
+        "2 xícaras de mamão e chia",
+        "1 colher de sopa de sementes de chia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com canela e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "bowl-de-acai-com-banana-e-aveia",
+      "title": "Bowl de açaí com banana e aveia",
+      "description": "Bowl de açaí com banana e aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 11,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Aproveita:Banana",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de polpa de açaí",
+        "2 xícaras de banana e aveia",
+        "1 colher de sopa de sementes de chia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com canela e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "bowl-de-frutas-com-cottage",
+      "title": "Bowl de frutas com cottage",
+      "description": "Bowl de frutas com cottage com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 14,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de queijo cottage",
+        "2 xícaras de frutas picadas",
+        "1 colher de sopa de sementes de chia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com hortelã e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "bowl-de-iogurte-com-manga-e-coco",
+      "title": "Bowl de iogurte com manga e coco",
+      "description": "Bowl de iogurte com manga e coco com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 8,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Aproveita:Iogurte",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "2 xícaras de iogurte natural",
+        "2 xícaras de manga e coco",
+        "1 colher de sopa de sementes de chia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com canela e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "bowl-de-banana-com-cacau-e-amendoim",
+      "title": "Bowl de banana com cacau e amendoim",
+      "description": "Bowl de banana com cacau e amendoim com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 20.4,
+      "minutes": 11,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Fresco e leve",
+        "Vegetariana",
+        "Aproveita:Banana",
+        "Contém:Amendoim"
+      ],
+      "ingredients": [
+        "3 xícaras de banana",
+        "2 xícaras de cacau e amendoim",
+        "1 colher de sopa de sementes de chia",
+        "Canela a gosto"
+      ],
+      "steps": [
+        "Prepare e resfrie previamente os ingredientes que exigem cozimento.",
+        "Misture os ingredientes em uma tigela grande.",
+        "Tempere com canela e sirva."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "bolinho-de-mandioca-com-queijo",
+      "title": "Bolinho de mandioca com queijo",
+      "description": "Bolinho de mandioca com queijo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Air fryer",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de mandioca cozida",
+        "2 xícaras de queijo minas",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "bolinho-de-abobora-com-aveia",
+      "title": "Bolinho de abóbora com aveia",
+      "description": "Bolinho de abóbora com aveia com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 23.8,
+      "minutes": 32,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de abóbora cozida",
+        "2 xícaras de aveia",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e páprica a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "bolinho-de-milho-com-cheiro-verde",
+      "title": "Bolinho de milho com cheiro-verde",
+      "description": "Bolinho de milho com cheiro-verde com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 35,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Air fryer",
+        "Aproveita:Ovos",
+        "Contém:Ovos",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de milho",
+        "3 ovos com ",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 58,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "croquete-de-lentilha",
+      "title": "Croquete de lentilha",
+      "description": "Croquete de lentilha com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 38,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de lentilha cozida",
+        "2 xícaras de cenoura",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e cominho a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 390,
+      "proteinGrams": 18,
+      "carbGrams": 66,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "bolinho-de-feijao-branco-e-ervas",
+      "title": "Bolinho de feijão-branco e ervas",
+      "description": "Bolinho de feijão-branco e ervas com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 32,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Mais fibras",
+        "Vegetariana",
+        "Equipamento:Air fryer",
+        "Aproveita:Cebola",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "2 xícaras de feijão-branco cozido",
+        "2 xícaras de cebola",
+        "1/2 xícara de aveia em flocos",
+        "1 colher de sopa de azeite",
+        "Sal e salsinha a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 18,
+      "carbGrams": 74,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "tapioca-de-atum-com-queijo",
+      "title": "Tapioca de atum com queijo",
+      "description": "Tapioca de atum com queijo com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 32,
+      "minutes": 15,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Atum",
+        "Contém:Laticínios",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "8 colheres de sopa de goma de tapioca hidratada",
+        "500 g de atum",
+        "2 xícaras de queijo minas",
+        "Sal ou canela e orégano a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 460,
+      "proteinGrams": 33,
+      "carbGrams": 42,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "tapioca-de-banana-com-canela",
+      "title": "Tapioca de banana com canela",
+      "description": "Tapioca de banana com canela com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Banana"
+      ],
+      "ingredients": [
+        "8 colheres de sopa de goma de tapioca hidratada",
+        "2 xícaras de goma de tapioca",
+        "2 xícaras de banana",
+        "Sal ou canela e canela a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 495,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "tapioca-de-frango-com-cenoura",
+      "title": "Tapioca de frango com cenoura",
+      "description": "Tapioca de frango com cenoura com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 35.4,
+      "minutes": 12,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Frango"
+      ],
+      "ingredients": [
+        "8 colheres de sopa de goma de tapioca hidratada",
+        "2 xícaras de goma de tapioca",
+        "500 g de frango desfiado",
+        "Sal ou canela e cenoura e cheiro-verde a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 320,
+      "proteinGrams": 33,
+      "carbGrams": 58,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "tapioca-de-coco-com-manga",
+      "title": "Tapioca de coco com manga",
+      "description": "Tapioca de coco com manga com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 22.1,
+      "minutes": 15,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão"
+      ],
+      "ingredients": [
+        "8 colheres de sopa de goma de tapioca hidratada",
+        "2 xícaras de goma de tapioca",
+        "2 xícaras de manga e coco",
+        "Sal ou canela e canela a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 10,
+      "healthScore": 8
+    },
+    {
+      "id": "tapioca-de-atum-com-espinafre",
+      "title": "Tapioca de atum com espinafre",
+      "description": "Tapioca de atum com espinafre com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 38.8,
+      "minutes": 18,
+      "servings": 3,
+      "tags": [
+        "Café da manhã",
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Fogão",
+        "Aproveita:Atum",
+        "Contém:Peixe",
+        "Contém:Atum"
+      ],
+      "ingredients": [
+        "8 colheres de sopa de goma de tapioca hidratada",
+        "500 g de atum",
+        "2 xícaras de espinafre",
+        "Sal ou canela e pimenta-do-reino a gosto"
+      ],
+      "steps": [
+        "Prepare e tempere os ingredientes.",
+        "Aqueça uma frigideira ou panela e cozinhe em fogo médio, mexendo quando necessário.",
+        "Finalize quando tudo estiver aquecido e completamente cozido."
+      ],
+      "portionGrams": 260,
+      "calories": 390,
+      "proteinGrams": 33,
+      "carbGrams": 74,
+      "fatGrams": 12,
+      "healthScore": 9
+    },
+    {
+      "id": "banana-assada-com-aveia-na-air-fryer",
+      "title": "Banana assada com aveia na air fryer",
+      "description": "Banana assada com aveia na air fryer com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 25.5,
+      "minutes": 30,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Air fryer",
+        "Aproveita:Banana",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de banana",
+        "2 xícaras de aveia",
+        "1 colher de sopa de azeite",
+        "Sal e canela a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 425,
+      "proteinGrams": 14,
+      "carbGrams": 42,
+      "fatGrams": 14,
+      "healthScore": 7
+    },
+    {
+      "id": "pao-recheado-com-ricota-na-air-fryer",
+      "title": "Pão recheado com ricota na air fryer",
+      "description": "Pão recheado com ricota na air fryer com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 27.2,
+      "minutes": 33,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Air fryer",
+        "Aproveita:Pão",
+        "Contém:Laticínios",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de pão",
+        "2 xícaras de ricota",
+        "1 colher de sopa de azeite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 460,
+      "proteinGrams": 14,
+      "carbGrams": 50,
+      "fatGrams": 16,
+      "healthScore": 8
+    },
+    {
+      "id": "grao-de-bico-crocante-na-air-fryer",
+      "title": "Grão-de-bico crocante na air fryer",
+      "description": "Grão-de-bico crocante na air fryer com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 28.9,
+      "minutes": 36,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Air fryer"
+      ],
+      "ingredients": [
+        "2 xícaras de grão-de-bico cozido",
+        "2 xícaras de páprica",
+        "1 colher de sopa de azeite",
+        "Sal e cominho a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 495,
+      "proteinGrams": 18,
+      "carbGrams": 58,
+      "fatGrams": 18,
+      "healthScore": 9
+    },
+    {
+      "id": "cubos-de-queijo-coalho-com-tomate",
+      "title": "Cubos de queijo coalho com tomate",
+      "description": "Cubos de queijo coalho com tomate com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 17,
+      "minutes": 30,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Air fryer",
+        "Aproveita:Tomate",
+        "Contém:Laticínios"
+      ],
+      "ingredients": [
+        "3 xícaras de queijo coalho",
+        "2 xícaras de tomate-cereja",
+        "1 colher de sopa de azeite",
+        "Sal e orégano a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 320,
+      "proteinGrams": 14,
+      "carbGrams": 66,
+      "fatGrams": 8,
+      "healthScore": 7
+    },
+    {
+      "id": "pastel-assado-de-palmito",
+      "title": "Pastel assado de palmito",
+      "description": "Pastel assado de palmito com ingredientes acessíveis e preparo adequado à rotina doméstica.",
+      "estimatedCost": 18.7,
+      "minutes": 33,
+      "servings": 5,
+      "tags": [
+        "Lanches",
+        "Rápido e fácil",
+        "Equipamento:Air fryer",
+        "Contém:Glúten"
+      ],
+      "ingredients": [
+        "3 xícaras de massa de pastel",
+        "2 xícaras de palmito",
+        "1 colher de sopa de azeite",
+        "Sal e salsinha a gosto"
+      ],
+      "steps": [
+        "Misture ou tempere os ingredientes e modele quando necessário.",
+        "Preaqueça a air fryer a 190 °C.",
+        "Asse por 15 a 25 minutos, virando na metade, até dourar e cozinhar por completo."
+      ],
+      "portionGrams": 390,
+      "calories": 355,
+      "proteinGrams": 14,
+      "carbGrams": 74,
+      "fatGrams": 10,
+      "healthScore": 8
+    }
+  ]
+}

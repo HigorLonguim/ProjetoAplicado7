@@ -7,7 +7,15 @@ class NutritionDetailsScreen extends StatelessWidget {
   final ProductModel product;
 
   String _grams(double? value) => value == null ? 'Não informado' : '${value.toStringAsFixed(1)} g';
-  String _status(String key) => switch (product.nutrientLevel(key)) { 'high' => 'ALTO', 'moderate' => 'MODERADO', 'low' => 'BAIXO', _ => '' };
+  String _status(String key, double? value) {
+    if (value == null) return '';
+    return switch (product.nutrientLevel(key)) {
+      'high' => 'ALTO',
+      'moderate' => 'MODERADO',
+      'low' => 'BAIXO',
+      _ => '',
+    };
+  }
   Color _color(String status) => switch (status) { 'ALTO' => const Color(0xFFC8443E), 'MODERADO' => AppColors.terracotta, 'BAIXO' => AppColors.olive, _ => const Color(0xFF6B7280) };
 
   @override
@@ -15,12 +23,12 @@ class NutritionDetailsScreen extends StatelessWidget {
     final rows = <(String, String, String)>[
       ('Energia', product.calories == null ? 'Não informado' : '${product.calories!.toStringAsFixed(0)} kcal', ''),
       ('Carboidratos', _grams(product.carbohydrates), ''),
-      ('Açúcares totais', _grams(product.sugar), _status('sugars')),
+      ('Açúcares totais', _grams(product.sugar), _status('sugars', product.sugar)),
       ('Proteínas', _grams(product.protein), ''),
-      ('Gorduras totais', _grams(product.fat), _status('fat')),
-      ('Gordura saturada', _grams(product.saturatedFat), _status('saturated-fat')),
+      ('Gorduras totais', _grams(product.fat), _status('fat', product.fat)),
+      ('Gordura saturada', _grams(product.saturatedFat), _status('saturated-fat', product.saturatedFat)),
       ('Fibra alimentar', _grams(product.fiber), ''),
-      ('Sódio', product.sodium == null ? 'Não informado' : '${(product.sodium! * 1000).toStringAsFixed(0)} mg', _status('salt')),
+      ('Sódio', product.sodium == null ? 'Não informado' : '${(product.sodium! * 1000).toStringAsFixed(0)} mg', _status('salt', product.sodium)),
       if (product.caffeine != null) ('Cafeína', '${product.caffeine!.toStringAsFixed(1)} g', ''),
     ];
     return Scaffold(
