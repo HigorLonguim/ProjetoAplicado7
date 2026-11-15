@@ -1,4 +1,5 @@
-platform :ios, '13.0'
+# mobile_scanner 6.x (Google ML Kit) requires iOS 15.5 or newer.
+platform :ios, '15.5'
 
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
