@@ -2061,6 +2061,18 @@ class _RecipeSheet extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            IconButton.filledTonal(
+              key: const Key('recipe-close-button'),
+              tooltip: 'Fechar receita',
+              onPressed: () => Navigator.of(context).pop(),
+              icon: const Icon(Icons.arrow_back_rounded),
+              style: IconButton.styleFrom(
+                minimumSize: const Size(48, 48),
+                backgroundColor: AppColors.mineral.withValues(alpha: .1),
+                foregroundColor: AppColors.mineral,
+              ),
+            ),
+            const SizedBox(height: 12),
             ClipRRect(
               borderRadius: BorderRadius.circular(22),
               child: AspectRatio(
@@ -2559,7 +2571,7 @@ class _NutritionMetric extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
     width: 104,
-    height: 108,
+    height: 136,
     padding: const EdgeInsets.all(13),
     decoration: BoxDecoration(
       gradient: const LinearGradient(
@@ -2596,6 +2608,8 @@ class _NutritionMetric extends StatelessWidget {
             Expanded(
               child: Text(
                 label,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
                   fontSize: 10,
                   height: 1.15,

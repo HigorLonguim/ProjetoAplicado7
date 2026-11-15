@@ -102,6 +102,15 @@ void main() {
       expect(find.text('Arroz seguro'), findsOneWidget);
       expect(find.text('Omelete insegura'), findsNothing);
       expect(find.textContaining('Não foi possível abrir'), findsNothing);
+
+      await tester.tap(find.text('Arroz seguro'));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('recipe-close-button')), findsOneWidget);
+      expect(find.text('Valores por porção'), findsOneWidget);
+
+      await tester.tap(find.byKey(const Key('recipe-close-button')));
+      await tester.pumpAndSettle();
+      expect(find.text('Valores por porção'), findsNothing);
     },
   );
 }

@@ -1,6 +1,9 @@
+import 'dart:async';
 import 'dart:convert';
-import 'dart:io';
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:http/http.dart' as http;
+
 import '../models/product_model.dart';
 
 sealed class ProductLookupException implements Exception {
@@ -30,45 +33,70 @@ class ProductOfflineException extends ProductLookupException {
 }
 
 class ProductService {
-  const ProductService({http.Client? client}) : _client = client;
+  const ProductService({
+    http.Client? client,
+    List<String> hosts = _defaultHosts,
+  }) : _client = client,
+       _hosts = hosts;
+
+  static const _defaultHosts = <String>[
+    'world.openfoodfacts.org',
+    'api.openfoodfacts.org',
+  ];
+
   final http.Client? _client;
+  final List<String> _hosts;
 
   Future<ProductModel> findByBarcode(String rawBarcode) async {
     final barcode = rawBarcode.replaceAll(RegExp(r'\D'), '');
     if (barcode.length < 8) throw const ProductNotFoundException();
     final client = _client ?? http.Client();
     try {
-      final uri = Uri.https(
-        'world.openfoodfacts.org',
-        '/api/v2/product/$barcode.json',
-        {
-          'fields':
-              'code,product_name,product_name_pt,brands,image_front_url,image_url,nutriments,nutriscore_grade,nutrient_levels,ecoscore_grade,nova_group',
-        },
-      );
-      final response = await client
-          .get(
-            uri,
-            headers: const {
-              'User-Agent': 'Origem/1.0 (projeto acadêmico)',
-              'Accept': 'application/json',
-            },
-          )
-          .timeout(const Duration(seconds: 12));
-      if (response.statusCode != 200) throw const ProductConnectionException();
-      final data = jsonDecode(response.body) as Map<String, dynamic>;
-      if (data['status'] != 1) throw const ProductNotFoundException();
-      return ProductModel.fromOpenFoodFacts(barcode, data);
-    } on ProductLookupException {
-      rethrow;
-    } on SocketException {
-      throw const ProductOfflineException();
-    } on FormatException {
-      throw const ProductConnectionException();
-    } catch (_) {
+      for (final host in _hosts) {
+        try {
+          final response = await client
+              .get(_productUri(host, barcode), headers: _headers())
+              .timeout(const Duration(seconds: 8));
+          final product = _readResponse(barcode, response);
+          if (product != null) return product;
+        } on ProductNotFoundException {
+          rethrow;
+        } on TimeoutException {
+          continue;
+        } on http.ClientException {
+          continue;
+        } on FormatException {
+          continue;
+        }
+      }
       throw const ProductConnectionException();
     } finally {
       if (_client == null) client.close();
     }
+  }
+
+  Uri _productUri(String host, String barcode) => Uri.https(
+    host,
+    '/api/v2/product/$barcode.json',
+    {
+      'fields':
+          'code,product_name,product_name_pt,brands,image_front_url,image_url,nutriments,nutriscore_grade,nutrient_levels,ecoscore_grade,nova_group',
+    },
+  );
+
+  Map<String, String> _headers() => {
+    'Accept': 'application/json',
+    if (!kIsWeb) 'User-Agent': 'Origem/1.0 (projeto acadêmico)',
+  };
+
+  ProductModel? _readResponse(String barcode, http.Response response) {
+    if (response.statusCode != 200 && response.statusCode != 404) return null;
+
+    final decoded = jsonDecode(response.body);
+    if (decoded is! Map) throw const FormatException();
+    final data = Map<String, dynamic>.from(decoded);
+    if (data['status'] != 1) throw const ProductNotFoundException();
+    if (response.statusCode != 200) return null;
+    return ProductModel.fromOpenFoodFacts(barcode, data);
   }
 }
