@@ -1,0 +1,29 @@
+workflows:
+  ios-altstore:
+    name: Origem iOS - AltStore
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Prepare Flutter dependencies
+        script: |
+          set -euo pipefail
+          flutter config --no-enable-swift-package-manager
+          flutter pub get
+      - name: Test product lookup and scanner
+        script: flutter test test/product_service_test.dart test/scanner_screen_test.dart
+      - name: Build unsigned iOS release
+        script: flutter build ios --release --no-codesign
+      - name: Package IPA for AltStore
+        script: |
+          set -euo pipefail
+          mkdir -p build/altstore/Payload
+          ditto build/ios/iphoneos/Runner.app build/altstore/Payload/Runner.app
+          cd build/altstore
+          /usr/bin/zip -r -y Origem-unsigned.ipa Payload
+    artifacts:
+      - build/altstore/Origem-unsigned.ipa
+      - /tmp/xcodebuild_logs/*.log

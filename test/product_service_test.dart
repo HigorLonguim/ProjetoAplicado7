@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
@@ -20,6 +22,37 @@ const _productResponse = '''
 ''';
 
 void main() {
+  test(
+    'envia os cabeçalhos pelo cliente HTTP nativo sem erro de leitura',
+    () async {
+      final server = await HttpServer.bind(InternetAddress.loopbackIPv4, 0);
+      final nativeClient = http.Client();
+      final received = server.first.then((request) async {
+        expect(request.headers.value('User-Agent'), contains('Origem/1.0'));
+        request.response.headers.contentType = ContentType.json;
+        request.response.write(_productResponse);
+        await request.response.close();
+      });
+      final service = ProductService(
+        client: MockClient(
+          (request) => nativeClient.get(
+            Uri.http('127.0.0.1:${server.port}', request.url.path),
+            headers: request.headers,
+          ),
+        ),
+      );
+
+      try {
+        final product = await service.findByBarcode(_barcode);
+        expect(product.name, 'Biscoito Chico');
+        await received;
+      } finally {
+        nativeClient.close();
+        await server.close(force: true);
+      }
+    },
+  );
+
   test('retorna o produto consultado pelo código normalizado', () async {
     final service = ProductService(
       client: MockClient((request) async {

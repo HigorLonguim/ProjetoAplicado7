@@ -86,7 +86,8 @@ class ProductService {
 
   Map<String, String> _headers() => {
     'Accept': 'application/json',
-    if (!kIsWeb) 'User-Agent': 'Origem/1.0 (projeto acadêmico)',
+    // dart:io rejects non-ASCII characters in HTTP header values before sending.
+    if (!kIsWeb) 'User-Agent': 'Origem/1.0 (projeto academico)',
   };
 
   ProductModel? _readResponse(String barcode, http.Response response) {
