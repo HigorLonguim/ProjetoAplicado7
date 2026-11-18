@@ -15,6 +15,34 @@ class _AccountScreenState extends State<AccountScreen> {
   bool _hasAccount = false;
   bool _loggedIn = false;
   bool _loading = true;
+  bool _registerNewAccount = false;
+
+  Future<void> _createAnotherAccount() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Criar outra conta local?'),
+        content: const Text(
+          'Este dispositivo guarda uma conta por vez. Ao concluir o novo cadastro, '
+          'o nome, e-mail e senha anteriores serão substituídos. '
+          'Histórico, favoritos e listas continuarão neste dispositivo e serão '
+          'visíveis com a nova conta.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancelar'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Continuar'),
+          ),
+        ],
+      ),
+    );
+    if (!mounted || confirmed != true) return;
+    setState(() => _registerNewAccount = true);
+  }
 
   @override
   void initState() {
@@ -33,6 +61,7 @@ class _AccountScreenState extends State<AccountScreen> {
         _loggedIn = loggedIn;
         _user = user;
         _loading = false;
+        _registerNewAccount = false;
       });
     } catch (_) {
       if (!mounted) return;
@@ -57,9 +86,24 @@ class _AccountScreenState extends State<AccountScreen> {
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 520),
                   child: _loggedIn && _user != null
-                      ? _ProfileCard(user: _user!, onLogout: () async { await _auth.logout(); await _load(); })
+                      ? _ProfileCard(
+                          user: _user!,
+                          onLogout: () async {
+                            await _auth.logout();
+                            await _load();
+                          },
+                        )
                       : _AuthForm(
-                          registerMode: !_hasAccount,
+                          key: ValueKey(!_hasAccount || _registerNewAccount),
+                          registerMode: !_hasAccount || _registerNewAccount,
+                          savedEmail: _user?.email,
+                          onCreateAnother: _hasAccount && !_registerNewAccount
+                              ? _createAnotherAccount
+                              : null,
+                          onBackToLogin: _hasAccount && _registerNewAccount
+                              ? () =>
+                                    setState(() => _registerNewAccount = false)
+                              : null,
                           onSuccess: _load,
                           auth: _auth,
                         ),
@@ -77,45 +121,84 @@ class _ProfileCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(26),
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(colors: [AppColors.navyLight, AppColors.navy]),
-          borderRadius: BorderRadius.circular(28),
-        ),
-        child: Column(children: [
-          CircleAvatar(
-            radius: 38,
-            backgroundColor: AppColors.peach,
-            child: Text(user.name.characters.first.toUpperCase(), style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: AppColors.navy)),
+    return Column(
+      children: [
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(26),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [AppColors.navyLight, AppColors.navy],
+            ),
+            borderRadius: BorderRadius.circular(28),
           ),
-          const SizedBox(height: 16),
-          Text(user.name, style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: Colors.white)),
-          const SizedBox(height: 4),
-          Text(user.email, style: const TextStyle(color: Colors.white70)),
-        ]),
-      ),
-      const SizedBox(height: 18),
-      Card(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Row(children: [
-            const Icon(Icons.lock_outline_rounded, color: AppColors.olive),
-            const SizedBox(width: 14),
-            const Expanded(child: Text('Conta local protegida por senha. Seus dados ficam neste dispositivo.')),
-          ]),
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 38,
+                backgroundColor: AppColors.peach,
+                child: Text(
+                  user.name.characters.first.toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.navy,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                user.name,
+                style: Theme.of(
+                  context,
+                ).textTheme.headlineSmall?.copyWith(color: Colors.white),
+              ),
+              const SizedBox(height: 4),
+              Text(user.email, style: const TextStyle(color: Colors.white70)),
+            ],
+          ),
         ),
-      ),
-      const SizedBox(height: 22),
-      OutlinedButton.icon(onPressed: onLogout, icon: const Icon(Icons.logout_rounded), label: const Text('Sair da conta')),
-    ]);
+        const SizedBox(height: 18),
+        Card(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Row(
+              children: [
+                const Icon(Icons.lock_outline_rounded, color: AppColors.olive),
+                const SizedBox(width: 14),
+                const Expanded(
+                  child: Text(
+                    'Conta local protegida por senha. Seus dados ficam neste dispositivo.',
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 22),
+        OutlinedButton.icon(
+          onPressed: onLogout,
+          icon: const Icon(Icons.logout_rounded),
+          label: const Text('Sair da conta'),
+        ),
+      ],
+    );
   }
 }
 
 class _AuthForm extends StatefulWidget {
-  const _AuthForm({required this.registerMode, required this.onSuccess, required this.auth});
+  const _AuthForm({
+    super.key,
+    required this.registerMode,
+    required this.onSuccess,
+    required this.auth,
+    this.savedEmail,
+    this.onCreateAnother,
+    this.onBackToLogin,
+  });
+  final String? savedEmail;
+  final VoidCallback? onCreateAnother;
+  final VoidCallback? onBackToLogin;
   final bool registerMode;
   final VoidCallback onSuccess;
   final AuthService auth;
@@ -133,26 +216,52 @@ class _AuthFormState extends State<_AuthForm> {
   String? _error;
 
   @override
+  void initState() {
+    super.initState();
+    if (!widget.registerMode) _email.text = widget.savedEmail ?? '';
+  }
+
+  @override
   void dispose() {
-    _name.dispose(); _email.dispose(); _password.dispose();
+    _name.dispose();
+    _email.dispose();
+    _password.dispose();
     super.dispose();
   }
 
   Future<void> _submit() async {
     if (!(_key.currentState?.validate() ?? false)) return;
-    setState(() { _busy = true; _error = null; });
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
     try {
       if (widget.registerMode) {
-        await widget.auth.register(name: _name.text, email: _email.text, password: _password.text);
+        await widget.auth.register(
+          name: _name.text,
+          email: _email.text,
+          password: _password.text,
+        );
         widget.onSuccess();
         return;
       }
-      final valid = await widget.auth.login(email: _email.text, password: _password.text);
+      final valid = await widget.auth.login(
+        email: _email.text,
+        password: _password.text,
+      );
       if (!mounted) return;
       if (valid) widget.onSuccess();
-      setState(() { _busy = false; _error = valid ? null : 'E-mail ou senha incorretos.'; });
+      setState(() {
+        _busy = false;
+        _error = valid ? null : 'E-mail ou senha incorretos.';
+      });
     } catch (_) {
-      if (mounted) setState(() { _busy = false; _error = 'Não foi possível salvar os dados neste dispositivo.'; });
+      if (mounted) {
+        setState(() {
+          _busy = false;
+          _error = 'Não foi possível salvar os dados neste dispositivo.';
+        });
+      }
     }
   }
 
@@ -163,30 +272,109 @@ class _AuthFormState extends State<_AuthForm> {
         padding: const EdgeInsets.all(24),
         child: Form(
           key: _key,
-          child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            const Center(child: OrigemMark(size: 72)),
-            const SizedBox(height: 22),
-            Text(widget.registerMode ? 'Criar conta' : 'Entrar', style: Theme.of(context).textTheme.headlineMedium),
-            const SizedBox(height: 6),
-            Text(widget.registerMode ? 'Salve seu perfil neste dispositivo.' : 'Acesse seu perfil local.', style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant)),
-            const SizedBox(height: 24),
-            if (widget.registerMode) ...[
-              TextFormField(controller: _name, textCapitalization: TextCapitalization.words, decoration: const InputDecoration(labelText: 'Nome', prefixIcon: Icon(Icons.person_outline)), validator: (value) => (value?.trim().length ?? 0) < 2 ? 'Informe seu nome.' : null),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const Center(child: OrigemMark(size: 72)),
+              const SizedBox(height: 22),
+              Text(
+                widget.registerMode ? 'Criar conta' : 'Entrar',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                widget.registerMode
+                    ? 'Salve seu perfil neste dispositivo.'
+                    : 'Acesse seu perfil local.',
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                ),
+              ),
+              if (!widget.registerMode && widget.savedEmail != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 12),
+                  child: Text(
+                    'Conta salva neste dispositivo: ${widget.savedEmail}',
+                  ),
+                ),
+              const SizedBox(height: 24),
+              if (widget.registerMode) ...[
+                TextFormField(
+                  controller: _name,
+                  textCapitalization: TextCapitalization.words,
+                  decoration: const InputDecoration(
+                    labelText: 'Nome',
+                    prefixIcon: Icon(Icons.person_outline),
+                  ),
+                  validator: (value) => (value?.trim().length ?? 0) < 2
+                      ? 'Informe seu nome.'
+                      : null,
+                ),
+                const SizedBox(height: 14),
+              ],
+              TextFormField(
+                controller: _email,
+                keyboardType: TextInputType.emailAddress,
+                decoration: const InputDecoration(
+                  labelText: 'E-mail',
+                  prefixIcon: Icon(Icons.mail_outline),
+                ),
+                validator: (value) =>
+                    !RegExp(r'^.+@.+\..+$').hasMatch(value?.trim() ?? '')
+                    ? 'Informe um e-mail válido.'
+                    : null,
+              ),
               const SizedBox(height: 14),
+              TextFormField(
+                controller: _password,
+                obscureText: _hidden,
+                onFieldSubmitted: (_) => _submit(),
+                decoration: InputDecoration(
+                  labelText: 'Senha',
+                  prefixIcon: const Icon(Icons.lock_outline),
+                  suffixIcon: IconButton(
+                    onPressed: () => setState(() => _hidden = !_hidden),
+                    icon: Icon(
+                      _hidden
+                          ? Icons.visibility_outlined
+                          : Icons.visibility_off_outlined,
+                    ),
+                  ),
+                ),
+                validator: (value) => (value?.length ?? 0) < 6
+                    ? 'Use pelo menos 6 caracteres.'
+                    : null,
+              ),
+              if (_error != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 12),
+                  child: Text(
+                    _error!,
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.error,
+                    ),
+                  ),
+                ),
+              const SizedBox(height: 22),
+              GradientButton(
+                label: widget.registerMode ? 'Criar minha conta' : 'Entrar',
+                icon: widget.registerMode
+                    ? Icons.person_add_alt_1
+                    : Icons.login_rounded,
+                onPressed: _busy ? null : _submit,
+              ),
+              if (widget.onCreateAnother != null)
+                TextButton(
+                  onPressed: _busy ? null : widget.onCreateAnother,
+                  child: const Text('Criar outra conta'),
+                ),
+              if (widget.onBackToLogin != null)
+                TextButton(
+                  onPressed: _busy ? null : widget.onBackToLogin,
+                  child: const Text('Voltar para entrar'),
+                ),
             ],
-            TextFormField(controller: _email, keyboardType: TextInputType.emailAddress, decoration: const InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.mail_outline)), validator: (value) => !RegExp(r'^.+@.+\..+$').hasMatch(value?.trim() ?? '') ? 'Informe um e-mail válido.' : null),
-            const SizedBox(height: 14),
-            TextFormField(
-              controller: _password,
-              obscureText: _hidden,
-              onFieldSubmitted: (_) => _submit(),
-              decoration: InputDecoration(labelText: 'Senha', prefixIcon: const Icon(Icons.lock_outline), suffixIcon: IconButton(onPressed: () => setState(() => _hidden = !_hidden), icon: Icon(_hidden ? Icons.visibility_outlined : Icons.visibility_off_outlined))),
-              validator: (value) => (value?.length ?? 0) < 6 ? 'Use pelo menos 6 caracteres.' : null,
-            ),
-            if (_error != null) Padding(padding: const EdgeInsets.only(top: 12), child: Text(_error!, style: TextStyle(color: Theme.of(context).colorScheme.error))),
-            const SizedBox(height: 22),
-            GradientButton(label: widget.registerMode ? 'Criar minha conta' : 'Entrar', icon: widget.registerMode ? Icons.person_add_alt_1 : Icons.login_rounded, onPressed: _busy ? null : _submit),
-          ]),
+          ),
         ),
       ),
     );
