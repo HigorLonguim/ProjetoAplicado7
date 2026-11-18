@@ -20,7 +20,7 @@ void main() {
       await tester.tap(find.text('Sair da conta'));
       await tester.pumpAndSettle();
       expect(
-        find.textContaining('Conta salva neste dispositivo: antiga@teste.com'),
+        find.textContaining('Continuar como antiga@teste.com'),
         findsOneWidget,
       );
 

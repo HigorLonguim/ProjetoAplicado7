@@ -21,7 +21,7 @@ class _AccountScreenState extends State<AccountScreen> {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Criar outra conta local?'),
+        title: const Text('Criar outra conta?'),
         content: const Text(
           'Este dispositivo guarda uma conta por vez. Ao concluir o novo cadastro, '
           'o nome, e-mail e senha anteriores serão substituídos. '
@@ -168,7 +168,7 @@ class _ProfileCard extends StatelessWidget {
                 const SizedBox(width: 14),
                 const Expanded(
                   child: Text(
-                    'Conta local protegida por senha. Seus dados ficam neste dispositivo.',
+                    'Seu perfil no Origem. Use seu e-mail e senha para acessar sua conta.',
                   ),
                 ),
               ],
@@ -230,24 +230,32 @@ class _AuthFormState extends State<_AuthForm> {
   }
 
   Future<void> _submit() async {
+    if (_busy) return;
     if (!(_key.currentState?.validate() ?? false)) return;
+    final name = _name.text;
+    final email = _email.text;
+    final password = _password.text;
     setState(() {
       _busy = true;
       _error = null;
     });
     try {
+      // Simulated latency for the prototype; no remote request is performed.
+      await Future<void>.delayed(const Duration(milliseconds: 1200));
+      if (!mounted) return;
       if (widget.registerMode) {
         await widget.auth.register(
-          name: _name.text,
-          email: _email.text,
-          password: _password.text,
+          name: name,
+          email: email,
+          password: password,
         );
+        if (!mounted) return;
         widget.onSuccess();
         return;
       }
       final valid = await widget.auth.login(
-        email: _email.text,
-        password: _password.text,
+        email: email,
+        password: password,
       );
       if (!mounted) return;
       if (valid) widget.onSuccess();
@@ -259,7 +267,7 @@ class _AuthFormState extends State<_AuthForm> {
       if (mounted) {
         setState(() {
           _busy = false;
-          _error = 'Não foi possível salvar os dados neste dispositivo.';
+          _error = 'Não foi possível concluir. Tente novamente.';
         });
       }
     }
@@ -278,14 +286,14 @@ class _AuthFormState extends State<_AuthForm> {
               const Center(child: OrigemMark(size: 72)),
               const SizedBox(height: 22),
               Text(
-                widget.registerMode ? 'Criar conta' : 'Entrar',
+                widget.registerMode ? 'Crie sua conta' : 'Boas-vindas de volta',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               const SizedBox(height: 6),
               Text(
                 widget.registerMode
-                    ? 'Salve seu perfil neste dispositivo.'
-                    : 'Acesse seu perfil local.',
+                    ? 'Cadastre seus dados para começar sua experiência no Origem.'
+                    : 'Entre com seu e-mail e senha para continuar.',
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
@@ -294,7 +302,7 @@ class _AuthFormState extends State<_AuthForm> {
                 Padding(
                   padding: const EdgeInsets.only(top: 12),
                   child: Text(
-                    'Conta salva neste dispositivo: ${widget.savedEmail}',
+                    'Continuar como ${widget.savedEmail}',
                   ),
                 ),
               const SizedBox(height: 24),
@@ -357,12 +365,19 @@ class _AuthFormState extends State<_AuthForm> {
                 ),
               const SizedBox(height: 22),
               GradientButton(
-                label: widget.registerMode ? 'Criar minha conta' : 'Entrar',
+                label: _busy
+                    ? (widget.registerMode ? 'Criando conta…' : 'Entrando…')
+                    : (widget.registerMode ? 'Criar minha conta' : 'Entrar'),
                 icon: widget.registerMode
                     ? Icons.person_add_alt_1
                     : Icons.login_rounded,
                 onPressed: _busy ? null : _submit,
               ),
+              if (_busy)
+                const Padding(
+                  padding: EdgeInsets.only(top: 12),
+                  child: LinearProgressIndicator(),
+                ),
               if (widget.onCreateAnother != null)
                 TextButton(
                   onPressed: _busy ? null : widget.onCreateAnother,
