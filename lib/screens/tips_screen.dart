@@ -17,13 +17,13 @@ class _TipsScreenState extends State<TipsScreen>
   late final AnimationController _intro;
   static const episodes = [
     _Episode(
-      'Muzy compartilha dicas incríveis sobre alimentação',
+      'OrigemCast - Natural X Sintético',
       'Nutrição',
       'YouTube',
-      'Uma conversa sobre alimentação e escolhas possíveis para o dia a dia.',
+      'Uma conversa sobre natural e sintético no OrigemCast.',
       Icons.restaurant_rounded,
-      youtubeId: 'qTH_P4PBEI8',
-      author: 'TICARACATICAST Cortes[OFICIAL]',
+      youtubeId: '2S1hMJIezrM',
+      author: 'Júlia Dias',
     ),
     _Episode(
       'Por onde começar a ler um rótulo?',
